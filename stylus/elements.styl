@@ -1,103 +1,82 @@
+// picturefill overrides
+.picturefill-background
+    overflow hidden
+    background-size: cover
+    background-position: 50% 50%
+.picturefill-background.containMob
+    @media mtrigger
+        background-size: contain
+        background-position: 50% 0
+        
+
+
+
 // icons
 .icon
     background-color: brand1
-    color: white
+    border: 2px solid brand1
     display: flex
     justify-content: center
     align-items: center
     width: 45px
     height: 45px
     padding:0.2em
-    font-size: 1.1em
-    border-radius: 50%
-.icon.alt
-    background-color: brand2
-.ic-basic
     font-size: 1.4em
-    line-height: 1.4em
-    color: brand1
-.ic-basic::before
-    color: brand1
-.ic-basic.rev
+    border-radius: 50%
+.icon,
+.icon::before 
     color: white
-.ic-basic.rev::before
-    color: white
+.icon.alt
+    background-color: brand0
+    border-color: brand0
+a.icon 
+    text-decoration: none
+a.icon.inline-icons
+    display: inline-flex
+.ic
+    font-size:200%
+    line-height: 75%
+    color: brand1
+    text-decoration: none
+
+
+ul.iconRow
+    padding: 0
+    margin: 0
 ul.iconRow,
 ul.iconRow li
     list-style-type: none
 ul.iconRow li
-    margin: marXXS marStd 0 0
-    padding: padXXS padStd padXXS 0 
+    margin: marXXS marXXS*0.25
+    padding: padXS*0.75 padXS*0.75 padXS*0.75 padXXS*0.5
     display: inline-block
-    border-right:1px solid brand1
+    border-right:1px solid blackAlp25
+ul.iconRow li:first-child
+    margin-left: 0
+    padding-left: 0
 ul.iconRow li:last-child
     border-right:none
+    padding-right:0
+    margin-right:0
 ul.iconRow li i 
-    font-size: 2em
-div.socialLinks
-    display: flex
-    justify-content: center
-div.socialLinks a
-    font-size: 2.5em
-    padding: padStd
-    flex-basis: 20%
-
-main div.socialLinks
-    justify-content:flex-start
-main div.socialLinks a
-    font-size: 2em
-    padding: padStd
-    padding-left:0
-    padding-top:0
-    flex-basis: auto
-@media phoneRule 
-    main div.socialLinks a
-        margin-right: marStd*2
-
-
-       
-
-#navMobile .icon,
-#navHeader .icon
-    background: none
-body > footer .icon
-    display: inline-flex
-    // background-color: blackAlp10
     font-size: 1.4em
-    width:40px
-    height: 40px
-    margin-right: 1px
-    margin-bottom: 10px
-    justify-content: flex-start
-    background: none
-    padding: 0
+   
+
+
+
 // ctas
-a.majorCTA,
 a.ctaButton
-    color: white
-    background-color: brand1
-    padding: padXXS padXS padXXS*1.25 padXS
-    margin-bottom: 7px
-    display: inline-block
-    white-space: nowrap
-    border-radius: 2em
-    font-size: 0.8em
-    font-weight: 500
-div#masthead a.majorCTA
-    color: white !important
-a.ctaButton
-    border-radius: 6px
+    padding: 0.85em 1.3em
+    border-radius: 3em
     background: brand1
-    color: white !important
-    font-size: 1em
-    font-weight:500
-    border: 1px solid brand1
-    //padding:padXXS padXS
-    //margin-right:marXXS
+    color: white
+    font-weight:700
+    border: 2px solid brand1
     display: inline-flex
     justify-content: space-between
-    transition: 0.2s
-    white-space: normal
+    text-decoration: none
+    column-gap: 3vw
+    transition: 0.5s
 nav a.ctaButton
     background:none
     color:brand1 !important
@@ -105,40 +84,50 @@ nav a.ctaButton
     margin-right: marXXS
     margin-bottom: 0
     padding:padXXS*.75 padXS
-
-a.ctaButton i
-    margin-left:15px 
-    margin-right:10px;
-    transition: 0.2s 
 a.ctaButton i:before
     color: white
 a.ctaButton:hover,
-a.ctaButton:hover > i:before
+a.ctaButton:hover > i:before,
+a.icon:hover
     background: none
-    color: brand2 !important
-    border-color: brand2 !important
-    border-bottom-color: brand2 !important
-    transition: 0.2s 
-a.ctaButton:hover i
-    margin-left:25px
-    margin-right:0px
+    color: brand0 !important
+    border-color: brand0 !important
+    border-bottom-color: brand0 !important
     transition: 0.5s 
-#priNav a.majorCTA
-    text-shadow: 0px 1px 2px halfDark    
-    box-shadow: 0px 2px 2px black
-div.cta > div
-    text-align: center
-div.cta > div > h6
-    margin-bottom: 0
+a.ctaButton:hover i
+    margin-left:5px
+    transition: 0.5s 
 
-@media phoneRule
-    a.majorCTA
-        font-size:1.1em
-        font-weight: 800
-        padding: padM padXL padM padXL  
-    a.ctaButton
-        padding-top: padM
-        padding-bottom: padM
+
+
+// inverted icon style
+.inv,
+.inv:before,
+a.ctaButton.inv,
+a.ctaButton.inv i:before 
+    background: none
+    border-color: brand1
+    color: brand1
+.alt.inv,
+.alt.inv:before,
+a.icon.inv:hover
+    background: none
+    border-color: brand0
+    color: brand0
+
+
+
+
+// live chat styling
+#ChatStatusLoading
+    color: whiteAlp50
+#ChatStatusOnline
+    color: ok
+#ChatStatusOffline
+    color: warning
+
+
+
 
 
 .imgText
@@ -210,12 +199,25 @@ picture.logoAsset
     height:50px
     
 
+
+
 header.sticky .imgText.stacked
     flex-direction: row
 header.sticky .imgText.stacked picture
     margin-bottom: 0
 
 // logos
+.brandLogo
+    height:60px
+    width: auto
+    max-width:200px
+section.brandLogo
+    height:auto
+    width:auto
+    max-width:auto
+section.brandLogo img.brandLogo
+    height:80px
+    max-width:250px
 .mLogo picture
     margin-right: 10px
     max-width:100% !important
@@ -231,6 +233,14 @@ header.sticky .imgText.stacked picture
 .mLogo.long img
     max-height:100% !important
     max-width:150px !important
+
+.logoStrip > *
+    margin: 0 3em 0 3em  
+.logoStrip.left > *
+    margin-left: 0
+@media phoneRule
+    .logoStrip > *
+        margin: 0.5em 1.5em 0.5em 1.5em
 
 
 .inpage-logo
@@ -289,11 +299,7 @@ i.block
     transition: 0.3s 
 .rotateIC
     transition: 0.2s
-    transform: rotate(180deg) 
-.brand1
-    color: brand1
-.brand2
-    color: brand2
+    transform: rotate(180deg)
 
 
 // video
@@ -615,7 +621,7 @@ div.slideTextOverlay
     width: 100%
     padding:0
 .lightSlider div.slideTextOverlay
-    color: brand2
+    color: brand0
 .darkSlider div.slideTextOverlay
     color: brand1
 
@@ -755,3 +761,83 @@ body.safari div.videoLayer video#bgvid2,
 body.safari div.videoLayer video#bgvid3,
 body.safari div.videoLayer video#bgvid4
     display: none
+
+
+
+
+
+
+
+
+// model gallery
+div.galleryThumbs
+    display: flex
+    column-gap: 5px
+div.galleryThumbs a
+    display: flex
+    align-items: center
+    flex-basis: 7vw
+    border-bottom: 4px solid transparent
+    padding: 12px
+div.galleryThumbs a.selectedImage
+    border-bottom: 4px solid brand1
+
+
+
+
+
+
+// smallPromo
+div.smallPromo 
+    margin-bottom: 3em
+
+div.smallPromo h1
+    font-weight: 100
+    font-size: 4.75em
+    margin-top: 5px
+    margin-bottom: 10px
+
+div.smallPromo h6
+    font-weight: 300
+
+
+// enquiry tweaks
+div.form > div
+    margin-bottom: 1.25em
+div.form div.spaceBetween
+    display: flex
+    justify-content: space-between
+    align-items: center
+div.form option,
+div.form form textarea
+    font-family: 'twk', fontStack
+
+
+// related items
+div.teaserItems
+    display: flex
+    flex-wrap: nowrap
+    column-gap: 3vw
+    margin-top: 2em
+    margin-bottom: 1em
+div.teaserItems a:link,
+div.teaserItems a:visited
+    color: white
+    text-decoration: none
+    text-align: center
+    font-size: 0.85em
+    line-height: 140%
+    flex:1 1 10vw
+div.teaserItems a
+    display: flex
+    flex-direction: column
+div.teaserItems a > div
+    height:7.5vw
+    background-position: center
+    background-size:contain
+    background-repeat: no-repeat
+    margin: 1em
+    transition: 0.3s
+
+div.teaserItems a:hover > div
+    transform: translateY(-0.4em)

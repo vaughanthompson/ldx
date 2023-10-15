@@ -32,6 +32,8 @@
     // mobile top scroll
     //$('#navMobile').hide();
     
+
+    /*
     new Waypoint({
     element: document.getElementsByTagName('body'),
     handler: function(direction) {
@@ -56,7 +58,7 @@
         },
             offset: '5%'
         })
-
+    */
 
        
 

@@ -13,8 +13,8 @@
 
 
 // vars
-brand0 = rgba(62,62,62,1.0) //#
-brand1 = rgba(224,34,38,1.0) //#
+brand0 = rgba(26,26,26,1.0) //#231f20
+brand1 = rgba(200,16,46,1.0) //#c8102e
 brand2 = rgba(80,80,80,1.0) //#
 brand3 = rgba(35,31,32,1.0) //#
 
@@ -36,8 +36,11 @@ blackAlp5 = rgba(0,0,0,0.00)
 
 halfDark = rgba(0,0,0,0.45)
 lightGrey = rgba(222,222,222,1.0)
-mainBG = rgba(245,245,245,1.0)
+mainBG = rgba(255,255,255,1.0)
 
+warning = rgba(255,0,0,1.0)
+caution = rgba(200,120,0,1.0)
+ok = rgba(0,200,120,1.0)
 
 
 padXL = 7vw
@@ -47,7 +50,7 @@ padStd = 1.8vw
 padXS = 1.5vw
 padXXS = 0.8vw
 
-marXL = 10vw
+marXL = 7vw
 marL = 5vw
 marM = 3vw
 marStd = 1.8vw
@@ -61,8 +64,8 @@ fontStack = -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Ne
 //responsive breakpoint & media queries
 mBreakPoint = 750px
 tBreakPoint = 1100px
-sdBreakPoint = 1200px
-dBreakPoint = 1500px
+sdBreakPoint = 1400px
+dBreakPoint = 1600px
 lgBreakPoint = 1900px
 
 phoneRule = "screen and (max-width: mBreakPoint )"
@@ -70,7 +73,7 @@ tabletRule = "screen and (min-width: mBreakPoint) and (max-width: tBreakPoint )"
 desktopRule = "screen and (min-width: tBreakPoint) and (max-width: dBreakPoint )"
 lgdesktopRule = "screen and (min-width: dBreakPoint)"
 
-smallDesktop = "screen and (min-width: mBreakPoint) and (max-width: sdBreakPoint )"
+smallDesktop = "screen and (min-width: tBreakPoint) and (max-width: sdBreakPoint )"
 
 
 mtrigger = "screen and (max-width: tBreakPoint )"
@@ -121,43 +124,57 @@ wh100 = @block {
 test = @block {
     border:1px solid cyan
 }
+test1 = @block {
+    border:1px solid red
+}
+test2 = @block {
+    border:1px solid green
+}
 borderBtm = @block {
     border-bottom: 1px solid brand1
 }
 
 // heights
 fullH = 100vh
-largeH = 85vh
+largeH = fullH - 8vh
 halfH = 50vh
 smallH = 25vh
 
 navHeight = 8vh
 navHeightL = 11vh
-navSpacer = 12vh
+navSpacer = 10vh
 navSpacerL = 15vh
-
 
 
 // basic defaults
 html, body
     width: 100%
     height: 100%
-    font-family: 'Poppins', fontStack
+    font-family: 'twk', fontStack
 body
     font-size: 16px
+    font-weight: 300
     // background: linear-gradient(top, white, brand1)
 body
     background-color: mainBG
     color: brand3
-body > header.sticky
-    background-color: whiteAlp90
-
-
 hr
     border: none
     border-bottom: 1px solid brand0
-    margin:0
-
+    margin:1em 0
+footer hr
+    border-color: brand1
 .noPad
     padding: 0 !important
-// blend modes
+.inline
+    display: inline
+.brand0
+    color: brand0 !important
+.brand1
+    color: brand1 !important
+.brand2
+    color: brand2 !important
+.brand3
+    color: brand3 !important
+.vertBorder
+    border-left: 1px solid brand1

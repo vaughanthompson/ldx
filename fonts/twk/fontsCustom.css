@@ -1,0 +1,51 @@
+
+
+@font-face {
+    font-family: 'twk';
+    src: url('../fonts/twk/TWKEverett-Thin-web.woff2') format('woff2'), url('../fonts/twk/TWKEverett-Thin-web.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twk';
+    src: url('../fonts/twk/TWKEverett-Light-web.woff2') format('woff2'), url('../fonts/twk/TWKEverett-Light-web.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twk';
+    src: url('../fonts/twk/TWKEverett-Regular-web.woff2') format('woff2'), url('../fonts/twk/TWKEverett-Regular-web.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twk';
+    src: url('../fonts/twk/TWKEverett-Medium-web.woff2') format('woff2'), url('../fonts/twk/TWKEverett-Medium-web.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twk';
+    src: url('../fonts/twk/TWKEverett-Bold-web.woff2') format('woff2'), url('../fonts/twk/TWKEverett-Bold-web.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twk';
+    src: url('../fonts/twk/TWKEverett-Black-web.woff2') format('woff2'), url('../fonts/twk/TWKEverett-Black-web.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+

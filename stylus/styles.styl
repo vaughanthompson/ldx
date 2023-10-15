@@ -5,17 +5,14 @@
 // libs and default 3rd party
 @import 'nib'
 // setup
-@import '../fonts/poppins/poppinsCustom.css'
+//@import '../fonts/poppins/poppinsCustom.css'
+@import '../fonts/twk/fontsCustom.css'
 
 @require 'defaults.styl'
-// block, nav etc
 @require 'layout.styl'
-// custom elements, icons
 @require 'elements.styl'
-// typography, links
 @require 'typo.styl'
-// typography, links
-@import '../css/form.css'
+@require 'header-footer.styl'
 
 
 
@@ -24,7 +21,6 @@
 /* effects */
 .multiply
     background-blend-mode: multiply
-    /*background-color: blackAlp25*/
 .bgoverlay0
     background-color: blackAlp10 !important
 .bgoverlay1
@@ -34,19 +30,6 @@
 .bgoverlay3
     background-color: blackAlp75 !important
 
-.multiplyBlack
-    background-color: brand1
-.multiplyRed
-    background-color: brand2
-
-.lighten1
-    background-color: rgba(255,255,255,0.70)
-    background-blend-mode: overlay
-    filter:grayscale(80%)
-.lighten2
-    background-color: rgba(255,255,255,0.50)
-    background-blend-mode: overlay
-    filter:grayscale(80%)
 .greyscale
     background-color: rgba(0,0,0,0.30)
     filter:grayscale(100%)
@@ -55,38 +38,21 @@
     filter:grayscale(0%)
     transition: 2.5s
 
-
-.burnColor
-    background-blend-mode: color-burn
-    opacity: 1.0
 .gradient0
     background-blend-mode: multiply
     background: linear-gradient(to right, blackAlp75,blackAlp5, blackAlp5) 
 .gradient1
     background-blend-mode: multiply
-    background: linear-gradient(to right, brand2, blackAlp50)
+    background: linear-gradient(to right, brand0, blackAlp50)
 .gradient2
     background-blend-mode: multiply
     background: linear-gradient(to right, black ,blackAlp50, blackAlp10)    
 .gradient3
     background-blend-mode: multiply
     background: radial-gradient(circle at center, blackAlp5,blackAlp5,blackAlp5,blackAlp10, blackAlp25 )
-.gradientsec2
-    background-blend-mode: multiply
-    background: radial-gradient(circle at center, blackAlp5,blackAlp5,blackAlp5,blackAlp10, sec2dark )
-.gradientsec3
-    background-blend-mode: multiply
-    background: radial-gradient(circle at center, blackAlp5,blackAlp5,blackAlp5,blackAlp10, sec3dark )
-.gradientsec4
-    background-blend-mode: multiply
-    background: radial-gradient(circle at center, blackAlp5,blackAlp5,blackAlp5,blackAlp10, sec4dark )
-
-
-
 
 .blur
     filter:blur(10px)
-
 
 
 // last in the cascade - highest prio
@@ -97,3 +63,18 @@
     @media screen and (max-width: tBreakPoint)
         display: $hideItAll
 
+.nowrap
+    white-space: nowrap
+
+.fw-100 
+    font-weight: 100
+.fw-200 
+    font-weight: 200
+.fw-300 
+    font-weight: 300
+.fw-500 
+    font-weight: 500
+.fw-700 
+    font-weight: 700
+.fw-900 
+    font-weight: 900

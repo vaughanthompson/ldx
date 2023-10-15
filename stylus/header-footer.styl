@@ -1,0 +1,334 @@
+/*body > header.sticky
+    background-color: whiteAlp90
+*/
+
+#navMobile .icon,
+#navHeader .icon
+    background: none
+
+
+
+
+
+// mobile nav
+.navHeight
+    height: navSpacer
+
+#navMobile
+    position: fixed
+    bottom: marStd
+    right: marStd
+    z-index: 6000
+    display: none
+#navHeader
+    position: fixed
+    z-index: 7000
+    background-color: brand0
+    width:100vw
+    padding-left: padM
+    padding-right: padM 
+    display: flex
+    align-items: center
+    justify-content: space-between
+#navHeader div#mblNavControl
+    display: flex 
+#navHeader div#mblNavControl a
+    margin-left: marXS  
+#navHeader div#mblNavControl a.icon
+    border:none 
+
+div.mblnav
+    display: none;
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 6001
+    background: black
+div.mblnavContainer
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    /* The main point: */
+    overflow-y: auto
+    /* Optional but highly reccomended: enables momentum scrolling on iOS */
+    -webkit-overflow-scrolling: touch
+    background: linear-gradient(to bottom, black, brand0)
+
+.open
+    opacity: 1 !important
+div.containMNav
+    padding: padM padXL 0 padXL
+    margin-top: marL
+div.containMNav nav
+    display: flex
+    flex-wrap: wrap
+    column-gap: 5px
+    row-gap: 5px
+    margin-top: marL
+    //flex-direction: column
+div.containMNav nav a
+    padding: padM padL 
+    line-height: 130%
+    margin: 1px 0
+    background-color: rgba(255,255,255,0.15)
+    text-decoration: none
+div.containMNav,
+div.containMNav nav a:link,
+div.containMNav nav a:visited
+    color: white
+div.containMNav h6
+    font-size: 0.6em
+    font-weight: 500
+    text-transform: uppercase
+    margin: 0
+#navHeader a.siteLogo img 
+    height: navHeight*0.65
+    width: auto
+@media mtrigger
+    html.noscroll 
+        overflow: hidden 
+    body.noscroll
+        overflow: visible
+        height: 100%
+
+
+
+
+
+
+
+
+
+
+// header and footer
+
+
+
+
+footer a.logo img,
+header a.logo img
+    max-height: 42px
+    width:auto
+
+
+span.pipe
+    width:1px
+    background-color: brand1
+    align-self: stretch
+    margin-top: 3px
+    margin-bottom: 3px
+    margin-left: 30px
+div.positioning span.pipe 
+    margin-left: 10px
+div.positioning h5
+    color: brand1
+    font-size: 12.5px
+    margin: 0
+    align-self: center
+div.positioning
+    padding-right: 10px
+
+
+
+
+
+
+
+
+
+body > footer h6
+    font-weight: 700
+    margin-bottom: 0.5em
+    color: brand1
+body > footer nav
+    margin-bottom: 1.5em
+body > footer nav a
+    font-size: 1.0em
+    line-height: 1.5em
+    font-weight: 300
+    display: inline-block
+    padding: 0px
+    margin-right: 20px
+    margin-bottom: 0.25em
+
+body > footer nav a:link,
+body > footer nav a:visited
+    color: white !important
+    text-decoration: none
+body > footer nav a:hover,
+body > footer nav a:active
+    color: brand1 !important
+body > footer nav a i::before
+    color: white !important
+    transition: 0.5s
+body > footer nav a:hover i::before
+    color: brand1 !important
+body > footer nav.list
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+
+body > footer
+    background-color: brand0
+    color: white
+@media mtrigger
+    body > footer
+        padding-top: 10vh
+        padding-bottom: 5vh
+    body > footer > div
+        border-bottom: 4px solid brand1
+        margin-bottom: 5vh
+        padding-bottom: 3vh
+    body > footer > div:last-child
+        border-bottom: none
+    body > footer nav a
+        margin-top: 0.5vh
+        margin-bottom: 1vh
+@media ttrigger
+    body > footer
+        padding-top: padL   
+        padding-bottom: padL   
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        column-gap: 5vw
+    body > footer > div
+        flex: 1 1 0px
+    body > footer > div:first-child
+        flex:3
+    body > footer div.siteLogo
+        margin-bottom: 2em
+
+
+
+
+
+
+
+
+
+
+
+/* desktop masthead */
+
+body > header
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    width:100%
+    background-color: brand0
+    color: white
+    border-bottom:2px solid rgba(0,0,0,0.0)
+body > header div.navSection
+    display: flex
+    align-items: flex-end
+    column-gap: 10px
+    align-self: stretch
+body > header div.navSection nav
+    margin: 0 5px
+div.navSection div h6
+    font-size: 0.55em
+    font-weight: 500
+    text-transform: uppercase
+    margin: 0
+    padding: 0 0 0 13px
+div.navSection nav a
+    font-size: 1.0em
+    line-height: 1.1em
+    font-weight: 300
+    display: inline-block
+    padding: 0px 10px 0 10px
+    margin-right: 0px
+    margin-top: 0.5em
+    border-bottom:2px solid rgba(0,0,0,0.0)
+div.navSection nav a:link,
+div.navSection nav a:visited
+    color: white
+    text-decoration: none
+div.navSection nav a:hover,
+div.navSection nav a:active
+    color: brand1
+div.navSection nav a.activeLink
+    color: white !important
+    font-weight: 300 !important
+    border-bottom:2px solid brand1
+
+div.navSection nav a i::before
+    color: white
+    transition: 0.5s
+div.navSection nav a:hover i::before
+    color: brand1
+
+
+/* padding and margin bottom to allow for activeLink bordering */
+.positioning h5,
+div.navSection nav a
+    padding-bottom: 1.2em
+span.pipe
+    margin-bottom: 1.45em
+.siteLogo a.logo
+    margin-bottom: 1.2em    
+body > header
+    padding-top: 1.5em
+    padding-left: 2.25em
+    padding-right: 2.25em
+
+/* push contact links to right */
+body > header,
+body > header div.navSection
+    flex-wrap: nowrap
+div.navSection nav,
+div.navSection nav a,
+div.navSection div h6
+    white-space: nowrap
+body > header div.navSection.spacer
+    flex-basis: 100%
+    column-gap: 0
+
+/* adjust elements for small desktops */
+@media smallDesktop
+    .hideSmallDesktop 
+        display: none !important
+    span.pipe
+        margin-left: 15px
+    body > header
+        padding-top: 1.2em
+        padding-left: 1.25em
+        padding-right: 1.25em
+
+@media desktopRule
+    body > header
+        padding-top: 1.25em
+    body > header div.navSection nav a
+        font-size: 1em
+        line-height: 1em
+    span.pipe,
+    .siteLogo a.logo
+        margin-bottom: 1em
+
+/* hide for mobile */
+@media mtrigger
+    body > header
+        display: none
+
+
+
+
+
+    /*
+    body > header.fixed
+        min-height: navHeightL
+        position: absolute
+        z-index: 2000
+    body > header.sticky
+        min-height: navHeight
+        position: fixed
+        z-index: 20000
+        padding: 0
+        display: none
+    */
+ 
