@@ -1376,6 +1376,11 @@ div.teaserItems a:hover > div {
   -webkit-transform: translateY(-0.4em);
   transform: translateY(-0.4em);
 }
+.notApplicable {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
 a:link {
   -webkit-transition: 0.5s;
   transition: 0.5s;
