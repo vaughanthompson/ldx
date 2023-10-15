@@ -138,6 +138,10 @@ footer hr {
   div.contentWrapper:last-of-type {
     margin-top: 5vw;
   }
+  div.contentWrapper.modelGallery {
+    border: 1px solid #0ff;
+    position: relative;
+  }
   div.innerContent {
     padding-left: 8vw;
     padding-right: 8vw;
