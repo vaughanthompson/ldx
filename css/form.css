@@ -633,3 +633,28 @@ span.emailaddress-display {
   font-weight:900;
   font-size:1.2em;
 }
+
+
+
+
+
+
+/* enquiry selection checkbox version */
+div.enquiryType {
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+div.enquiryType > div {
+  margin:3px 0
+}
+
+  div.enquiryType {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    column-gap: 10px;
+  }
+  div.enquiryType > div {
+    white-space: nowrap;
+  }
