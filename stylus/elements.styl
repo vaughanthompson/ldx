@@ -822,8 +822,11 @@ div.galleryThumbs a:hover img
 
 
 // modeldesc
-
-
+div.longDescription
+    margin-bottom: 2.5em
+div.longDescription p 
+    font-size: 1.25em
+    font-weight: 200
 
 // smallPromo
 div.smallPromo 
@@ -885,14 +888,14 @@ ul.summaryFeaturesSimple li
     list-style-type: none
     line-height: 2em
 ul.summaryFeatures
-    margin-top: 2em
+    margin-top: 2.5em
     padding-right: 1vw
 ul.summaryFeatures li
     display: flex
     justify-content: flex-start
     column-gap: 1vw
 ul.summaryFeatures li > span
-    flex: 1 1 50%
+    flex: 1 1 40%
     white-space: nowrap
 ul.summaryFeaturesSimple
     display: flex
@@ -913,5 +916,47 @@ ul.summaryFeatures span.featureTitle
     color: brand1
     display: flex
     align-items: center
+ul.summaryFeatures span.featureTitle i
+    margin-right: 5px
+ul.summaryFeatures span.featureTitle:not(i)
+    font-weight: 500
 .notApplicable
     opacity 0.2
+
+
+// collapsible features
+div.collapsibleFeatures
+    margin: 1em 0 3.5em 0
+    padding-bottom: 0.1em
+    border-bottom:1px solid blackAlp10
+div.collapsibleFeatures div.featureItemDetail
+    padding: 1em 3vw 1.5em 0
+    margin-bottom: 2em
+div.collapsibleFeatures div.featureItem ul
+    margin: 0
+div.collapsibleFeatures div.featureItem ul li
+    margin-bottom: 1em
+    padding-right: 2vw
+    color: blackAlp50
+div.collapsibleFeatures div.featureItem ul li:last-of-type
+    margin-bottom: 0
+div.collapsibleFeatures div.featureItem p
+    color: brand0
+div.collapsibleFeatures div.featureItem a.featureItemTrigger
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 1em
+    padding-bottom: 1em
+    padding-right: 1em
+    text-decoration: none
+div.collapsibleFeatures div.featureItem a.featureItemTrigger h6
+    font-weight: 300
+div.collapsibleFeatures div.featureItem a.featureItemTrigger i
+    font-size: 1.2em
+    transition: 0.3s
+div.collapsibleFeatures div.featureItem a.featureItemTrigger
+    border-top:1px solid blackAlp10
+div.collapsibleFeatures div.featureItem a.featureItemTrigger.active i
+    transform: rotate(45deg)
+    {test}
