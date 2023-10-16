@@ -90,6 +90,9 @@ footer hr {
 .noPad {
   padding: 0 !important;
 }
+.noPadTop {
+  padding-top: 0 !important;
+}
 .inline {
   display: inline;
 }
@@ -279,6 +282,18 @@ div.contentWrapper.brandMode {
   background-color: #c8102e;
   color: #fff;
 }
+div.contentWrapper.darkMode div.innerContent > div.inpageNav i:before,
+div.contentWrapper.brandMode div.innerContent > div.inpageNav i:before {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+div.contentWrapper.darkMode div.innerContent > div.inpageNav a:hover i:before {
+  color: #c8102e;
+}
+div.contentWrapper.brandMode div.innerContent > div.inpageNav a:hover i:before {
+  color: #1a1a1a;
+}
 .spaceBetween {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,6 +321,9 @@ div.contentWrapper.brandMode {
   -o-box-orient: vertical;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+.minHeightContent {
+  min-height: 40vh;
 }
 .picturefill-background {
   overflow: hidden;
@@ -1318,6 +1336,9 @@ div.breadcrumb ul li a:visited {
   text-decoration: none;
   margin-right: 5px;
 }
+div.breadcrumb ul li a:hover {
+  color: #c8102e !important;
+}
 div.contentWrapper.modelGallery section:last-of-type {
   position: relative;
 }
@@ -1327,7 +1348,7 @@ div.contentWrapper.modelGallery section:last-of-type {
 @media screen and (min-width: 1100px) {
   .galleryHeroImage {
     position: absolute;
-    margin-top: -30vw;
+    margin-top: -28vw;
   }
 }
 div.galleryThumbs {
@@ -1468,7 +1489,7 @@ ul {
   padding-left: 1em;
 }
 ul li {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.4em;
   margin-bottom: 0.4em;
   list-style-type: circle;
@@ -1546,7 +1567,7 @@ h6 {
 }
 p {
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.4em;
   letter-spacing: -0.015em;
   margin-top: 0em;
