@@ -279,18 +279,6 @@ div.contentWrapper.brandMode {
   background-color: #c8102e;
   color: #fff;
 }
-div.contentWrapper.modelGallery section:last-of-type {
-  position: relative;
-}
-.galleryHeroImage {
-  border: 1px solid #f00;
-  width: 100%;
-  position: absolute;
-  margin-top: -30vw;
-}
-.galleryHeroImage img {
-  margin: 0px auto;
-}
 .picturefill-background {
   overflow: hidden;
   background-size: cover;
@@ -1277,6 +1265,18 @@ body.safari div.videoLayer video#bgvid3,
 body.safari div.videoLayer video#bgvid4 {
   display: none;
 }
+div.contentWrapper.modelGallery section:last-of-type {
+  position: relative;
+}
+.galleryHeroImage {
+  width: 100%;
+}
+@media screen and (min-width: 1100px) {
+  .galleryHeroImage {
+    position: absolute;
+    margin-top: -30vw;
+  }
+}
 div.galleryThumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1298,10 +1298,18 @@ div.galleryThumbs a {
   -ms-flex-preferred-size: 7vw;
       flex-basis: 7vw;
   border-bottom: 4px solid transparent;
-  padding: 12px;
+  padding: 10px;
 }
 div.galleryThumbs a.selectedImage {
   border-bottom: 4px solid #c8102e;
+}
+div.galleryThumbs a img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+div.galleryThumbs a:hover img {
+  -webkit-transform: translateY(-0.4em);
+  transform: translateY(-0.4em);
 }
 div.smallPromo {
   margin-bottom: 3em;

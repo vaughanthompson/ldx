@@ -770,6 +770,13 @@ body.safari div.videoLayer video#bgvid4
 
 
 // model gallery
+div.contentWrapper.modelGallery section:last-of-type 
+    position: relative
+.galleryHeroImage
+    width:100%
+    @media dtrigger
+        position: absolute
+        margin-top:-30vw
 div.galleryThumbs
     display: flex
     column-gap: 5px
@@ -778,13 +785,13 @@ div.galleryThumbs a
     align-items: center
     flex-basis: 7vw
     border-bottom: 4px solid transparent
-    padding: 12px
+    padding: 10px
 div.galleryThumbs a.selectedImage
     border-bottom: 4px solid brand1
-
-
-
-
+div.galleryThumbs a img
+    transition: 0.3s
+div.galleryThumbs a:hover img
+    transform: translateY(-0.4em)
 
 
 // smallPromo
