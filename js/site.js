@@ -168,5 +168,39 @@
     });
 
 
+
+
+    /* sidebar collapsible nav */
+    $('.subnavContent').hide();
+    $('.collapseNavTrig').click(function(){
+        $(this).siblings('.subnavContent').slideToggle(500);
+        //$(this).html(($(this).html()=="Try it"?"Close":"Try it"));
+        return false;
+    });
+
+
+
+
+    // slideToggle content
+    $('div.featureItemDetail').hide();
+    $('a.featureItemTrigger').click(function(){
+        //$(this).closest('div.slideToggleParent').find('div.slideToggleChild').slideToggle(500);
+        //$(this).html(($(this).html()=="Close comparison"?"Click to compare":"Close comparison"));
+        //$(this).parent().find('i').toggleClass('upDown');
+        $(this).toggleClass('active');
+        return false;
+    });
+
+ 
+
+
+
+    // ddown
+    $('a.ddownClose').click(function(){
+        $(this).parent('div.ddownOuter').fadeTo(250,0).hide(300);
+        return false;
+    });
+
+
 });
 

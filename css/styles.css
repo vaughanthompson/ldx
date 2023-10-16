@@ -412,7 +412,6 @@ ul.iconRow li i {
 }
 a.ctaButton {
   padding: 0.85em 1.3em;
-  border-radius: 3em;
   background: #c8102e;
   color: #fff;
   font-weight: 700;
@@ -1620,7 +1619,6 @@ div.collapsibleFeatures div.featureItem a.featureItemTrigger {
 div.collapsibleFeatures div.featureItem a.featureItemTrigger.active i {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  border: 1px solid #0ff;
 }
 a:link {
   -webkit-transition: 0.5s;
