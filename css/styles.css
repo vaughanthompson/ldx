@@ -93,6 +93,9 @@ footer hr {
 .noPadTop {
   padding-top: 0 !important;
 }
+.noPadBottom {
+  padding-bottom: 0 !important;
+}
 .bumpLineHeight {
   line-height: 200% !important;
 }
@@ -1399,6 +1402,11 @@ div.longDescription p {
 div.smallPromo {
   margin-bottom: 3em;
 }
+@media screen and (min-width: 1600px) {
+  div.smallPromo {
+    width: 80%;
+  }
+}
 div.smallPromo h1 {
   font-weight: 100;
   font-size: 4.75em;
@@ -1675,18 +1683,11 @@ h1 {
   line-height: 105%;
   letter-spacing: -0.035em;
 }
-h1 span {
-  font-weight: 300;
-}
 h2 {
   font-weight: 600;
-  font-size: 3.2em;
+  font-size: 3em;
   line-height: 105%;
   letter-spacing: -0.045em;
-}
-h2 span {
-  font-weight: 300;
-  letter-spacing: -0.015em;
 }
 h3 {
   font-weight: 600;
@@ -1694,28 +1695,17 @@ h3 {
   line-height: 115%;
   letter-spacing: -0.035em;
 }
-h3 span {
-  font-weight: 300;
-  letter-spacing: -0.01em;
-}
 h4 {
   font-weight: 600;
   font-size: 1.7em;
   line-height: 120%;
   letter-spacing: -0.01em;
 }
-h4 span {
-  font-weight: 400;
-}
 h5 {
   font-weight: 400;
   font-size: 1.2em;
   line-height: 125%;
   letter-spacing: -0.02em;
-}
-h5 span {
-  font-weight: 400;
-  letter-spacing: -0.01em;
 }
 h6 {
   font-weight: 500;
@@ -1736,6 +1726,12 @@ strong {
 }
 .small {
   font-size: 0.9em;
+}
+.light {
+  font-weight: 300;
+}
+.lighter {
+  font-weight: 200;
 }
 @media screen and (max-width: 1100px) {
   h1 {
