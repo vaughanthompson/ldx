@@ -184,9 +184,7 @@
     // slideToggle content
     $('div.featureItemDetail').hide();
     $('a.featureItemTrigger').click(function(){
-        //$(this).closest('div.slideToggleParent').find('div.slideToggleChild').slideToggle(500);
-        //$(this).html(($(this).html()=="Close comparison"?"Click to compare":"Close comparison"));
-        //$(this).parent().find('i').toggleClass('upDown');
+        $(this).closest('div.featureItem').find('div.featureItemDetail').slideToggle(500);
         $(this).toggleClass('active');
         return false;
     });
