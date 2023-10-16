@@ -138,10 +138,6 @@ footer hr {
   div.contentWrapper:last-of-type {
     margin-top: 5vw;
   }
-  div.contentWrapper.modelGallery {
-    border: 1px solid #0ff;
-    position: relative;
-  }
   div.innerContent {
     padding-left: 8vw;
     padding-right: 8vw;
@@ -282,6 +278,20 @@ div.contentWrapper.darkMode {
 div.contentWrapper.brandMode {
   background-color: #c8102e;
   color: #fff;
+}
+div.contentWrapper.modelGallery {
+  position: relative;
+}
+.galleryHeroImage {
+  border: 1px solid #f00;
+  height: 65vh;
+  position: absolute;
+  margin-top: -45vh;
+}
+.galleryHeroImage img {
+  height: 100%;
+  width: auto;
+  margin: 0px auto;
 }
 .picturefill-background {
   overflow: hidden;
