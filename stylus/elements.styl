@@ -877,5 +877,41 @@ div.teaserItems a:hover > div
 
 
 // icon Lists
+ul.summaryFeatures,
+ul.summaryFeaturesSimple
+    padding: 0
+ul.summaryFeatures li,
+ul.summaryFeaturesSimple li
+    list-style-type: none
+    line-height: 2em
+ul.summaryFeatures
+    margin-top: 2em
+    padding-right: 1vw
+ul.summaryFeatures li
+    display: flex
+    justify-content: flex-start
+    column-gap: 1vw
+ul.summaryFeatures li > span
+    flex: 1 1 50%
+    white-space: nowrap
+ul.summaryFeaturesSimple
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    column-gap: 1vw
+    padding-right: 3vw
+ul.summaryFeaturesSimple li
+    white-space: nowrap
+    flex:1 1 auto
+ul.summaryFeaturesSimple li span.featureTitle
+    display: flex
+    align-items: center
+ul.summaryFeatures i,
+ul.summaryFeaturesSimple i
+    font-size:1.5em
+ul.summaryFeatures span.featureTitle
+    color: brand1
+    display: flex
+    align-items: center
 .notApplicable
     opacity 0.2
