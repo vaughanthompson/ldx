@@ -279,6 +279,34 @@ div.contentWrapper.brandMode {
   background-color: #c8102e;
   color: #fff;
 }
+.spaceBetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.spaceBetweenVert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -o-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
 .picturefill-background {
   overflow: hidden;
   background-size: cover;
@@ -1265,6 +1293,31 @@ body.safari div.videoLayer video#bgvid3,
 body.safari div.videoLayer video#bgvid4 {
   display: none;
 }
+div.breadcrumb ul {
+  padding: 0;
+}
+div.breadcrumb ul li {
+  font-size: 0.65em;
+  list-style-type: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
+div.breadcrumb ul li:after {
+  font-family: 'icomoon';
+  content: '\eba5';
+  font-size: 0.75em;
+  color: #c8102e;
+}
+div.breadcrumb ul li:last-of-type:after {
+  content: '';
+}
+div.breadcrumb ul li a:link,
+div.breadcrumb ul li a:visited {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  margin-right: 5px;
+}
 div.contentWrapper.modelGallery section:last-of-type {
   position: relative;
 }
@@ -1299,6 +1352,7 @@ div.galleryThumbs a {
       flex-basis: 7vw;
   border-bottom: 4px solid transparent;
   padding: 10px;
+  padding-bottom: 15px;
 }
 div.galleryThumbs a.selectedImage {
   border-bottom: 4px solid #c8102e;
@@ -1325,20 +1379,6 @@ div.smallPromo h6 {
 }
 div.form > div {
   margin-bottom: 1.25em;
-}
-div.form div.spaceBetween {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 div.form option,
 div.form form textarea {

@@ -769,6 +769,31 @@ body.safari div.videoLayer video#bgvid4
 
 
 
+//breadcrumb
+div.breadcrumb ul
+    padding:0
+div.breadcrumb ul li
+    font-size: 0.65em
+    list-style-type: none
+    display: inline-block
+    text-transform: uppercase
+    //padding-right: 5px
+    color: whiteAlp75
+div.breadcrumb ul li:after
+    font-family: 'icomoon'
+    content: '\eba5'
+    font-size: 0.75em
+    color: brand1
+div.breadcrumb ul li:last-of-type:after
+    content: ''
+div.breadcrumb ul li a:link,
+div.breadcrumb ul li a:visited
+    color: whiteAlp75
+    text-decoration: none
+    margin-right: 5px
+
+
+
 // model gallery
 div.contentWrapper.modelGallery section:last-of-type 
     position: relative
@@ -786,6 +811,7 @@ div.galleryThumbs a
     flex-basis: 7vw
     border-bottom: 4px solid transparent
     padding: 10px
+    padding-bottom: 15px
 div.galleryThumbs a.selectedImage
     border-bottom: 4px solid brand1
 div.galleryThumbs a img
@@ -811,10 +837,6 @@ div.smallPromo h6
 // enquiry tweaks
 div.form > div
     margin-bottom: 1.25em
-div.form div.spaceBetween
-    display: flex
-    justify-content: space-between
-    align-items: center
 div.form option,
 div.form form textarea
     font-family: 'twk', fontStack
