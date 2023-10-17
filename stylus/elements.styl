@@ -830,7 +830,7 @@ div.longDescription p
 
 // smallPromo
 div.smallPromo 
-    margin-bottom: 3em
+    margin-bottom: 4em
 @media lgdesktopRule
     div.smallPromo
         width:80%
@@ -1001,3 +1001,71 @@ div.search > form .button
 div.search > form > div.floating
     flex-basis: 100%
     //min-width:20vw
+
+
+
+
+
+/* pagination */
+div.pagination
+    display: flex
+    column-gap: 2px
+
+div.pagination > .paginationItem
+    width:40px
+    height:40px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size:0.9em
+    margin-bottom: 0
+    padding-top:1px
+    //border:1px solid blackAlp25
+    //color: blackAlp25
+    //border-radius: 2px
+    transition:0.3s
+div.pagination > .paginationItem.active
+    background-color: brand0
+    border-color: brand0
+    color: white
+div.pagination > .paginationItem:hover
+    text-decoration: none
+div.pagination > .paginationItem:hover:not(.active)
+    text-decoration: none
+    background-color: brand0
+    border-color: brand0
+    color: white
+div.pagination > .paginationItem.inactive
+div.pagination > .paginationItem.inactive:hover
+    text-decoration: none
+    background: none
+    color: blackAlp50
+    display: none
+div.pagination > .paginationItem:first-child,
+div.pagination > .paginationItem:last-child
+    padding-top:0px
+    border:none
+div.pagination a
+    text-decoration: none
+div.paginationCtrl
+    margin-bottom: 2em
+@media phoneRule
+    div.paginationCtrl
+        flex-direction: column
+        row-gap: 1em
+        padding-bottom: padStd
+    div.paginationCtrl > div
+        text-align: center
+    div.paginationCtrl div.forms  
+        margin-bottom: 5px
+    div.pagination
+        flex-wrap: wrap
+        justify-content: center
+        column-gap: 4px
+    div.pagination > .paginationItem
+        background-color: blackAlp5
+        margin-bottom: 4px
+    div.pagination > .paginationItem
+        width:34px
+        height:34px
+
