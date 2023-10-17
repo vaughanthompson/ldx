@@ -401,7 +401,7 @@ html {
 input.ctaButton,
 .button {
   background: var(--color__accent);
-  border-width: 0;
+  border:2px solid var(--color__accent);
   /*border-radius: 50px;*/
   color: #fff;
   display: inline-block;
@@ -420,9 +420,10 @@ input.ctaButton {
 
 input.ctaButton:hover,
 .button:hover {
-  background: var(--color__hover);
-  color: #fff;
+  background: none;
+  color: var(--color__hover);
   cursor: pointer;
+  border:2px solid var(--color__hover);
 }
 
 
