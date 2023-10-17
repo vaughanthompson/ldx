@@ -334,21 +334,14 @@ div.contentWrapper.brandMode div.innerContent > div.inpageNav a:hover i:before {
   min-height: 40vh;
 }
 div.catList {
-  border: 1px solid #0ff;
   margin-bottom: 4em;
-}
-div.catGroup {
-  border: 1px solid #f00;
-}
-div.catItem {
-  border: 1px solid #008000;
 }
 @media screen and (min-width: 750px) {
   div.catList div.catGroup {
     display: -ms-grid;
     display: grid;
-    grid-column-gap: 1.5vw;
-    grid-row-gap: 2.5vw;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   }
 }
@@ -358,38 +351,32 @@ div.catItem {
     grid-auto-flow: row dense;
     grid-auto-rows: -webkit-min-content;
     grid-auto-rows: min-content;
-    border: 1px solid #0ff;
   }
 }
 div.catGroup .catItem {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+div.catGroup .catItem > a {
   border: 1px solid rgba(0,0,0,0.1);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-  padding: 1.5vw 0.8vw;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  padding: 1.5vw 0.8vw 0.8vw 0.8vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: box;
   display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -o-box-orient: vertical;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-align-self: stretch;
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
+  -ms-flex-item-align: stretch;
+  height: 100%;
   position: relative;
+  text-decoration: none;
 }
 @media screen and (min-width: 1100px) {
   div.catGroup .catItem:hover {
@@ -399,8 +386,34 @@ div.catGroup .catItem {
     box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
   }
 }
-div.catGroup .catItem > a {
-  width: 100%;
+div.brand {
+  position: absolute;
+  top: 0.8vw;
+}
+div.brand img {
+  max-height: 30px;
+  max-width: 80px;
+}
+div.imageThumb {
+  height: 10vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1.5vw;
+}
+div.landing div.imageThumb {
+  max-width: 9vw;
+  height: 6vw;
+}
+@media screen and (max-width: 750px) {
+  div.imageThumb {
+    height: 40vw !important;
+    margin-bottom: 5vh !important;
+  }
+  div.landing div.imageThumb {
+    max-width: 100vw !important;
+    height: 60vw !important;
+  }
 }
 .picturefill-background {
   overflow: hidden;

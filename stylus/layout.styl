@@ -127,39 +127,62 @@ div.contentWrapper.brandMode div.innerContent > div.inpageNav a:hover i:before
 
 /* item cat groups */
 div.catList
-    {test}
+    //{test}
     margin-bottom: 4em
 div.catGroup
-    {test1}
+    //{test1}
 div.catItem
-    {test2}
+    //{test2}
 @media ttrigger
     div.catList div.catGroup
         display: grid
-        grid-column-gap: 1.5vw;
-        grid-row-gap: 2.5vw;
+        grid-column-gap: 2vw;
+        grid-row-gap: 2vw;
         grid-template-columns: repeat(auto-fill, minmax(30%, 1fr) )
 @media dtrigger
     div.catList div.catGroup
         grid-template-columns: repeat(auto-fill, minmax(30%, 1fr) )
         grid-auto-flow: row dense
         grid-auto-rows: min-content 
-        {test}
 
 div.catGroup .catItem
+    transition: 0.3s
+div.catGroup .catItem > a
     border: 1px solid blackAlp10
     box-shadow: 0px 0px 10px 0px blackAlp10
-    padding: padXS padXXS
-    transition: 0.3s
+    padding: padXS padXXS padXXS padXXS
     display: flex
-    flex-wrap: wrap
     flex-direction: column
-    align-items: center
-    justify-content: space-between
+    align-self: stretch
+    height: 100%
     position: relative
+    text-decoration: none
 @media dtrigger and (pointer: fine)
     div.catGroup .catItem:hover
         transform: translateY(-0.4em) 
         box-shadow: 0px 10px 15px 0px blackAlp10
-div.catGroup .catItem > a
-    width: 100%
+
+div.brand 
+    position: absolute
+    top: padXXS
+div.brand img
+    max-height: 30px
+    max-width: 80px
+div.imageThumb
+    height: 10vw
+    //background-color: blackAlp5
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    margin-bottom: marXS
+div.landing div.imageThumb
+    max-width: 9vw
+    height:6vw
+
+@media phoneRule
+    div.imageThumb
+        height: 40vw !important
+        margin-bottom: 5vh !important
+    div.landing div.imageThumb
+        max-width: 100vw  !important
+        height:60vw !important
