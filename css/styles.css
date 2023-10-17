@@ -344,7 +344,7 @@ div.catList {
     display: -ms-grid;
     display: grid;
     grid-column-gap: 1.75vw;
-    grid-row-gap: 1.75vw;
+    grid-row-gap: 2.75vw;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   }
 }
