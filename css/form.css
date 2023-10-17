@@ -667,20 +667,26 @@ div.enquiryType > div {
 
 /* dark mode overrides */
 :root {
-  --darkmode-bg: rgba(255,255,255,0.05);
-  --darkmode-hover: rgba(255,255,255,0.10);
-  --darkmode-focus: rgba(255,255,255,0.15);
+  --darkmode-bg: rgba(26,26,26,0.25);
+  --darkmode-hover: rgba(26,26,26,0.40);
+  --darkmode-focus: rgba(26,26,26,0.80);
   --darkmode-accent: rgba(255,255,255,1.0);
-  --darkmode-label: rgba(255,255,255,0.65);
+  --darkmode-label: rgba(255,255,255,1.0);
 }
 .darkMode .floating {
   background-color: var(--darkmode-bg);
+  border-bottom:1px solid var(--darkmode-accent);
+  transition: 0.2s;
 }
 .darkMode .floating:hover {
   background-color: var(--darkmode-hover);
+  border-bottom:1px solid transparent;
+
 }
 .darkMode .floating:focus-within {
   background-color: var(--darkmode-focus);
+  border-bottom:1px solid transparent;
+
 }
 .darkMode .floating__input {
   caret-color: var(--darkmode-label);
