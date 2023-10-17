@@ -359,12 +359,13 @@ div.catList {
 div.catGroup .catItem {
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  position: relative;
 }
 div.catGroup .catItem > a {
   border: 1px solid rgba(0,0,0,0.05);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
-  padding: 1.5vw 1.125vw 1.5vw 1.125vw;
+  padding: 1.5vw 1.125vw 1.875vw 1.125vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: box;
@@ -412,6 +413,19 @@ div.imageThumb {
 div.landing div.imageThumb {
   max-width: 9vw;
   height: 6vw;
+}
+div.offer {
+  background-color: #c8102e;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 1em 0.5em;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  -webkit-box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.1);
 }
 @media screen and (max-width: 750px) {
   div.imageThumb {
@@ -1839,7 +1853,7 @@ div.pagination a {
   text-decoration: none;
 }
 div.paginationCtrl {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 @media screen and (max-width: 750px) {
   div.paginationCtrl {

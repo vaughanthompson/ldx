@@ -149,10 +149,11 @@ div.catItem
 
 div.catGroup .catItem
     transition: 0.2s
+    position: relative
 div.catGroup .catItem > a
     border: 1px solid blackAlp5
     box-shadow: 0px 0px 10px 0px blackAlp5
-    padding: padXS padXS*0.75 padXS padXS*0.75
+    padding: padXS padXS*0.75 padXS*1.25 padXS*0.75
     display: flex
     flex-direction: column
     align-self: stretch
@@ -160,7 +161,6 @@ div.catGroup .catItem > a
     height: 100%
     position: relative
     text-decoration: none
-
 @media dtrigger and (pointer: fine)
     div.catGroup .catItem:hover
         transform: translateY(-0.4em) 
@@ -183,7 +183,17 @@ div.imageThumb
 div.landing div.imageThumb
     max-width: 9vw
     height:6vw
-
+div.offer
+    background-color: brand1
+    color: white
+    text-align: center
+    font-size: 0.9em
+    padding: 1em 0.5em
+    position: absolute
+    width: 100%
+    left: 0
+    bottom: 0
+    box-shadow: 0px -5px 10px 0px blackAlp10
 @media phoneRule
     div.imageThumb
         height: 40vw !important
