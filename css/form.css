@@ -256,8 +256,8 @@ input:focus {outline:none;}
 .floating {
     background-color: var(--field__background);
     transition: background-color 0.2s ease;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    /* border-top-left-radius: 4px;
+    border-top-right-radius: 4px; */
 }
 
 .floating:hover,
@@ -265,8 +265,9 @@ input:focus {outline:none;}
   background-color: var(--field__background--hover);
 }
 
+
 .floating__input {
-  padding: 1.2rem 1rem 0.8rem 1rem;
+  padding: 1.2rem 1rem 0.75rem 1rem;
   font-size: 1rem;
   border: none;
   background: none;
@@ -656,4 +657,50 @@ div.enquiryType {
 }
 div.enquiryType > div {
   white-space: nowrap;
+}
+
+
+
+
+
+
+/* dark mode overrides */
+:root {
+  --darkmode-bg: rgba(255,255,255,0.05);
+  --darkmode-hover: rgba(255,255,255,0.10);
+  --darkmode-focus: rgba(255,255,255,0.15);
+  --darkmode-accent: rgba(255,255,255,1.0);
+  --darkmode-label: rgba(255,255,255,0.65);
+}
+.darkMode .floating {
+  background-color: var(--darkmode-bg);
+}
+.darkMode .floating:hover {
+  background-color: var(--darkmode-hover);
+}
+.darkMode .floating:focus-within {
+  background-color: var(--darkmode-focus);
+}
+.darkMode .floating__input {
+  caret-color: var(--darkmode-label);
+  color: var(--darkmode-accent)
+}
+.darkMode .floating__label::before {
+  color: var(--darkmode-label);
+}
+.darkMode .floating__label::after {
+  background-color: var(--darkmode-label);
+}
+.darkMode .search div.submitW label,
+.darkMode div.search div.submitW label {
+  background: var(--darkmode-hover);
+  color: var(--darkmode-label);
+}
+.darkMode .search div.submitW label:hover,
+.darkMode div.search div.submitW label:hover {
+  background: var(--darkmode-focus);
+  color: var(--darkmode-accent);
+}
+.darkMode .floating__input:focus + .floating__label::before {
+  color: var(--darkmode-label);
 }

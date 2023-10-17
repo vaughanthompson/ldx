@@ -24,7 +24,8 @@
 
 
 @media dtrigger
-    div.contentWrapper:last-of-type 
+    div.contentWrapper:last-of-type,
+    div.contentWrapper.bodyContent
         margin-top: 5vw
     div.content
         //{test1}
@@ -114,3 +115,51 @@ div.contentWrapper.brandMode div.innerContent > div.inpageNav a:hover i:before
     flex-direction: column
 .minHeightContent
     min-height: 40vh
+
+
+
+
+
+
+
+
+
+
+/* item cat groups */
+div.catList
+    {test}
+    margin-bottom: 4em
+div.catGroup
+    {test1}
+div.catItem
+    {test2}
+@media ttrigger
+    div.catList div.catGroup
+        display: grid
+        grid-column-gap: 1.5vw;
+        grid-row-gap: 2.5vw;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr) )
+@media dtrigger
+    div.catList div.catGroup
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr) )
+        grid-auto-flow: row dense
+        grid-auto-rows: min-content 
+        {test}
+
+div.catGroup .catItem
+    border: 1px solid blackAlp10
+    box-shadow: 0px 0px 10px 0px blackAlp10
+    padding: padXS padXXS
+    transition: 0.3s
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    position: relative
+@media dtrigger and (pointer: fine)
+    div.catGroup .catItem:hover
+        transform: translateY(-0.4em) 
+        box-shadow: 0px 10px 15px 0px blackAlp10
+div.catGroup .catItem > a
+    width: 100%
