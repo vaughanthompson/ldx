@@ -1900,10 +1900,10 @@ div.catMasthead div.content {
   background-position: 100% 50%;
 }
 div.subCatMasthead div.content {
-  background-image: url("/images/misc/arrowoverlay3@2x.webp");
+  background-image: url("/images/misc/arrowoverlay1@2x.webp");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+  background-position: 0% 50%;
 }
 div.catModel div.content {
   background-image: url("/images/misc/arrowoverlay3@2x.webp");
