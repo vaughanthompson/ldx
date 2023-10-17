@@ -340,8 +340,8 @@ div.catList {
   div.catList div.catGroup {
     display: -ms-grid;
     display: grid;
-    grid-column-gap: 2vw;
-    grid-row-gap: 2vw;
+    grid-column-gap: 1.75vw;
+    grid-row-gap: 1.75vw;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   }
 }
@@ -354,14 +354,14 @@ div.catList {
   }
 }
 div.catGroup .catItem {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 div.catGroup .catItem > a {
-  border: 1px solid rgba(0,0,0,0.1);
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-  padding: 1.5vw 0.8vw 0.8vw 0.8vw;
+  border: 1px solid rgba(0,0,0,0.05);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+  padding: 1.5vw 1.125vw 1.5vw 1.125vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: box;
@@ -374,6 +374,10 @@ div.catGroup .catItem > a {
   -ms-grid-row-align: stretch;
       align-self: stretch;
   -ms-flex-item-align: stretch;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   height: 100%;
   position: relative;
   text-decoration: none;
@@ -382,13 +386,14 @@ div.catGroup .catItem > a {
   div.catGroup .catItem:hover {
     -webkit-transform: translateY(-0.4em);
     transform: translateY(-0.4em);
-    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.1);
   }
 }
 div.brand {
   position: absolute;
   top: 0.8vw;
+  left: 0.8vw;
 }
 div.brand img {
   max-height: 30px;
@@ -399,7 +404,7 @@ div.imageThumb {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 1.5vw;
+  margin-bottom: 0.8vw;
 }
 div.landing div.imageThumb {
   max-width: 9vw;
@@ -1224,7 +1229,7 @@ ul.featureList li strong {
 }
 div.thirdparty-logo {
   border: 1px solid #c8102e;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.05);
   padding: 0.8vw !important;
 }
 .lightSlider div.slickSlider {
@@ -1264,7 +1269,7 @@ div.slideTextOverlay {
     position: relative;
     padding-bottom: 14vw;
     background-blend-mode: multiply;
-    background: radial-gradient(circle at center, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.25));
+    background: radial-gradient(circle at center, rgba(0,0,0,0.05), rgba(0,0,0,0.05), rgba(0,0,0,0.05), rgba(0,0,0,0.1), rgba(0,0,0,0.25));
   }
   div.containSlider {
     background-image: url("/images/bgs/default-m.jpg");
@@ -1654,6 +1659,44 @@ ul.summaryFeatures span.featureTitle:not(i) {
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20);
+}
+div.keyStats {
+  margin-top: 0.5em;
+}
+div.keyStats span {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0;
+  font-weight: 400;
+  display: block;
+  color: #505050;
+}
+div.keyStats ul.summaryFeatures {
+  margin-top: 0.75em;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+div.keyStats ul.summaryFeatures li {
+  line-height: 1em;
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
+}
+div.keyStats ul.summaryFeatures li > span {
+  -webkit-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 div.collapsibleFeatures {
   margin: 1em 0 3.5em 0;
@@ -2329,8 +2372,8 @@ body > header div.navSection.spacer {
 }
 .gradient0 {
   background-blend-mode: multiply;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.75)), color-stop(rgba(0,0,0,0)), to(rgba(0,0,0,0)));
-  background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0), rgba(0,0,0,0));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.75)), color-stop(rgba(0,0,0,0.05)), to(rgba(0,0,0,0.05)));
+  background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.05), rgba(0,0,0,0.05));
 }
 .gradient1 {
   background-blend-mode: multiply;
@@ -2344,7 +2387,7 @@ body > header div.navSection.spacer {
 }
 .gradient3 {
   background-blend-mode: multiply;
-  background: radial-gradient(circle at center, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.25));
+  background: radial-gradient(circle at center, rgba(0,0,0,0.05), rgba(0,0,0,0.05), rgba(0,0,0,0.05), rgba(0,0,0,0.1), rgba(0,0,0,0.25));
 }
 .blur {
   -webkit-filter: blur(10px);

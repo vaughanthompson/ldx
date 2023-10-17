@@ -136,8 +136,8 @@ div.catItem
 @media ttrigger
     div.catList div.catGroup
         display: grid
-        grid-column-gap: 2vw;
-        grid-row-gap: 2vw;
+        grid-column-gap: 1.75vw;
+        grid-row-gap: 1.75vw;
         grid-template-columns: repeat(auto-fill, minmax(30%, 1fr) )
 @media dtrigger
     div.catList div.catGroup
@@ -146,25 +146,28 @@ div.catItem
         grid-auto-rows: min-content 
 
 div.catGroup .catItem
-    transition: 0.3s
+    transition: 0.2s
 div.catGroup .catItem > a
-    border: 1px solid blackAlp10
-    box-shadow: 0px 0px 10px 0px blackAlp10
-    padding: padXS padXXS padXXS padXXS
+    border: 1px solid blackAlp5
+    box-shadow: 0px 0px 10px 0px blackAlp5
+    padding: padXS padXS*0.75 padXS padXS*0.75
     display: flex
     flex-direction: column
     align-self: stretch
+    justify-content: space-between
     height: 100%
     position: relative
     text-decoration: none
+
 @media dtrigger and (pointer: fine)
     div.catGroup .catItem:hover
         transform: translateY(-0.4em) 
-        box-shadow: 0px 10px 15px 0px blackAlp10
+        box-shadow: 0px 7px 15px 0px blackAlp10
 
 div.brand 
     position: absolute
     top: padXXS
+    left: padXXS
 div.brand img
     max-height: 30px
     max-width: 80px
@@ -174,7 +177,7 @@ div.imageThumb
     background-size: contain
     background-position: center
     background-repeat: no-repeat
-    margin-bottom: marXS
+    margin-bottom: marXXS
 div.landing div.imageThumb
     max-width: 9vw
     height:6vw
@@ -186,3 +189,6 @@ div.landing div.imageThumb
     div.landing div.imageThumb
         max-width: 100vw  !important
         height:60vw !important
+
+
+
