@@ -124,15 +124,15 @@ footer hr {
   border-left: 1px solid #c8102e;
 }
 *.fullH {
-  min-height: 100vh;
+  min-height: 92vh;
 }
 @media screen and (max-width: 1100px) {
   *.fullH {
-    min-height: 90vh;
+    min-height: 82vh;
   }
 }
 *.largeH {
-  min-height: 92vh;
+  min-height: 85vh;
 }
 *.halfH {
   min-height: 50vh;
@@ -156,6 +156,9 @@ footer hr {
   div.contentWrapper.bodyContent {
     margin-top: 5vw;
     margin-bottom: 5vw;
+  }
+  div.slick-slider div.contentWrapper {
+    margin: 0;
   }
   div.innerContent {
     padding-left: 8vw;

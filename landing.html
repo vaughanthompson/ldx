@@ -105,7 +105,7 @@
         </div>
         <div class="navSection positioning hideSmallDesktop">
             <span class="pipe"></span>
-            <h5>A <span class="fw-700">TDX Ltd</span><br><span class="nowrap">Partner Company</span></h5>
+            <h5><span class="nowrap">A company</span><br>of <span class="fw-700">TDX</span></h5>
         </div>
         <div class="navSection">
             <span class="pipe"></span>
@@ -186,7 +186,61 @@
 
 
 
+    <div class="mastheadSlider" >
 
+
+        <div class="contentWrapper darkMode" style="background-color: aquamarine;"> <!--bg color and pictureFill -->
+            <div class="content"> <!--overlay darken etc -->
+                <div class="innerContent largeH" style="background-image: url(/images/misc/arrowoverlay2@2x.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rC cC tC"><!--  content control -->
+                            <h1>Lift</h1> 
+                    
+                        </section>
+                        <section class="rC cC">
+                            <img src="/images/misc/test.webp">
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="contentWrapper darkMode"> <!--bg color and pictureFill -->
+            <div class="content"> <!--overlay darken etc -->
+                <div class="innerContent largeH" style="background-image: url(/images/misc/arrowoverlay2@2x.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rC cC tC"><!--  content control -->
+                            <h1>Etwo</h1>
+                    
+                        </section>
+                        <section class="rC cC">
+                            <img src="/images/misc/test.webp">
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="contentWrapper darkMode"> <!--bg color and pictureFill -->
+            <div class="content"> <!--overlay darken etc -->
+                <div class="innerContent largeH" style="background-image: url(/images/misc/arrowoverlay2@2x.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rC cC tC"><!--  content control -->
+                            <h1>Example h1 title centered</h1>
+                    
+                        </section>
+                        <section class="rC cC">
+                            <img src="/images/misc/test.webp">
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    </div>
+    
 
 
 
@@ -194,53 +248,7 @@
 
     
 
-
-
-
-    <div class="contentWrapper darkMode masthead">
-        <div class="content">
-
-            <div class="innerContent smallH">   
-                <div>
-                    <section class="largerSec spaceBetweenVert noPadBottom">
-               
-                        <div class="breadcrumb">
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/landing.html">Lift</a></li>
-                            </ul>
-                        </div>
-
-                        <h1>Electric Forklifts</h1> 
-                    
-                    </section>
-                    <section class="rE noPadBottom">
-                        &nbsp;
-                    </section>
-                </div>
-            </div>
-
-
-            <div class="innerContent">
-                <div>
-                    <section class="semilargerSec">
-                        <h3 class="lighter brand1">High-efficiency driving and lifting performance</h3> 
-                        <br>
-                        <div class="modelSummary">  
-                            <p>The Power to Choose range consisting of Linde and Baoli electric counterbalanced forklifts is built on advanced technology providing optimal use of energy through high-efficiency driving and lifting performance.</p> 
-                            <p>With lift heights up to 8000mm and lift capacities from 1.0 - 8.0 tonnes, there's a Linde electric counterbalanced forklift suited for your application. Get ready to lift your stacking productivity with shorter cycle times and reduced operator fatigue.</p> 
-                        </div>
-                    </section>
-                    <section>
-                        &nbsp;<!-- spacer  -->
-                    </section>
-                </div>
-             </div>
-
-        </div>
-    </div>
-
-
+    
 
     
 
@@ -253,9 +261,11 @@
                 <div><!-- flex and innermost LR padding -->
                     <section class="largerSec"><!--  content control -->
                         
-                        <!-- div class="longDescription">
+                        <div class="longDescription">
+                            <h3 class="lighter brand1">High-efficiency driving and lifting performance</h3>
+                            <br>
                             <p>Keep for a category description teaser in the 1st level cats above this level.</p>
-                        </div -->
+                        </div>
 
                        
 
@@ -915,7 +925,20 @@
     <script type="text/javascript" src="/js/site.js"></script>
     <script type="text/javascript" src="/js/fslightbox.js"></script>
 
-
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.mastheadSlider').slick({
+                dots:true,
+                accessibility:true,
+                autoplay:true,
+                autoplaySpeed:6000,
+                pauseOnHover:false,
+                useTransform:false,
+                easing:'easeOutQuad',
+                speed:1000
+            });
+        });
+    </script>
     
 </body>
 </html>
