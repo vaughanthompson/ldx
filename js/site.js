@@ -189,6 +189,20 @@
         return false;
     });
 
+
+    // simple show/hide
+    $('.showItemContent').hide();
+    $('a.showItemTrigger').click(function(){
+        $(this).closest('div.showItemWrapper').find('.showItemContent').slideDown(500);
+        $(this).hide();
+        return false;
+    });
+    $('a.closeParent').click(function(){
+        $(this).closest('div.showItemWrapper').find('.showItemContent').slideUp(500);
+        $('a.showItemTrigger').show();
+        return false;
+    });
+
  
 
 
