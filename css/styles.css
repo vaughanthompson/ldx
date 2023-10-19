@@ -102,6 +102,24 @@ footer hr {
 .noMarginBottom {
   margin-bottom: 0 !important;
 }
+.forcePadTopL {
+  padding-top: 5vw !important;
+}
+.forcePadBottomL {
+  padding-bottom: 5vw !important;
+}
+.forcePadTopM {
+  padding-top: 3vw !important;
+}
+.forcePadBottomM {
+  padding-bottom: 3vw !important;
+}
+.forcePadTop {
+  padding-top: 1.8vw !important;
+}
+.forcePadBottom {
+  padding-bottom: 1.8vw !important;
+}
 .bumpLineHeight {
   line-height: 200% !important;
 }
@@ -514,6 +532,18 @@ a.icon.inline-icons {
   line-height: 75%;
   color: #c8102e;
   text-decoration: none;
+}
+.smallIcon {
+  font-size: 0.6em;
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+  padding: 1px;
+  top: -0.5em;
+  position: relative;
+}
+.hintTrigger:hover {
+  cursor: pointer;
 }
 ul.iconRow {
   padding: 0;
@@ -1527,6 +1557,11 @@ div.longDescription p {
   font-size: 1.25em;
   font-weight: 200;
 }
+@media screen and (min-width: 750px) {
+  div.longDescription {
+    max-width: 45vw;
+  }
+}
 div.smallPromo {
   margin-bottom: 4em;
 }
@@ -2032,7 +2067,7 @@ p {
   font-size: 1em;
   line-height: 1.4em;
   letter-spacing: -0.015em;
-  margin-top: 0em;
+  margin-top: 0.5em;
 }
 strong {
   font-weight: 800;

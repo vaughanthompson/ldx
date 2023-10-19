@@ -204,6 +204,18 @@
     });
 
  
+    // inline hints
+    $('.hint').hide();
+    $('.hintTrigger').on('mouseenter', function(){
+        $(this).closest('.hintWrapper').find('.hint').slideDown(500);
+    });
+    $('.hintTrigger').on('mouseleave', function(){
+        $(this).closest('.hintWrapper').find('.hint').slideUp(500);
+    });
+    $('.hintTrigger').click(function(){
+        $(this).closest('.hintWrapper').find('.hint').slideToggle(500);
+    });
+
 
 
 
