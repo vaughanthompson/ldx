@@ -483,17 +483,6 @@ div.offer {
     height: 60vw !important;
   }
 }
-.picturefill-background {
-  overflow: hidden;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-@media screen and (max-width: 1100px) {
-  .picturefill-background.containMob {
-    background-size: contain;
-    background-position: 50% 0;
-  }
-}
 .icon {
   background-color: #c8102e;
   border: 2px solid #c8102e;
@@ -1963,26 +1952,37 @@ div.paginationCtrl {
   }
 }
 body.landing div.masthead div.content {
-  background-image: url("/images/misc/arrowoverlay1@2x.webp");
+  background-image: url("/images/misc/arrowoverlay1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 body.catg div.masthead div.content {
-  background-image: url("/images/misc/arrowoverlay1@2x.webp");
+  background-image: url("/images/misc/arrowoverlay1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 body.model div.masthead div.content {
-  background-image: url("/images/misc/arrowoverlay1@2x.webp");
+  background-image: url("/images/misc/arrowoverlay1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+.picturefill-background {
+  overflow: hidden;
+  background-size: contain;
+  background-position: 150% 50%;
+}
+@media screen and (max-width: 1100px) {
+  .picturefill-background.containMob {
+    background-size: contain;
+    background-position: 50% 0;
+  }
+}
 div.masthead.picturefill-background {
   background-size: contain;
-  background-position: 100% 50%;
+  background-position: 125% 50%;
 }
 a:link {
   -webkit-transition: 0.5s;

@@ -1,14 +1,3 @@
-// picturefill overrides
-.picturefill-background
-    overflow hidden
-    background-size: cover
-    background-position: 50% 50%
-.picturefill-background.containMob
-    @media mtrigger
-        background-size: contain
-        background-position: 50% 0
-        
-
 
 
 // icons
@@ -1088,22 +1077,36 @@ div.paginationCtrl
 
 // masthead backgrounds
 body.landing div.masthead div.content
-    background-image: url(/images/misc/arrowoverlay1@2x.webp)
+    background-image: url(/images/misc/arrowoverlay1.webp)
     background-size: cover
     background-repeat: no-repeat
     background-position: 50% 50%
 body.catg div.masthead div.content
-    background-image: url(/images/misc/arrowoverlay1@2x.webp)
+    background-image: url(/images/misc/arrowoverlay1.webp)
     background-size: cover
     background-repeat: no-repeat
     background-position: 50% 50%
 body.model div.masthead div.content
-    background-image: url(/images/misc/arrowoverlay1@2x.webp)
+    background-image: url(/images/misc/arrowoverlay1.webp)
     background-size: cover
     background-repeat: no-repeat
     background-position: 50% 50%
 
+
+
+
+
+// picturefill overrides
+.picturefill-background
+    overflow hidden
+    background-size: contain
+    background-position: 150% 50%
+.picturefill-background.containMob
+    @media mtrigger
+        background-size: contain
+        background-position: 50% 0
+        
+
 div.masthead.picturefill-background
     background-size: contain
-    background-position: 100% 50%
-
+    background-position: 125% 50%
