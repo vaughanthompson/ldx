@@ -263,7 +263,6 @@ div.navSection nav a i::before
 div.navSection nav a:hover i::before
     color: brand1
 
-
 /* padding and margin bottom to allow for activeLink bordering */
 .positioning h5,
 div.navSection nav a
@@ -315,6 +314,21 @@ body > header div.navSection.spacer
     body > header
         display: none
 
+
+/* temp navigation without product sub cats */
+body > header.tempNavigation div.navSection nav a
+    font-size: 1.05em
+    line-height: 1.1em
+body > header.tempNavigation div.navSection nav a
+    padding-bottom: 1.15em 
+    padding-left: 0.75vw
+    padding-right: 0.75vw
+body > header.tempNavigation span.pipe
+    background-color: whiteAlp25
+
+@media smallDesktop
+    body > header.tempNavigation div.navSection.siteLogo
+        margin-right:15px 
 
 
 
