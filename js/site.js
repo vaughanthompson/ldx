@@ -213,8 +213,9 @@
         $(this).closest('.hintWrapper').find('.hint').slideUp(500);
     });
     $('.hintTrigger').click(function(){
-        $(this).closest('.hintWrapper').find('.hint').slideToggle(500);
+        $(this).closest('.hintWrapper').find('.hint').slideDown(500);
     });
+
 
 
 

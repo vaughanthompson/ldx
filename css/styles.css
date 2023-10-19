@@ -1554,10 +1554,12 @@ div.longDescription {
   margin-bottom: 2.5em;
 }
 div.longDescription p {
-  font-size: 1.25em;
   font-weight: 200;
 }
 @media screen and (min-width: 750px) {
+  div.longDescription p {
+    font-size: 1.25em;
+  }
   div.longDescription {
     max-width: 45vw;
   }
