@@ -312,6 +312,21 @@ footer hr {
     flex: 1 1 50%;
   }
 }
+div.termsConditions {
+  padding-top: 3em;
+  padding-left: 11vw;
+  padding-right: 11vw;
+  color: rgba(0,0,0,0.55);
+  font-size: 90%;
+}
+div.termsConditions h6 {
+  margin-bottom: 0.5;
+}
+@media screen and (min-width: 1100px) {
+  div.termsConditionsItem {
+    max-width: 45vw;
+  }
+}
 div.contentWrapper.darkMode {
   background-color: #1a1a1a;
   color: #fff;
