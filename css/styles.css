@@ -2022,7 +2022,7 @@ div.staticOverlayContent div.innerContent section:first-child {
   align-items: flex-end;
 }
 div.staticOverlayContent div.innerContent section:first-child > div {
-  border-bottom: 1px solid #c8102e;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
   padding-bottom: 3.5vh;
 }
 a:link {
