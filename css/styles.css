@@ -2005,14 +2005,27 @@ div.mastheadSlider {
 }
 div.mastheadSlider.withOverlay div.innerContent section:first-child {
   height: 30%;
+  padding-top: 2%;
   margin-bottom: 5%;
   background-color: rgba(255,255,255,0.1);
 }
 div.staticOverlayContent div.innerContent section:first-child {
   min-height: 40%;
-  margin-top: 10%;
+  margin-bottom: 20%;
+  padding-bottom: 2%;
   border-bottom: 1px solid #c8102e;
   background-color: rgba(255,255,255,0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+div.staticOverlayContent div.innerContent section:first-child > div {
+  border: 1px solid #0ff;
 }
 a:link {
   -webkit-transition: 0.5s;
