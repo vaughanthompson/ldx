@@ -228,7 +228,6 @@ footer hr {
     box-flex: 1;
     -ms-flex: 1 1 0px;
     flex: 1 1 0px;
-    border: 1px solid #0ff;
   }
   div.innerContent section.semilargerSec {
     -webkit-box-flex: 1.5;
@@ -1999,6 +1998,12 @@ body.model div.masthead div.content {
 div.masthead.picturefill-background {
   background-size: contain;
   background-position: 125% 50%;
+}
+div.mastheadSlider section {
+  border: 1px solid #0ff;
+}
+div.mastheadSlider {
+  background-color: #c8102e;
 }
 a:link {
   -webkit-transition: 0.5s;
