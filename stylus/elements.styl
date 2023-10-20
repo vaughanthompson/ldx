@@ -1114,7 +1114,24 @@ div.masthead.picturefill-background
 
 
 //landing sliders
+// overlay content over slider
+.staticOverlayContent
+    background: none !important
+    position: absolute
+    z-index: 1000
+    width: 100%
+
 div.mastheadSlider section
-    {test}
+    //{test}
 div.mastheadSlider
     background-color: brand1
+
+div.mastheadSlider.withOverlay div.innerContent section:first-child
+    height:30%
+    margin-bottom: 5%
+    background-color: whiteAlp10
+div.staticOverlayContent div.innerContent section:first-child
+    min-height:40%
+    margin-top: 10%
+    border-bottom:1px solid brand1
+    background-color: whiteAlp10
