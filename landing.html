@@ -162,7 +162,7 @@
                         <div>
                             <h1>Products</h1> 
                             <br>
-                            <p>Look at padding top and bottom of slider sections and also aligning self to bottom of section so that the slide content below joins with this static element</p>
+                            <h6 class="fw-200">Look at padding top and bottom of slider sections and also aligning self to bottom of section so that the slide content below joins with this static element</h6>
                         </div>
                     </section>
                     <section class="rC cC">
@@ -186,9 +186,59 @@
             <div class="content" style="background-image: url(/images/misc/arrowoverlay1.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"> <!--overlay darken etc -->
                 <div class="innerContent largeH" ><!--height and LR partial padding overlay bg element - eg arrow -->
                     <div><!-- flex and innermost LR padding -->
-                        <section class="rE cC"><!--  content control -->
-                            <h4>this is the content for the slide in view</h4> 
+                        <section class="rS cC"><!--  content control -->
+                            <h1 class="brand1 fw-100">Promo / Slide title 1</h1>
+                            <br> 
                             <p>Look at padding top and bottom of slider sections and this element aling self to top so it joins the static content above.</p>
+                            <br>
+                            <a href="#" class="ctaButton">Learn More</a>
+                    
+                        </section>
+                        <section class="rC cC">
+                            <img src="/images/test/large1.png">
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="contentWrapper darkMode picturefill-background"> <!--bg color and pictureFill -->
+            <div class="content" style="background-image: url(/images/misc/arrowoverlay1.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"> <!--overlay darken etc -->
+                <div class="innerContent largeH" ><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rS cC"><!--  content control -->
+                            <h1 class="brand1 fw-100">Promo / Slide title 2</h1>
+                            <br> 
+                            <p>Look at padding top and bottom of slider sections and this element aling self to top so it joins the static content above.</p>
+                            <br>
+                            <a href="#" class="ctaButton">Learn More</a>
+                    
+                        </section>
+                        <section class="rC cC">
+                            &nbsp;
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <span data-src="/images/test/hmasthead-electric-forklifts.png"></span><!-- ph -->
+            <span data-src="/images/test/masthead-electric-forklifts.png" data-media="(min-width: 1100px)"></span><!-- desktop -->
+        </div>
+
+
+
+
+        <div class="contentWrapper darkMode picturefill-background"> <!--bg color and pictureFill -->
+            <div class="content" style="background-image: url(/images/misc/arrowoverlay1.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"> <!--overlay darken etc -->
+                <div class="innerContent largeH" ><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rS cC"><!--  content control -->
+                            <h1 class="brand1 fw-100">Promo / Slide title 3</h1>
+                            <br> 
+                            <p>Look at padding top and bottom of slider sections and this element aling self to top so it joins the static content above.</p>
+                            <br>
+                            <a href="#" class="ctaButton">Learn More</a>
                     
                         </section>
                         <section class="rC cC">
@@ -201,38 +251,8 @@
             <span data-src="/images/test/masthead-electric-forklifts.png" data-media="(min-width: 1100px)"></span><!-- desktop -->
         </div>
 
-        <div class="contentWrapper darkMode"> <!--bg color and pictureFill -->
-            <div class="content"> <!--overlay darken etc -->
-                <div class="innerContent largeH" style="background-image: url(/images/misc/arrowoverlay2@2x.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"><!--height and LR partial padding overlay bg element - eg arrow -->
-                    <div><!-- flex and innermost LR padding -->
-                        <section class="rC cC tC"><!--  content control -->
-                            <h1>Etwo</h1>
-                    
-                        </section>
-                        <section class="rC cC">
-                            <img src="/images/misc/test.webp">
-                        </section>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="contentWrapper darkMode"> <!--bg color and pictureFill -->
-            <div class="content"> <!--overlay darken etc -->
-                <div class="innerContent largeH" style="background-image: url(/images/misc/arrowoverlay2@2x.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"><!--height and LR partial padding overlay bg element - eg arrow -->
-                    <div><!-- flex and innermost LR padding -->
-                        <section class="rC cC tC"><!--  content control -->
-                            <h1>Example h1 title centered</h1>
-                    
-                        </section>
-                        <section class="rC cC">
-                            <img src="/images/misc/test.webp">
-                        </section>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+       
+        
     
     
     </div>
@@ -914,7 +934,7 @@
             $('.mastheadSlider').slick({
                 dots:true,
                 accessibility:true,
-                //autoplay:true,
+                autoplay:true,
                 autoplaySpeed:6000,
                 //fade:true,
                 pauseOnHover:false,
