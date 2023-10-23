@@ -442,6 +442,10 @@ div.catGroup .catItem > a {
   position: relative;
   text-decoration: none;
 }
+body.landing div.catGroup .catItem > a {
+  padding-top: 0.8vw;
+  padding-bottom: 1.5vw;
+}
 @media screen and (min-width: 1100px) {
   div.catGroup .catItem:hover {
     -webkit-transform: translateY(-0.4em);
@@ -466,9 +470,9 @@ div.imageThumb {
   background-repeat: no-repeat;
   margin-bottom: 0.8vw;
 }
-div.landing div.imageThumb {
-  max-width: 9vw;
-  height: 6vw;
+body.landing div.imageThumb {
+  height: 7vw;
+  border: 1px solid #0ff;
 }
 div.offer {
   background-color: #c8102e;
