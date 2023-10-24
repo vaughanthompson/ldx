@@ -84,6 +84,9 @@ hr {
   border-bottom: 1px solid #1a1a1a;
   margin: 1em 0;
 }
+section hr {
+  margin: 2.5em 0;
+}
 footer hr {
   border-color: #c8102e;
 }
@@ -826,6 +829,11 @@ section.brandLogo {
 section.brandLogo img.brandLogo {
   height: 80px;
   max-width: 250px;
+}
+.side-by-side img.brandLogo {
+  height: 45px;
+  width: auto;
+  max-width: 130px;
 }
 .mLogo picture {
   margin-right: 10px;
@@ -2083,6 +2091,32 @@ div.staticOverlayContent div.innerContent section:first-child {
 div.staticOverlayContent div.innerContent section:first-child > div {
   border-bottom: 1px solid rgba(255,255,255,0.25);
   padding-bottom: 3.5vh;
+}
+div.inpageTeaserBg {
+  border: 1px solid #0ff;
+}
+.sidebar-Teaser {
+  margin: 2em 0;
+}
+.side-by-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  border-bottom: 1px solid #c8102e;
+  padding-bottom: 0.75em;
+  margin-bottom: 1em;
+}
+.side-by-side > *:last-child {
+  margin-right: 1em;
 }
 a:link {
   -webkit-transition: 0.5s;
