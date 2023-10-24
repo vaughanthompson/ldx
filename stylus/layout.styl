@@ -182,7 +182,7 @@ div.catGroup .catItem > a
     display: flex
     flex-direction: column
     align-self: stretch
-    justify-content: space-between
+    justify-content: flex-start
     height: 100%
     position: relative
     text-decoration: none
@@ -194,25 +194,24 @@ body.landing div.catGroup .catItem > a
         transform: translateY(-0.4em) 
         box-shadow: 0px 7px 15px 0px blackAlp10
 
-div.brand 
+ .catItem div.brand 
     position: absolute
     top: padXXS
     left: padXXS
-div.brand img
+.catItem div.brand img
     max-height: 30px
     max-width: 80px
-div.imageThumb
+.catItem div.imageThumb
     height: 10vw
     //background-color: blackAlp5
     background-size: contain
     background-position: center
     background-repeat: no-repeat
     margin-bottom: marXXS
-body.landing div.imageThumb
+body.landing .catItem div.imageThumb
     //max-width: 9vw
-    height:7vw
-    {test}
-div.offer
+    //height:7vw
+.catItem div.offer
     background-color: brand1
     color: white
     text-align: center
@@ -223,6 +222,22 @@ div.offer
     left: 0
     bottom: 0
     box-shadow: 0px -5px 10px 0px blackAlp10
+body.landing .catItem div.offer 
+    position: relative
+    text-align: left
+    color: brand1
+    background: none
+    padding: 0    
+    padding-top: 2px
+    box-shadow: none
+
+body.catg .catItem h5
+    min-height: 2.7em 
+body.landing .catItem p,
+body.catg .catItem p
+    color:brand0
+    font-weight:200
+
 @media phoneRule
     div.imageThumb
         height: 40vw !important

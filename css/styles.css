@@ -434,10 +434,10 @@ div.catGroup .catItem > a {
   -ms-grid-row-align: stretch;
       align-self: stretch;
   -ms-flex-item-align: stretch;
-  -webkit-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   height: 100%;
   position: relative;
   text-decoration: none;
@@ -454,27 +454,23 @@ body.landing div.catGroup .catItem > a {
     box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.1);
   }
 }
-div.brand {
+.catItem div.brand {
   position: absolute;
   top: 0.8vw;
   left: 0.8vw;
 }
-div.brand img {
+.catItem div.brand img {
   max-height: 30px;
   max-width: 80px;
 }
-div.imageThumb {
+.catItem div.imageThumb {
   height: 10vw;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 0.8vw;
 }
-body.landing div.imageThumb {
-  height: 7vw;
-  border: 1px solid #0ff;
-}
-div.offer {
+.catItem div.offer {
   background-color: #c8102e;
   color: #fff;
   text-align: center;
@@ -486,6 +482,24 @@ div.offer {
   bottom: 0;
   -webkit-box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.1);
   box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.1);
+}
+body.landing .catItem div.offer {
+  position: relative;
+  text-align: left;
+  color: #c8102e;
+  background: none;
+  padding: 0;
+  padding-top: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+body.catg .catItem h5 {
+  min-height: 2.7em;
+}
+body.landing .catItem p,
+body.catg .catItem p {
+  color: #1a1a1a;
+  font-weight: 200;
 }
 @media screen and (max-width: 750px) {
   div.imageThumb {
@@ -1748,6 +1762,13 @@ ul.summaryFeatures span.featureTitle:not(i) {
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20);
+}
+.catItem ul.summaryFeaturesSimple {
+  margin-bottom: 0;
+}
+.catItem ul.summaryFeaturesSimple li {
+  line: height 1.4em;
+  font-size: 80%;
 }
 div.keyStats {
   margin-top: 0.5em;
