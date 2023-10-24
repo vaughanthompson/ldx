@@ -497,6 +497,10 @@ body.landing div.catGroup .catItem > a {
   background-repeat: no-repeat;
   margin-bottom: 0.8vw;
 }
+.catList.photographic .catItem div.imageThumb {
+  background-size: cover;
+  margin-top: 0.4vw;
+}
 .catItem div.offer {
   background-color: #c8102e;
   color: #fff;
