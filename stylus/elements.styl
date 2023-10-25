@@ -1113,11 +1113,13 @@ body.model div.masthead div.content
     @media mtrigger
         background-size: contain
         background-position: 50% 0
-        
-
+    
 div.masthead.picturefill-background
     background-size: contain
     background-position: 125% 50%
+.picturefill-background.noOffset
+    background-size: cover
+    background-position: 50% 50%
 
 
 
@@ -1128,8 +1130,9 @@ div.masthead.picturefill-background
     position: absolute
     z-index: 1000
     width: 100%
-
 div.mastheadSlider section
+    //{test}
+div.mastheadSlider section > *
     //{test}
 div.mastheadSlider
     background-color: brand0
@@ -1150,7 +1153,10 @@ div.staticOverlayContent div.innerContent section:first-child
 div.staticOverlayContent div.innerContent section:first-child > div
     border-bottom:1px solid whiteAlp25
     padding-bottom: 3.5vh
-
+@media dtrigger
+     div.mastheadSlider section.inset
+        padding-left: 15vw
+        padding-right: 15vw
 
 
 
@@ -1159,7 +1165,7 @@ div.staticOverlayContent div.innerContent section:first-child > div
 
 
 // inpage teasers
-div.inpageTeaserBg
+.bodyContent div.inpageTeaserBg
     margin-top: 6em
     margin-bottom: 6em
     //{test}

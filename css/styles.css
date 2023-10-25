@@ -183,9 +183,6 @@ footer hr {
   }
 }
 @media screen and (min-width: 1100px) {
-  div.contentWrapper:last-of-type {
-    margin-top: 5vw;
-  }
   div.contentWrapper.bodyContent {
     margin-top: 3vw;
     margin-bottom: 5vw;
@@ -530,8 +527,7 @@ body.landing .catItem div.offer {
 body.catg .catItem h5 {
   min-height: 2.7em;
 }
-body.landing .catItem p,
-body.catg .catItem p {
+.catItem p {
   color: #1a1a1a;
   font-weight: 200;
 }
@@ -2058,6 +2054,10 @@ div.masthead.picturefill-background {
   background-size: contain;
   background-position: 125% 50%;
 }
+.picturefill-background.noOffset {
+  background-size: cover;
+  background-position: 50% 50%;
+}
 .staticOverlayContent {
   background: none !important;
   position: absolute;
@@ -2092,7 +2092,13 @@ div.staticOverlayContent div.innerContent section:first-child > div {
   border-bottom: 1px solid rgba(255,255,255,0.25);
   padding-bottom: 3.5vh;
 }
-div.inpageTeaserBg {
+@media screen and (min-width: 1100px) {
+  div.mastheadSlider section.inset {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+.bodyContent div.inpageTeaserBg {
   margin-top: 6em;
   margin-bottom: 6em;
 }
@@ -2754,7 +2760,7 @@ body > header.tempNavigation span.pipe {
   background-color: rgba(0,0,0,0.25) !important;
 }
 .bgoverlay2 {
-  background-color: rgba(0,0,0,0.5) !important;
+  background-color: rgba(0,0,0,0.55) !important;
 }
 .bgoverlay3 {
   background-color: rgba(0,0,0,0.75) !important;
