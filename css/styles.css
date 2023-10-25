@@ -85,7 +85,7 @@ hr {
   margin: 1em 0;
 }
 section hr {
-  margin: 2.5em 0;
+  margin: 3.5em 0;
 }
 footer hr {
   border-color: #c8102e;
@@ -2070,13 +2070,13 @@ div.mastheadSlider {
 div.mastheadSlider.withOverlay div.innerContent section:first-child {
   padding-top: 3vh;
   margin-bottom: 4vh;
-  margin-top: 37.5vh;
+  margin-top: 35vh;
 }
 div.mastheadSlider.withOverlay div.innerContent section:first-child > * {
   max-width: 90%;
 }
 div.staticOverlayContent div.innerContent section:first-child {
-  margin-bottom: 37.5vh;
+  margin-bottom: 40.5vh;
   padding-bottom: 0;
   padding-top: 10vh;
   display: -webkit-box;
@@ -2093,10 +2093,50 @@ div.staticOverlayContent div.innerContent section:first-child > div {
   padding-bottom: 3.5vh;
 }
 div.inpageTeaserBg {
-  border: 1px solid #0ff;
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+div.inpageTeaserBg div.content {
+  min-height: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+div.inpageTeaserBg div.content {
+  background-size: cover;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding: 0.8vw 45% 1.8vw 3vw;
+}
+div.inpageTeaserBg.theme-brand0,
+div.inpageTeaserBg.theme-brand1 {
+  color: #fff;
+}
+div.inpageTeaserBg h3 {
+  margin-bottom: 0.3em;
+}
+div.inpageTeaserBg.theme-brand1 a.ctaButton {
+  color: #c8102e;
+  background-color: #fff;
+  border-color: #fff;
+}
+div.inpageTeaserBg.theme-brand1 a.ctaButton:hover {
+  background-color: #c8102e;
+  border-color: #fff !important;
+  color: #fff !important;
+}
+div.inpageTeaserBg.theme-brand0 a.ctaButton:hover {
+  background-color: #1a1a1a;
+  border-color: #fff !important;
+  color: #fff !important;
 }
 .sidebar-Teaser {
-  margin: 2em 0;
+  margin: 2em 0 3em 0;
 }
 .side-by-side {
   display: -webkit-box;
@@ -2111,7 +2151,6 @@ div.inpageTeaserBg {
   -o-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  border-bottom: 1px solid #c8102e;
   padding-bottom: 0.75em;
   margin-bottom: 1em;
 }
@@ -2272,6 +2311,10 @@ p.intro {
   p.intro {
     width: 80%;
   }
+}
+.text-header {
+  max-width: 80%;
+  height: auto;
 }
 #navMobile .icon,
 #navHeader .icon {

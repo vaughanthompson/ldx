@@ -1137,12 +1137,12 @@ div.mastheadSlider
 div.mastheadSlider.withOverlay div.innerContent section:first-child
     padding-top: 3vh
     margin-bottom: 4vh
-    margin-top: 37.5vh
+    margin-top: 35vh
     //{test}
 div.mastheadSlider.withOverlay div.innerContent section:first-child > *
     max-width: 90%
 div.staticOverlayContent div.innerContent section:first-child
-    margin-bottom: 37.5vh
+    margin-bottom: 40.5vh
     padding-bottom: 0
     padding-top: 10vh
     display: flex
@@ -1160,15 +1160,44 @@ div.staticOverlayContent div.innerContent section:first-child > div
 
 // inpage teasers
 div.inpageTeaserBg
-    {test}
-.sidebar-Teaser
-    margin: 2em 0
+    margin-top: 6em
+    margin-bottom: 6em
+    //{test}
+div.inpageTeaserBg div.content
+    min-height: 20vw
+    display: flex
+    align-items: center
+div.inpageTeaserBg div.content
+    background-size: cover
+    background-position: 100% 50%
+    background-repeat: no-repeat
+    padding: padXXS 45% padStd padM
+div.inpageTeaserBg.theme-brand0,
+div.inpageTeaserBg.theme-brand1
+    color: white
+div.inpageTeaserBg h3
+    margin-bottom: 0.3em
 
+div.inpageTeaserBg.theme-brand1 a.ctaButton
+    color: brand1
+    background-color: white
+    border-color: white
+div.inpageTeaserBg.theme-brand1 a.ctaButton:hover
+    background-color: brand1
+    border-color: white !important
+    color: white !important
+div.inpageTeaserBg.theme-brand0 a.ctaButton:hover
+    background-color: brand0
+    border-color: white !important
+    color: white !important
+
+.sidebar-Teaser
+    margin: 2em 0 3em 0
 .side-by-side
     display: flex
     justify-content: space-between
     align-items: flex-end
-    border-bottom: 1px solid brand1
+    //border-bottom: 1px solid brand1
     padding-bottom: 0.75em
     margin-bottom: 1em
 .side-by-side > *:last-child
