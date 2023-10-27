@@ -450,6 +450,13 @@ div.catList {
     grid-row-gap: 2.75vw;
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   }
+  div.catList.flexi div.catGroup {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1.75vw;
+    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+  }
 }
 div.catGroup .catItem {
   -webkit-transition: 0.2s;
