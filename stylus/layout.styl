@@ -167,6 +167,13 @@ div.catItem
         grid-column-gap: 2.5vw;
         grid-row-gap: 2.75vw;
         grid-template-columns: repeat(auto-fill, minmax(20%, 1fr) )
+    div.catList.flexi div.catGroup
+        display: grid
+        grid-column-gap: 1vw;
+        grid-row-gap: 1.75vw;
+        grid-template-columns: repeat(auto-fill, minmax(15%, 1fr) )
+        
+
 @media dtrigger
     div.catList.col2 div.catGroup
         display: grid
@@ -197,6 +204,14 @@ div.catGroup .catItem > a
     height: 100%
     position: relative
     text-decoration: none
+div.catGroup .catItem.brand1 > a
+    border: 1px solid white
+    background-color: brand1
+    color: white
+div.catList.flexi div.catGroup .catItem > a
+    text-align: center
+    padding-bottom: padXS
+    padding-top: padXXS
 body.landing div.catGroup .catItem > a
     padding-top: padXXS
     padding-bottom: padXS
@@ -225,6 +240,8 @@ body.landing div.catGroup .catItem > a
 body.landing .catItem div.imageThumb
     //max-width: 9vw
     //height:7vw
+body.home .catItem div.imageThumb
+    height: 9vw
 .catItem div.offer
     background-color: brand1
     color: white
