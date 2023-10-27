@@ -84,6 +84,11 @@ hr {
   border-bottom: 1px solid #1a1a1a;
   margin: 1em 0;
 }
+hr.brand1 {
+  border: none;
+  border-bottom: 1px solid #c8102e;
+  margin: 1em 0;
+}
 section hr {
   margin: 3.5em 0;
 }
@@ -2253,7 +2258,8 @@ p {
   font-size: 1em;
   line-height: 1.4em;
   letter-spacing: -0.015em;
-  margin-top: 0.5em;
+  margin-top: 0.75em;
+  margin-bottom: 1.5em;
 }
 strong {
   font-weight: 800;
