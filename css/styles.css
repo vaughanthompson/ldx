@@ -2129,6 +2129,9 @@ div.staticOverlayContent div.innerContent section:first-child > div {
     padding-left: 15vw;
     padding-right: 15vw;
   }
+  body.landing div.mastheadSlider:not(.withOverlay) section.rS:first-child {
+    padding-top: 18vh;
+  }
 }
 .bodyContent div.inpageTeaserBg {
   margin-top: 6em;
@@ -2277,7 +2280,7 @@ h5 {
 h6 {
   font-weight: 500;
   font-size: 1.2em;
-  line-height: 130%;
+  line-height: 140%;
   letter-spacing: -0.015em;
 }
 p {

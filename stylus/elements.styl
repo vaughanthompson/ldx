@@ -1130,13 +1130,11 @@ div.masthead.picturefill-background
     position: absolute
     z-index: 1000
     width: 100%
-div.mastheadSlider section
-    //{test}
+
 div.mastheadSlider section > *
     //{test}
 div.mastheadSlider
     background-color: brand0
-
 div.mastheadSlider.withOverlay div.innerContent section:first-child
     padding-top: 3vh
     margin-bottom: 4vh
@@ -1154,10 +1152,11 @@ div.staticOverlayContent div.innerContent section:first-child > div
     border-bottom:1px solid whiteAlp25
     padding-bottom: 3.5vh
 @media dtrigger
-     div.mastheadSlider section.inset
+    div.mastheadSlider section.inset
         padding-left: 15vw
         padding-right: 15vw
-
+    body.landing div.mastheadSlider:not(.withOverlay) section.rS:first-child
+        padding-top: smallH - padXL
 
 
 
