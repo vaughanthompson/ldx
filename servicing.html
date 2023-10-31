@@ -522,8 +522,8 @@
                                     <div class="select-container">
                                         <select required="" id="FormSubmitModel_RegionID" name="FormSubmitModel.RegionID">
                                             <option value="">Region</option>
-                                                <option value="2">Auckland Central/South</option>
-                                                <option value="15">Auckland North/West</option>
+                                            <option value="15">Auckland North/West</option>
+                                            <option value="2">Auckland Central/South</option>
                                                 <option value="4">Bay of Plenty</option>
                                                 <option value="11">Canterbury</option>
                                                 <option value="5">Gisborne / Hawkes Bay</option>
@@ -545,42 +545,66 @@
                                             
                                     <p>Message:</p>
                                     <div class="other__inputs">                                       
-                                        <textarea data-val="true" data-val-length="The field Message must be a string with a maximum length of 4000." data-val-length-max="4000" data-val-required="The Message field is required." id="Message" maxlength="4000" name="Message" placeholder=""></textarea>
+                                        <textarea data-val="true" data-val-length="The field Message must be a string with a maximum length of 4000." data-val-length-max="4000" id="Message" maxlength="4000" name="Message" placeholder=""></textarea>
                                         <div><span class="field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="true"></span></div>
                                     </div>
 
                                     <br>
                                             
-                                    <p>Booking Information (optional):</p>
+                                    <p>Machine Booking Information (optional):</p>
 
-                                    <div>
-                                        <div class="floating">
-                                            <input class="floating__input" type="text" placeholder="Email Address" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-length="The field Email must be a string with a maximum length of 256." data-val-length-max="256" data-val-required="The Email field is required." id="Email" maxlength="256" name="Email" value="">
-                                            <label for="Email" class="floating__label" data-content="Email Address">
-                                                <span class="hidden--visually">Email Address</span>
-                                            </label>
+                                    <div class="spaceBetween">
+                                        <div>
+                                            <div class="floating">
+                                                <input class="floating__input" type="text" placeholder="Make" data-val="true" data-val-length="The field Company name must be a string with a maximum length of 256." data-val-length-max="256" id="Machine-Make" maxlength="256" name="Machine-Make" value="">
+                                                <label for="Machine-Make" class="floating__label" data-content="Make">
+                                                <span class="hidden--visually">Make</span>
+                                                </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="Machine-Make" data-valmsg-replace="true"></span>
                                         </div>
-                                        <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+
+                                        <div>
+                                            <div class="floating">
+                                                <input class="floating__input" type="text" placeholder="Model" data-val="true" data-val-length="The field Company name must be a string with a maximum length of 256." data-val-length-max="256" id="Machine-Model" maxlength="256" name="Machine-Model" value="">
+                                                <label for="Machine-Model" class="floating__label" data-content="Model">
+                                                <span class="hidden--visually">Model</span>
+                                                </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="Machine-Model" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="spaceBetween">
+                                        <div>
+                                            <div class="floating">
+                                                <input class="floating__input" type="text" placeholder="Serial #" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-length="The field Email must be a string with a maximum length of 256." data-val-length-max="256" id="Machine-Serial" maxlength="256" name="Machine-Serial" value="">
+                                                <label for="Machine-Serial" class="floating__label" data-content="Serial #">
+                                                    <span class="hidden--visually">Serial #</span>
+                                                </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="Machine-Serial" data-valmsg-replace="true"></span>
+                                        </div>
+
+                                        <div>
+                                            <div class="floating">
+                                                <input class="floating__input" type="text" placeholder="Service Interval" data-val="true" data-val-length="The field Company name must be a string with a maximum length of 256." data-val-length-max="256" id="Service-Interval" maxlength="256" name="Service-Interval" value="">
+                                                <label for="Service-Interval" class="floating__label" data-content="Service Interval">
+                                                <span class="hidden--visually">Service Interval</span>
+                                                </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="Service-Interval" data-valmsg-replace="true"></span>
+                                        </div>
                                     </div>
 
                                     <div>
                                         <div class="floating">
-                                            <input class="floating__input" type="text" placeholder="Email Address" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-length="The field Email must be a string with a maximum length of 256." data-val-length-max="256" data-val-required="The Email field is required." id="Email" maxlength="256" name="Email" value="">
-                                            <label for="Email" class="floating__label" data-content="Email Address">
-                                                <span class="hidden--visually">Email Address</span>
+                                            <input class="floating__input" type="text" placeholder="Preferred Date &amp; Time" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-length="The field Email must be a string with a maximum length of 256." data-val-length-max="256" id="Service-Date" maxlength="256" name="Service-Date" value="">
+                                            <label for="Service-Date" class="floating__label" data-content="Preferred Date &amp; Time">
+                                                <span class="hidden--visually">Preferred Date &amp; Time</span>
                                             </label>
                                         </div>
-                                        <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
-                                    </div>
-
-                                    <div>
-                                        <div class="floating">
-                                            <input class="floating__input" type="text" placeholder="Email Address" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-length="The field Email must be a string with a maximum length of 256." data-val-length-max="256" data-val-required="The Email field is required." id="Email" maxlength="256" name="Email" value="">
-                                            <label for="Email" class="floating__label" data-content="Email Address">
-                                                <span class="hidden--visually">Email Address</span>
-                                            </label>
-                                        </div>
-                                        <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                        <span class="field-validation-valid" data-valmsg-for="Service-Date" data-valmsg-replace="true"></span>
                                     </div>
 
                                     <br>
