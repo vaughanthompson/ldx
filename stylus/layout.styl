@@ -195,10 +195,11 @@ div.catItem
         grid-row-gap: 1.75vw;
         grid-template-columns: repeat(auto-fill, minmax(15%, 1fr) )
 
-div.catGroup .catItem
+div.catGroup .catItem a
     transition: 0.2s
     position: relative
-div.catGroup .catItem > a
+div.catGroup .catItem > a,
+div.catGroup .catItem > div
     border: 1px solid blackAlp5
     box-shadow: 0px 0px 10px 0px blackAlp5
     padding: padXS padXS*0.75 3.5em padXS*0.75
@@ -217,11 +218,12 @@ div.catList.flexi div.catGroup .catItem > a
     text-align: center
     padding-bottom: padXS
     padding-top: padXXS
-body.landing div.catGroup .catItem > a
+body.landing div.catGroup .catItem > a,
+body.landing div.catGroup .catItem > div
     padding-top: padXXS
     padding-bottom: padXS
 @media dtrigger and (pointer: fine)
-    div.catGroup .catItem:hover
+    div.catGroup .catItem:hover a
         transform: translateY(-0.4em) 
         box-shadow: 0px 7px 15px 0px blackAlp10
 
@@ -266,6 +268,10 @@ body.landing .catItem div.offer
     padding: 0    
     padding-top: 2px
     box-shadow: none
+
+@media dtrigger
+    .catList.centred
+        text-align: center
 
 body.catg .catItem h5
     min-height: 2.7em 

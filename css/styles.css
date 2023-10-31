@@ -458,12 +458,13 @@ div.catList {
     grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
   }
 }
-div.catGroup .catItem {
+div.catGroup .catItem a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   position: relative;
 }
-div.catGroup .catItem > a {
+div.catGroup .catItem > a,
+div.catGroup .catItem > div {
   border: 1px solid rgba(0,0,0,0.05);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
@@ -498,12 +499,13 @@ div.catList.flexi div.catGroup .catItem > a {
   padding-bottom: 1.5vw;
   padding-top: 0.8vw;
 }
-body.landing div.catGroup .catItem > a {
+body.landing div.catGroup .catItem > a,
+body.landing div.catGroup .catItem > div {
   padding-top: 0.8vw;
   padding-bottom: 1.5vw;
 }
 @media screen and (min-width: 1100px) {
-  div.catGroup .catItem:hover {
+  div.catGroup .catItem:hover a {
     -webkit-transform: translateY(-0.4em);
     transform: translateY(-0.4em);
     -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.1);
@@ -555,6 +557,11 @@ body.landing .catItem div.offer {
   padding-top: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+@media screen and (min-width: 1100px) {
+  .catList.centred {
+    text-align: center;
+  }
 }
 body.catg .catItem h5 {
   min-height: 2.7em;
@@ -2262,7 +2269,7 @@ h2 {
 h3 {
   font-weight: 600;
   font-size: 1.9em;
-  line-height: 115%;
+  line-height: 120%;
   letter-spacing: -0.035em;
 }
 h4 {
@@ -2292,7 +2299,7 @@ p {
   margin-bottom: 1.5em;
 }
 strong {
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.015em;
 }
 .small {
