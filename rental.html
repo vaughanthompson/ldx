@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-****"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        //gtag('config', 'UA-****');
+    </script>
+
+
+    <title>LDX. [brand] [category].</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
+    <meta name="twitter:title" property="og:title" content="[brand] [model] [category]." />
+    <meta name="twitter:card" content="LDX">
+    <meta name="twitter:site" property="og:site_name" content="LDX. Forklifts, Warehouse Trucks, Compact Construction Equipment." />
+    <meta name="description" property="og:description" content="New Zealand's source for Linde &amp; Baoli Forklifts, Warehouse Trucks and Yanmar Compact Construction Equipment." />
+    <meta name="twitter:image" property="og:image" content="https://www.ldx.co.nz/images/icon.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:url" property="og:url" content="https://www.ldx.co.nz" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <!-- css -->
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/images/icomoon/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/form.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+<body class="landing">
+    <!-- mob nav -->
+    <div id="navHeader" class="navHeight m">
+        <a href="#" class="siteLogo"><img src="/images/logos/br-ldx-rev@4x.png"></a>
+        <div id="mblNavControl">
+            <a href="#" class="icon"><i class="icon-phone"></i></a>
+            <a href="#" id="navTrigger" class="icon"><i class="icon-menu"></i></a>
+            <a href="#" id="navClose" class="icon"><i class="icon-cross"></i></a>
+        </div>
+    </div>
+
+    <div class="mblnav m">
+        <div class="mblnavContainer">
+            <div class="navHeight">&nbsp;</div>
+                <div class="containMNav">
+                    <h6>Products</h6>
+                    <nav>
+                        <a href="/landing">Lift</a>
+                        <a href="/landing">Dig</a>
+                        <a href="/landing">Compact</a>
+                    </nav> 
+                </div>  
+                <div class="containMNav">
+                    <h6>Services</h6>
+                    <nav>
+                        <a href="#">Servicing</a>
+                        <a href="#">Leasing &amp; Rental</a>
+                    </nav> 
+                </div>
+                <div class="containMNav">
+                    <h6>Company</h6>
+                    <nav>
+                        <a href="#">Our Story</a>
+                        <a href="#">Careers</a>
+                    </nav> 
+                </div> 
+                <div class="containMNav">
+                    <nav>      
+                        <a href="#">Contact Us</a>    
+                        <a href="#home" class="inpage">Home</a>
+                    </nav> 
+                    <br>
+                    <br>
+                    <a href="#" class="icon inline-icons"><i class="icon-facebook"></i></a>&nbsp;
+                    <a href="#" class="icon inline-icons"><i class="icon-youtube"></i></a>&nbsp;
+                    <a href="#" class="icon inline-icons"><i class="icon-linkedin"></i></a>
+                </div>  
+            </div>
+        <div class="navHeight">&nbsp;</div>  
+    </div> 
+    <div class="navHeight m">&nbsp;</div>
+    <!-- end mobile navigation -->
+
+    <!-- desktop nav -->
+    <header class="tempNavigation">
+        <div class="navSection siteLogo">
+            <a href="#" class="logo"><img src="/images/logos/br-ldx-tagline.png"></a>
+        </div>
+       
+        <div class="navSection">
+            <span class="pipe"></span>
+            <div>
+                <nav>
+                    <a href="/landing.html">Products</a>
+                    <a href="/servicing.html" >Servicing</a>
+                    <a href="/rental.html" class="activeLink"><span class="hideSmallDesktop">Leasing &amp;</span> Rental</a>
+                    <a href="/about.html">Our Story</a>
+                    <a href="/careers.html">Careers</a>
+                </nav>    
+            </div>
+        </div>
+
+        <div class="navSection spacer">&nbsp;</div>
+
+        <div class="navSection">
+            <span class="pipe"></span>
+            <div>
+                <h6>Contact</h6>
+                <nav>
+                    <a href="tel:0800539583" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">
+                        <i class="inline icon-ic-1clr-call hideSmallDesktop">
+                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                        </i>0800 539 583
+                    </a>
+                </nav>    
+            </div>
+        </div>
+        <div class="navSection">
+            <div>
+                <h6>NZ Online Support</h6>
+                <nav>
+                    <a href="javascript:void(0);" onclick="$('#chat-widget-container').show();LiveChatWidget.call('maximize');">
+                        <i class="inline icon-ic-1clr-support hideSmallDesktop"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+                        <span id="ChatStatusLoading" class="chatStatus offline animated infinite bounceInDown">Loading...</span>
+                        <span id="ChatStatusOnline" class="chatStatus online" style="display:none;">Chat Now</span>
+                        <span id="ChatStatusOffline" class="chatStatus offline" style="display:none;">Message</span>
+                    </a>
+                </nav>    
+            </div>
+        </div>
+        
+
+    </header>
+
+
+
+
+
+
+
+    <!--div class="contentWrapper darkMode staticOverlayContent">
+        <div class="content">
+            <div class="innerContent largeH">
+                <div>
+                    <section class="rE">
+                        <div>
+                            
+                        </div>
+                    </section>
+                    <section class="rC cC">
+                        &nbsp;
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div -->
+    
+
+
+
+
+
+
+    <div class="mastheadSlider">
+
+
+        <div class="contentWrapper darkMode picturefill-background" > <!--bg color and pictureFill -->
+            <div class="content" style="background-image: url(/images/misc/arrowoverlay4-slider.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"> <!--overlay darken etc -->
+                <div class="innerContent largeH" ><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rS cC"><!--  content control -->
+
+                            <h1>Rent it <span class="brand1 fw-200">at <br class="d">your doorstep.</span></h1> 
+                            <br>
+                            <h6 class="fw-200">You'll never need to declare you've "got to take it in for a service" with LDX Servicing. Our service fleet is at your service- at your place, across <span class="nowrap">New Zealand</span>.</h6>
+                            <br>
+                            <hr class="brand1">
+                            <br>
+                            <p>With a team of over 50 (and growing!) Material Handling field service technicians across Aotearoa, LDX has the expertise and- together with a savvy back office parts and spares team, to deliver total support for Linde, Baoli or many other brand forklifts, pallet movers and reach trucks. All at your site.</p>
+                    
+                        </section>
+                        <section class="rS cC d">
+                            &nbsp;    
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <span data-src="/images/servicing/servicing-1.jpg"></span><!-- ph -->
+            <span data-src="/images/servicing/servicing-1.jpg" data-media="(min-width: 1100px)"></span><!-- desktop -->
+        </div>
+
+
+        <div class="contentWrapper darkMode picturefill-background"> <!--bg color and pictureFill -->
+            <div class="content" style="background-image: url(/images/misc/arrowoverlay4-slider.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"> <!--overlay darken etc -->
+                <div class="innerContent largeH" ><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rS cC"><!--  content control -->
+                            <h1>Parts &amp; Spares <span class="brand1 fw-200">at <br class="d">our fingertips.</span></h1> 
+                            <br>
+                            <h6 class="fw-200">The LDX support team has the connections and network capabilites to find the right part for the job. From a catalogue of over 50,000 items we either stock or can source items quickly- many within hours.</h6>
+                        </section>
+                        <section class="rS cC d">
+                            &nbsp;    
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <span data-src="/images/servicing/servicing-2.jpg"></span><!-- ph -->
+            <span data-src="/images/servicing/servicing-2.jpg" data-media="(min-width: 1100px)"></span><!-- desktop -->
+        </div>
+
+        <div class="contentWrapper darkMode picturefill-background"> <!--bg color and pictureFill -->
+            <div class="content" style="background-image: url(/images/misc/arrowoverlay4-slider.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"> <!--overlay darken etc -->
+                <div class="innerContent largeH" ><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rS cC"><!--  content control -->
+                            <h1>We work for you <br class="d"><span class="brand1 fw-200">with flexible support packages.</span></h1> 
+                            <br>
+                            <h6 class="fw-200">Whether you operate a large warehouse fleet or run a sole machine around the yard, we value every customer equally. And as such we can tailor regular servicing and urgent support to match your needs.</h6>
+                    
+                        </section>
+                        <section class="rS cC d">
+                            &nbsp;    
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <span data-src="/images/servicing/servicing-3.jpg"></span><!-- ph -->
+            <span data-src="/images/servicing/servicing-3.jpg" data-media="(min-width: 1100px)"></span><!-- desktop -->
+        </div>
+
+       
+        
+    
+    
+    </div>
+    
+
+
+
+
+
+    
+
+    
+
+    
+
+
+
+    <div class="contentWrapper bodyContent"> <!--bg color and pictureFill -->
+        <div class="content"> <!--overlay darken etc -->
+            <div class="innerContent"><!--height and LR partial padding overlay bg element - eg arrow -->
+                
+                <div><!-- flex and innermost LR padding -->
+                    <section class="largerSec"><!--  content control -->
+                        
+                        <div class="longDescription">
+                            <h3 class="">LDX Servicing is mobile- designed specifically for operating out in the field. <span class="fw-200 ">Combining proactive regular maintenance programs with urgent service and repair call-outs, we're there when you need us 24/7 - 365.</span></h3>
+                        </div>
+                
+                        <img src="/images/test/van-mock@0.5x.png">
+
+                       
+
+
+                        <div class="longDescription">
+                            <p>Our fleet of service experts are backed up with strategically located supply hubs throughout New Zealand, all managed by a responsive nationwide technical support team.</p>
+
+                            <hr>
+
+                            <h3 class="brand1">Choose a support package or fine-tune one in consultation with your local LDX Customer Support Representative.</h3>
+
+                            <br>
+                            <h5 class="fw-200">Or take it one service at a time. Simply get in touch when you need to schedule a repair or service on an ad-hoc basis. <br class="d"><strong>That's the Power to Choose.</strong> </h5>
+                        </div>
+
+                       
+                        <br>
+        
+
+                        
+                        <div class="catList col3 centred">
+                
+                            <div class="catGroup">
+            
+    
+                                <div class="catItem">
+                                    <div>
+                                        <div class="cardTop">
+                                            <div class="imageThumb" style="background-image:url(/images/misc/x-priority@2x.webp);">
+                                                &nbsp;
+                                            </div>
+                                            <h5>X Priority Support</h5>
+                                            <p>Ideal for high use, large multi-site operations. X Priority Support delivers critical response, automation (reporting) integration and maintenance scheduling as standard.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="catItem">
+                                    <div>
+                                        <div class="cardTop">
+                                            <div class="imageThumb" style="background-image:url(/images/misc/x-flexi@2x.webp);">
+                                                &nbsp;
+                                            </div>
+                                            <h5>X Flexi Support</h5>
+                                            <p>Fleet operators on one site, or multi-sites with a small fleets benefit from sharing a pool of support hours. Elevated breakdown support reduces downtime.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="catItem">
+                                    <div>
+                                        <div class="cardTop">
+                                            <div class="imageThumb" style="background-image:url(/images/misc/x-core@2x.webp);">
+                                                &nbsp;
+                                            </div>
+                                            <h5>X Core Support</h5>
+                                            <p>Perfect for businesses who supplement their core activity with material handling. Benefit from LDX expertise with advice, support and timely repair services.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="longDescription">
+                            <h3 class=" brand1">Access genuine OEM Linde and Baoli new parts as well as parts &amp; spares for other major material handling brands.</h3>
+                            <p>Don't hesitate to contact us to enquire after these and other premium quality parts to keep your material handling equipment in perfect working condition.</p>
+                        </div>
+
+
+
+
+                        <div class="catList photographic col2">
+                
+                            <div class="catGroup">
+            
+    
+                                <div class="catItem">
+                                    <div>
+                                        <div class="cardTop">
+                                            <div class="imageThumb" style="background-image:url(/images/misc/parts-joysticks.avif);">
+                                                &nbsp;
+                                            </div>
+                                            <h5>Joysticks</h5>
+                                            <p>Outstanding precision, comfort, safety, and durability.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="catItem">
+                                    <div>
+                                        <div class="cardTop">
+                                            <div class="imageThumb" style="background-image:url(/images/misc/parts-filters.avif);">
+                                                &nbsp;
+                                            </div>
+                                            <h5>Oil Filters</h5>
+                                            <p>Ensure the flawless operation of the hydraulic system and the combustion engines.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="catItem">
+                                    <div>
+                                        <div class="cardTop">
+                                            <div class="imageThumb" style="background-image:url(/images/misc/parts-forks.avif);">
+                                                &nbsp;
+                                            </div>
+                                            <h5>Forks</h5>
+                                            <p>Longer service life, a higher nominal load, and maximum stability.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="catItem">
+                                    <div>
+                                        <div class="cardTop">
+                                            <div class="imageThumb" style="background-image:url(/images/misc/parts-chains.avif);">
+                                                &nbsp;
+                                            </div>
+                                            <h5>Mast Chains</h5>
+                                            <p>Exceptionally wear-resistant and safe thanks to the high quality of their design.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        
+                        
+
+                    </section>
+
+
+
+
+
+
+
+
+
+                
+
+                    <section class="vertBorder">
+
+
+                        <img src="/images/misc/nz@2x.webp">
+
+                        <br>
+                        <hr>
+                        <br>
+
+                        <h3>Service Enquiry / Booking</h3>
+                        <br>
+                        
+                            <form>
+                                <div class="form forms">
+                                    
+                                    <p>Enquiry type:</p>
+                                    <div class="enquiryType">
+                                        <div>
+                                            <input type="checkbox" id="Topic-Booking" name="Topic-Booking">
+                                            <label for="Topic-Booking">Servicing Booking</label> 
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="Topic-Servicing" name="Topic-Servicing">
+                                            <label for="Topic-Servicing">Servicing Enquiry</label> 
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                
+                                    <div class="spaceBetween">
+                                        <div>
+                                            <div class="floating">
+                                            <input class="floating__input" type="text" placeholder="First Name" data-val="true" data-val-length="The field First name must be a string with a maximum length of 256." data-val-length-max="256" data-val-required="The First name field is required." id="FirstName" maxlength="256" name="FirstName" value="">
+                                            <label for="FirstName" class="floating__label" data-content="First Name">
+                                                <span class="hidden--visually">First Name</span>
+                                            </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+                                        </div>
+
+                                        <div>
+                                            <div class="floating">
+                                            <input class="floating__input" type="text" placeholder="Last Name" data-val="true" data-val-length="The field First name must be a string with a maximum length of 256." data-val-length-max="256" data-val-required="The Last name field is required." id="LastName" maxlength="256" name="LastName" value="">
+                                            <label for="LastName" class="floating__label" data-content="Last Name">
+                                                <span class="hidden--visually">Last Name</span>
+                                            </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+                                        </div>                                
+                                    </div>
+
+                                    <div class="spaceBetween">
+                                        <div>
+                                            <div class="floating">
+                                                <input class="floating__input" type="text" placeholder="Phone" data-val="true" data-val-length="The field Company name must be a string with a maximum length of 256." data-val-length-max="256" id="Phone" maxlength="256" name="Phone" value="">
+                                                <label for="Phone" class="floating__label" data-content="Phone">
+                                                <span class="hidden--visually">Phone</span>
+                                                </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="CompanyName" data-valmsg-replace="true"></span>
+                                        </div>
+
+                                        <div>
+                                            <div class="floating">
+                                                <input class="floating__input" type="text" placeholder="Company" data-val="true" data-val-length="The field Company name must be a string with a maximum length of 256." data-val-length-max="256" id="CompanyName" maxlength="256" name="CompanyName" value="">
+                                                <label for="CompanyName" class="floating__label" data-content="Company">
+                                                <span class="hidden--visually">Company</span>
+                                                </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="CompanyName" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="floating">
+                                            <input class="floating__input" type="text" placeholder="Email Address" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-length="The field Email must be a string with a maximum length of 256." data-val-length-max="256" data-val-required="The Email field is required." id="Email" maxlength="256" name="Email" value="">
+                                            <label for="Email" class="floating__label" data-content="Email Address">
+                                                <span class="hidden--visually">Email Address</span>
+                                            </label>
+                                        </div>
+                                        <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                    </div>                                                           
+                                    
+                                    <div class="select-container">
+                                        <select required="" id="FormSubmitModel_RegionID" name="FormSubmitModel.RegionID">
+                                            <option value="">Region</option>
+                                            <option value="15">Auckland North/West</option>
+                                            <option value="2">Auckland Central/South</option>
+                                                <option value="4">Bay of Plenty</option>
+                                                <option value="11">Canterbury</option>
+                                                <option value="5">Gisborne / Hawkes Bay</option>
+                                                <option value="7">Manawatu-Wanganui</option>
+                                                <option value="9">Nelson / Marlborough</option>
+                                                <option value="1">Northland</option>
+                                                <option value="12">Otago</option>
+                                                <option value="14">Other / International</option>
+                                                <option value="13">Southland</option>
+                                                <option value="6">Taranaki</option>
+                                                <option value="10">Tasman / West Coast</option>
+                                                <option value="3">Waikato</option>
+                                                <option value="8">Wellington</option>
+                                        </select>
+                                    </div>
+
+                                    <br>
+                                    <br>
+                                            
+                                    <p>Message:</p>
+                                    <div class="other__inputs">                                       
+                                        <textarea data-val="true" data-val-length="The field Message must be a string with a maximum length of 4000." data-val-length-max="4000" id="Message" maxlength="4000" name="Message" placeholder=""></textarea>
+                                        <div><span class="field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="true"></span></div>
+                                    </div>
+
+                                    <br>
+                                            
+                                    <p>Machine Booking Information (optional):</p>
+
+                                    <div class="spaceBetween">
+                                        <div>
+                                            <div class="floating">
+                                                <input class="floating__input" type="text" placeholder="Make" data-val="true" data-val-length="The field Company name must be a string with a maximum length of 256." data-val-length-max="256" id="Machine-Make" maxlength="256" name="Machine-Make" value="">
+                                                <label for="Machine-Make" class="floating__label" data-content="Make">
+                                                <span class="hidden--visually">Make</span>
+                                                </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="Machine-Make" data-valmsg-replace="true"></span>
+                                        </div>
+
+                                        <div>
+                                            <div class="floating">
+                                                <input class="floating__input" type="text" placeholder="Model" data-val="true" data-val-length="The field Company name must be a string with a maximum length of 256." data-val-length-max="256" id="Machine-Model" maxlength="256" name="Machine-Model" value="">
+                                                <label for="Machine-Model" class="floating__label" data-content="Model">
+                                                <span class="hidden--visually">Model</span>
+                                                </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="Machine-Model" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="spaceBetween">
+                                        <div>
+                                            <div class="floating">
+                                                <input class="floating__input" type="text" placeholder="Serial #" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-length="The field Email must be a string with a maximum length of 256." data-val-length-max="256" id="Machine-Serial" maxlength="256" name="Machine-Serial" value="">
+                                                <label for="Machine-Serial" class="floating__label" data-content="Serial #">
+                                                    <span class="hidden--visually">Serial #</span>
+                                                </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="Machine-Serial" data-valmsg-replace="true"></span>
+                                        </div>
+
+                                        <div>
+                                            <div class="floating">
+                                                <input class="floating__input" type="text" placeholder="Service Interval" data-val="true" data-val-length="The field Company name must be a string with a maximum length of 256." data-val-length-max="256" id="Service-Interval" maxlength="256" name="Service-Interval" value="">
+                                                <label for="Service-Interval" class="floating__label" data-content="Service Interval">
+                                                <span class="hidden--visually">Service Interval</span>
+                                                </label>
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="Service-Interval" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="floating">
+                                            <input class="floating__input" type="text" placeholder="Preferred Date &amp; Time" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-length="The field Email must be a string with a maximum length of 256." data-val-length-max="256" id="Service-Date" maxlength="256" name="Service-Date" value="">
+                                            <label for="Service-Date" class="floating__label" data-content="Preferred Date &amp; Time">
+                                                <span class="hidden--visually">Preferred Date &amp; Time</span>
+                                            </label>
+                                        </div>
+                                        <span class="field-validation-valid" data-valmsg-for="Service-Date" data-valmsg-replace="true"></span>
+                                    </div>
+
+                                    <br>
+                                                                
+                                    <div class="submitW">
+                                        <input type="submit" value="Send Enquiry" class="ctaButton button">
+                                    </div>
+
+                                    <div id="ValidationSummary" class="text-danger validation-summary-valid" data-valmsg-summary="true">
+                                        <ul>
+                                            <li style="display:none"></li>
+                                        </ul>
+                                    </div>
+
+                                </div>      
+                            </form>
+
+           
+
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    <footer>
+       
+        
+        <div>
+            <h6>Products</h6>
+            <nav>
+                <a href="/catg.html">IC Engine Forklifts</a>
+                <a href="/catg.html">Electric Forklifts</a>
+                <a href="/catg.html">Pallet Trucks</a>
+                <a href="/catg.html">Tow Tractors</a>
+                <a href="/catg.html">Reach Trucks</a>
+                <a href="/catg.html">Narrow Aisle Trucks</a>
+                <a href="/catg.html">Pallet Stackers</a>
+                <a href="/catg.html">Order Pickers</a>
+<a href="/catg.html">Automation</a>
+            </nav> 
+            
+            <br>
+
+                <br>
+                <nav class="logoStrip left">
+                    <a href="/catg-brand.html"><img src="/images/logos/br-linde.svg" class="brandLogo"></a>
+                    <a href="/catg-brand.html"><img src="/images/logos/br-baoli-rev.svg" class="brandLogo"></a>
+                                   </nav> 
+        </div>
+          
+        <div>
+                <h6>Services</h6>
+                <nav>
+                    <a href="/servicing.html">Servicing</a>
+                    <a href="/rental.html"><span class="hideSmallDesktop">Leasing &amp;</span> Rental</a>
+                </nav>  
+                <h6>Company</h6>
+                <nav>
+                    <a href="/about.html">Our Story</a>
+                    <a href="/careers.html">Careers</a>
+                    <a href="/contact.html">Contact Us</a>
+                </nav> 
+                <nav class="list">
+                    <a href="/copyright.html">Copyright Notice</a>
+                    <a href="/terms.html">Terms of Trade</a>
+                    <a href="/privacy.html">Privacy Policy</a>
+                </nav>    
+        </div>
+
+        <div>
+                <div class="navSection siteLogo d">
+                    <a href="#" class="logo"><img src="/images/logos/br-ldx-rev@4x.png"></a>
+                </div>
+
+                <hr class="d">
+
+                <nav>
+                    <a href="tel:0800539583" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">
+                        New Zealand Freephone:<br>
+                        <i class="inline icon-ic-1clr-call hideSmallDesktop">
+                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                        </i>0800 539 583
+                    </a>
+                </nav> 
+                
+                <hr>
+                <br>
+
+                <nav>
+                    <a href="#" class="icon inline-icons"><i class="icon-facebook"></i></a>
+                    <a href="#" class="icon inline-icons"><i class="icon-youtube"></i></a>
+                    <a href="#" class="icon inline-icons"><i class="icon-linkedin"></i></a>
+                </nav>
+               
+                <p class="small">&copy; Copyright 2023 LDX (NZ) Ltd.</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.waypoints.min.js" ></script>
+    <script type="text/javascript" src="/js/inview.js" ></script>
+    <script type="text/javascript" src="/js/picturefill-background.js"></script>
+    <script type="text/javascript" src="/js/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.localScroll-1.4.0/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="/js/easing.js"></script>
+    <script type="text/javascript" src="/js/site.js"></script>
+    <script type="text/javascript" src="/js/fslightbox.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.mastheadSlider').slick({
+                dots:true,
+                accessibility:true,
+                autoplay:true,
+                autoplaySpeed:6000,
+                fade:true,
+                pauseOnHover:true,
+                useTransform:false,
+                easing:'easeOutQuad',
+                speed:1000
+            }).slick('slickPause');
+
+            var initialDelay = 12000;
+
+            setTimeout(function() {
+                $('.mastheadSlider').slick('slickPlay')
+            },initialDelay);
+
+
+        });
+    </script>
+    
+</body>
+</html>
