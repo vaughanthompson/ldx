@@ -198,13 +198,9 @@ footer hr {
     margin-top: 3vw;
     margin-bottom: 5vw;
   }
-  div.contentWrapper.inset {
-    border: 1px solid #008000;
-  }
   div.contentWrapper.inset section {
     max-width: 45vw;
     margin: 0px auto;
-    border: 1px solid #0ff;
   }
   div.slick-slider div.contentWrapper {
     margin: 0;
@@ -2135,7 +2131,8 @@ div.masthead.picturefill-background {
 .picturefill-background.offset175 {
   background-position: 175% 50%;
 }
-.staticOverlayContent {
+.staticOverlayContent,
+.staticOverlayContent2 {
   background: none !important;
   position: absolute;
   z-index: 1000;
@@ -2174,7 +2171,8 @@ div.staticOverlayContent div.innerContent section:first-child > div {
     padding-left: 15vw;
     padding-right: 15vw;
   }
-  body.landing div.mastheadSlider:not(.withOverlay) section.rS:first-child {
+  body.landing div.mastheadSlider:not(.withOverlay) section.rS:first-child,
+  .staticOverlayContent2 section.rS:first-child {
     padding-top: 18vh;
   }
 }

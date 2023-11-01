@@ -1137,7 +1137,8 @@ div.masthead.picturefill-background
 
 //landing sliders
 // overlay content over slider
-.staticOverlayContent
+.staticOverlayContent,
+.staticOverlayContent2
     background: none !important
     position: absolute
     z-index: 1000
@@ -1167,7 +1168,8 @@ div.staticOverlayContent div.innerContent section:first-child > div
     div.mastheadSlider section.inset
         padding-left: 15vw
         padding-right: 15vw
-    body.landing div.mastheadSlider:not(.withOverlay) section.rS:first-child
+    body.landing div.mastheadSlider:not(.withOverlay) section.rS:first-child,
+    .staticOverlayContent2 section.rS:first-child
         padding-top: smallH - padXL
 
 
