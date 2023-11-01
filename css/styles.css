@@ -2241,6 +2241,94 @@ div.inpageTeaserBg.theme-brand0 a.ctaButton:hover {
 .side-by-side > *:last-child {
   margin-right: 1em;
 }
+div.locationsCareers svg circle {
+  fill: #c8102e;
+}
+div.locationsCareers {
+  width: 96px;
+  height: 120px;
+  background-image: url("/images/careers/locationsCareersDefault.svg");
+  background-position: center;
+  position: absolute;
+  right: 1.5vw;
+}
+div.locationsCareers.north {
+  background-image: url("/images/careers/locationsCareersNorth.svg");
+}
+div.locationsCareers.south {
+  background-image: url("/images/careers/locationsCareersSouth.svg");
+}
+div.locationsCareers svg circle {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+div.locationsCareers.whangarei svg circle.whangarei {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+div.locationsCareers.auckland svg circle.auckland {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+div.locationsCareers.hamilton svg circle.hamilton {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+div.locationsCareers.auckland svg circle.auckland {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+div.locationsCareers.tauranga svg circle.tauranga {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+div.locationsCareers.wellington svg circle.wellington {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+div.locationsCareers.christchurch svg circle.christchurch {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+div.locationsCareers.greymouth svg circle.greymouth {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+div.locationsCareers.dunedin svg circle.dunedin {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+div.catList.careers div.catItem > div {
+  padding: 1.8vw 3vw 3vw 3vw;
+}
+div.catList.careers div.cardTop {
+  padding-right: 7vw;
+}
+div.catList.careers div.catItem a.ctaButton {
+  margin-top: auto;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+}
 a:link {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -2272,6 +2360,11 @@ ul li {
   line-height: 1.4em;
   margin-bottom: 0.4em;
   list-style-type: disc;
+}
+ul.compactList li {
+  padding-right: 3vw;
+  font-size: 0.9em;
+  line-height: 1.3em;
 }
 .activeLink,
 p a:hover,
