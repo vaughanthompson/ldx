@@ -158,8 +158,10 @@ footer hr {
 .slick-slide {
   height: inherit !important;
 }
+.slick-slide,
 .slick-slide > div {
   height: 100% !important;
+  margin-bottom: -3px;
 }
 *.fullH {
   min-height: 92vh;
@@ -421,6 +423,9 @@ div.catList {
     grid-row-gap: 2.75vw;
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   }
+  div.catList.col4.compact div.catGroup {
+    grid-column-gap: 1vw;
+  }
   div.catList.flexi div.catGroup {
     display: -ms-grid;
     display: grid;
@@ -449,6 +454,9 @@ div.catList {
     grid-column-gap: 2.5vw;
     grid-row-gap: 2.75vw;
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
+  div.catList.col4.compact div.catGroup {
+    grid-column-gap: 1.5vw;
   }
   div.catList.flexi div.catGroup {
     display: -ms-grid;
@@ -561,6 +569,9 @@ body.landing .catItem div.offer {
 @media screen and (min-width: 1100px) {
   .catList.centred {
     text-align: center;
+  }
+  .catList.centred img.lozenge {
+    margin: 10px auto;
   }
 }
 body.catg .catItem h5 {
@@ -841,6 +852,9 @@ header.sticky .imgText span.txtC {
 picture.logoAsset {
   width: 130px;
   height: 50px;
+}
+img.lozenge {
+  max-width: 90px;
 }
 header.sticky .imgText.stacked {
   -webkit-box-orient: horizontal;
@@ -2091,11 +2105,23 @@ body.model div.masthead div.content {
 }
 div.masthead.picturefill-background {
   background-size: contain;
-  background-position: 125% 50%;
+  background-position: 130% 50%;
 }
 .picturefill-background.noOffset {
   background-size: cover;
   background-position: 50% 50%;
+}
+.picturefill-background.offset100 {
+  background-position: 100% 50%;
+}
+.picturefill-background.offset125 {
+  background-position: 125% 50%;
+}
+.picturefill-background.offset150 {
+  background-position: 150% 50%;
+}
+.picturefill-background.offset175 {
+  background-position: 175% 50%;
 }
 .staticOverlayContent {
   background: none !important;

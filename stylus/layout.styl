@@ -167,6 +167,9 @@ div.catItem
         grid-column-gap: 2.5vw;
         grid-row-gap: 2.75vw;
         grid-template-columns: repeat(auto-fill, minmax(20%, 1fr) )
+    div.catList.col4.compact div.catGroup
+        grid-column-gap: 1vw;
+
     div.catList.flexi div.catGroup
         display: grid
         grid-column-gap: 1vw;
@@ -189,6 +192,9 @@ div.catItem
         grid-column-gap: 2.5vw;
         grid-row-gap: 2.75vw;
         grid-template-columns: repeat(auto-fill, minmax(20%, 1fr) )
+    div.catList.col4.compact div.catGroup
+        grid-column-gap: 1.5vw;
+
     div.catList.flexi div.catGroup
         display: grid
         grid-column-gap: 1vw;
@@ -269,9 +275,12 @@ body.landing .catItem div.offer
     padding-top: 2px
     box-shadow: none
 
+
 @media dtrigger
     .catList.centred
         text-align: center
+    .catList.centred img.lozenge
+        margin: 10px auto
 
 body.catg .catItem h5
     min-height: 2.7em 
