@@ -130,7 +130,7 @@ footer hr {
 }
 .pullUp {
   position: relative;
-  margin-top: -17.5vh !important;
+  margin-top: -15vh !important;
 }
 .bumpLineHeight {
   line-height: 200% !important;
@@ -197,6 +197,14 @@ footer hr {
   div.contentWrapper.bodyContent {
     margin-top: 3vw;
     margin-bottom: 5vw;
+  }
+  div.contentWrapper.inset {
+    border: 1px solid #008000;
+  }
+  div.contentWrapper.inset section {
+    max-width: 45vw;
+    margin: 0px auto;
+    border: 1px solid #0ff;
   }
   div.slick-slider div.contentWrapper {
     margin: 0;
