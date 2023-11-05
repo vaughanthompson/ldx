@@ -1,0 +1,144 @@
+/*!
+*
+*
+*
+*
+* responsive
+*
+*
+*
+*
+*
+*/
+
+@media phoneRule // just phone
+    #navHeader
+        border-bottom: 1px solid brand1
+    body > footer > div
+        border-bottom: 1px solid brand1
+        margin-bottom: 5vh
+        padding-bottom: 3vh
+
+
+
+
+
+@media mtrigger // up to tablet
+    body > footer
+        padding: 10vh 5vw 5vh 5vw
+    body > footer > div:last-child
+        border-bottom: none
+    body > footer nav a
+        margin-top: 0.5vh
+        margin-bottom: 1vh
+
+
+
+
+@media tabletRule and (orientation: landscape) // just tablet
+    #navHeader
+        border-bottom: 1px solid brand1
+    body > footer > div
+        margin-bottom: 3em
+
+
+
+    
+@media dtrigger
+    body > footer
+        padding-top: padL   
+        padding-bottom: padL   
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        column-gap: 5vw
+    body > footer > div
+        flex: 1 1 0px
+    body > footer div.siteLogo
+        margin-bottom: 2em
+    body > footer > div:first-child
+        flex:3
+
+
+
+
+// responsive slick slider
+@media phoneRule
+    button.slick-arrow
+        display: none !important
+    div.mastheadSlider div.innerContent
+        display: flex
+        justify-content: center
+        align-items: center
+@media mtrigger
+    div.mastheadSlider div.innerContent > div
+        padding: 10vw
+    div.mastheadSlider div.innerContent section
+        display: none
+        //max-height:50vh
+    div.mastheadSlider div.innerContent section:first-child
+        display: block
+        height:100%
+    div.mastheadSlider.galleryMobile div.contentWrapper
+        background-position: 100% 50%
+        background-size: cover
+    div.mastheadSlider.galleryMobile div.content
+        background: none !important 
+@media tabletRule and (orientation: landscape)
+    div.mastheadSlider div.innerContent > div
+        padding-right: 30vw
+    div.mastheadSlider.galleryMobile div.innerContent
+        height: 50vw
+
+
+
+
+
+
+
+// overlay slick slider content
+@media mtrigger
+    div.staticOverlayContent,
+    div.staticOverlayContent2
+        background-color: brand0 !important
+        position: relative
+    div.staticOverlayContent div.innerContent,
+    div.staticOverlayContent2 div.innerContent
+        min-height: 20vh
+        border-bottom:1px solid brand1
+    div.staticOverlayContent div.innerContent > div,
+    div.staticOverlayContent2 div.innerContent > div
+        padding: 10vw
+    @media tabletRule and (orientation: landscape)
+        div.staticOverlayContent div.innerContent > div,
+        div.staticOverlayContent2 div.innerContent > div
+            padding-top: 5vw
+
+    div.staticOverlayContent div.innerContent  section:last-child,
+    div.staticOverlayContent2 div.innerContent  section:last-child
+        display: none
+    div.staticOverlayContent div.innerContent  section:first-child > div,
+    div.staticOverlayContent2 div.innerContent  section:first-child > div
+        border-bottom: none
+        @media phoneRule
+            padding-bottom: 5vw
+
+    div.staticOverlayContent div.innerContent  section:first-child,
+    div.staticOverlayContent2 div.innerContent  section:first-child
+        margin-bottom:0
+        padding-top: 5vw
+
+    div.staticOverlayContent div.innerContent  section:first-child p,
+    div.staticOverlayContent2 div.innerContent  section:first-child p,
+    div.staticOverlayContent div.innerContent  section:first-child h6,
+    div.staticOverlayContent2 div.innerContent  section:first-child h6,
+    div.staticOverlayContent div.innerContent  section:first-child h1,
+    div.staticOverlayContent2 div.innerContent  section:first-child h1
+        margin:0
+
+
+    div.mastheadSlider.withOverlay div.innerContent section:first-child
+        margin-top:0
+        padding-top: 5vw
+
+    // add padding top to all mastheads to match above
