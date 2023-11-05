@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-****"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        //gtag('config', 'UA-****');
+    </script>
+
+
+    <title>LDX. [brand] [category].</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
+    <meta name="twitter:title" property="og:title" content="[brand] [model] [category]." />
+    <meta name="twitter:card" content="LDX">
+    <meta name="twitter:site" property="og:site_name" content="LDX. Forklifts, Warehouse Trucks, Compact Construction Equipment." />
+    <meta name="description" property="og:description" content="New Zealand's source for Linde &amp; Baoli Forklifts, Warehouse Trucks and Yanmar Compact Construction Equipment." />
+    <meta name="twitter:image" property="og:image" content="https://www.ldx.co.nz/images/icon.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:url" property="og:url" content="https://www.ldx.co.nz" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <!-- css -->
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/images/icomoon/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/form.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+<body class="landing">
+    <!-- mob nav -->
+    <div id="navHeader" class="navHeight m">
+        <a href="#" class="siteLogo"><img src="/images/logos/br-ldx-rev@4x.png"></a>
+        <div id="mblNavControl">
+            <a href="#" class="icon"><i class="icon-phone"></i></a>
+            <a href="#" id="navTrigger" class="icon"><i class="icon-menu"></i></a>
+            <a href="#" id="navClose" class="icon"><i class="icon-cross"></i></a>
+        </div>
+    </div>
+
+    <div class="mblnav m">
+        <div class="mblnavContainer">
+            <div class="navHeight">&nbsp;</div>
+                <div class="containMNav">
+                    <h6>Products</h6>
+                    <nav>
+                        <a href="/landing">Lift</a>
+                        <a href="/landing">Dig</a>
+                        <a href="/landing">Compact</a>
+                    </nav> 
+                </div>  
+                <div class="containMNav">
+                    <h6>Services</h6>
+                    <nav>
+                        <a href="#">Servicing</a>
+                        <a href="#">Sales &amp; Rental</a>
+                    </nav> 
+                </div>
+                <div class="containMNav">
+                    <h6>Company</h6>
+                    <nav>
+                        <a href="#">Our Story</a>
+                        <a href="#">Careers</a>
+                    </nav> 
+                </div> 
+                <div class="containMNav">
+                    <nav>      
+                        <a href="#">Contact Us</a>    
+                        <a href="#home" class="inpage">Home</a>
+                    </nav> 
+                    <br>
+                    <br>
+                    <a href="#" class="icon inline-icons"><i class="icon-facebook"></i></a>&nbsp;
+                    <a href="#" class="icon inline-icons"><i class="icon-youtube"></i></a>&nbsp;
+                    <a href="#" class="icon inline-icons"><i class="icon-linkedin"></i></a>
+                </div>  
+            </div>
+        <div class="navHeight">&nbsp;</div>  
+    </div> 
+    <div class="navHeight m">&nbsp;</div>
+    <!-- end mobile navigation -->
+
+    <!-- desktop nav -->
+    <header class="tempNavigation">
+        <div class="navSection siteLogo">
+            <a href="#" class="logo"><img src="/images/logos/br-ldx-tagline.png"></a>
+        </div>
+       
+        <div class="navSection">
+            <span class="pipe"></span>
+            <div>
+                <nav>
+                    <a href="/landing.html">Products</a>
+                    <a href="/servicing.html" >Servicing</a>
+                    <a href="/sales-rental.html">Sales &amp; Rental</a>
+                    <a href="/about.html">Our Story</a>
+                    <a href="/careers.html">Careers</a>
+                </nav>    
+            </div>
+        </div>
+
+        <div class="navSection spacer">&nbsp;</div>
+
+        <div class="navSection">
+            <span class="pipe"></span>
+            <div>
+                <h6>Contact</h6>
+                <nav>
+                    <a href="tel:0800539583" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">
+                        <i class="inline icon-ic-1clr-call hideSmallDesktop">
+                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                        </i>0800 539 583
+                    </a>
+                </nav>    
+            </div>
+        </div>
+        <div class="navSection">
+            <div>
+                <h6>NZ Online Support</h6>
+                <nav>
+                    <a href="javascript:void(0);" onclick="$('#chat-widget-container').show();LiveChatWidget.call('maximize');">
+                        <i class="inline icon-ic-1clr-support hideSmallDesktop"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+                        <span id="ChatStatusLoading" class="chatStatus offline animated infinite bounceInDown">Loading...</span>
+                        <span id="ChatStatusOnline" class="chatStatus online" style="display:none;">Chat Now</span>
+                        <span id="ChatStatusOffline" class="chatStatus offline" style="display:none;">Message</span>
+                    </a>
+                </nav>    
+            </div>
+        </div>
+        
+
+    </header>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    <div class="mastheadSlider">
+
+
+        <div class="contentWrapper darkMode picturefill-background"> <!--bg color and pictureFill -->
+            <div class="content" style="background-image: url(/images/misc/arrowoverlay2-slider.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"> <!--overlay darken etc -->
+                <div class="innerContent halfH"><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rS cC"><!--  content control -->
+
+                            <h1 class="brand1">Our terms<br>of trade</h1> 
+                            
+                    
+                        </section>
+                        <section class="rS cC d">
+                            &nbsp;    
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+    
+
+    
+
+    
+
+
+
+    <div class="contentWrapper bodyContent"> <!--bg color and pictureFill -->
+        <div class="content"> <!--overlay darken etc -->
+            <div class="innerContent"><!--height and LR partial padding overlay bg element - eg arrow -->
+                
+                <div><!-- flex and innermost LR padding -->
+                    <section class="largerSec"><!--  content control -->
+                        
+
+
+                            <strong>1. </strong><strong>DEFINITIONS</strong><br><p style="margin-left:40px">1.1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “LL” shall mean LDX Limited, or any agents or employees thereof.<br> 1.2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Customer” shall mean the Customer, any person acting on behalf of and with the apparent authority of the Customer, or any person purchasing products and services from LL.<br> 1.3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Goods” shall mean:<br> 1.3.1&nbsp;&nbsp;&nbsp;&nbsp; All Goods of the general description specified on the front of this agreement and supplied by LL to the Customer; and<br> 1.3.2&nbsp;&nbsp;&nbsp;&nbsp; All Goods supplied by LL to the Customer; and<br> 1.3.3&nbsp;&nbsp;&nbsp;&nbsp; All inventory of the Customer that is supplied by LL; and<br> 1.3.4&nbsp;&nbsp;&nbsp;&nbsp; All Goods supplied by LL and further identified in any invoice issued by LL to the Customer, which invoices are deemed to be incorporated into and form part of this agreement; and<br> 1.3.5&nbsp;&nbsp;&nbsp;&nbsp; All Goods that are marked as having been supplied by LL or that are stored by the Customer in a manner that enables them to be identified as having been supplied by LL; and<br> 1.3.6&nbsp;&nbsp;&nbsp;&nbsp; All of the Customer's present and after-acquired Goods that LL has performed work on or to or in which goods or materials supplied or financed by LL have been attached or incorporated.<br> 1.3.7&nbsp;&nbsp;&nbsp;&nbsp; The above descriptions may overlap but each is independent of and does not limit the others.<br> 1.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Goods” shall also mean all goods, products, services and advice provided by LL to the Customer and shall include without limitation the importation, distribution, exportation and repair and overhaul of diesel engines and transmissions, the supply of parts, technical advice, and all charges for labour, hire charges, insurance charges, freight or any fee or charge associated with the supply of Goods by LL to the Customer.<br> 1.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Price” shall mean the cost of the Goods as agreed between LL and the Customer and includes all disbursements e.g. charges LL pays to others on the Customer's behalf subject to clause 4 of these terms.</p><br> <strong>2. </strong><strong>ACCEPTANCE</strong><br><p style="margin-left:40px">2.1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any instructions received by LL from the Customer for the supply of Goods shall constitute a binding contract and acceptance of the terms and conditions contained herein.</p><br> <strong>3. </strong><strong>COLLECTION &amp; USE OF INFORMATION</strong><br><p style="margin-left:40px">3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Customer authorises LL to collect, retain and use any information about the Customer, for the purpose of assessing the Customer's credit worthiness, enforcing any rights under this contract, or marketing any Goods provided by LL to any other party.<br> 3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Customer authorises LL to disclose any information obtained to any person for the purposes set out in clause 3.1.<br> 3.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Where the Customer is a natural person the authorities under clauses 3.1 and 3.2 are authorities or consents for the purposes of the Privacy Act 1993.</p><br> <strong>4. </strong><strong>PRICE</strong><br><p style="margin-left:40px">4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Where no price is stated in writing or agreed to orally the Goods shall be deemed to be sold at the current amount as such Goods are sold by LL at the time of the contract.<br> 4.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The price may be increased by the amount of any reasonable increase in the cost of supply of the Goods that is beyond the control of LL between the date of the contract and delivery of the Goods.</p><br> <strong>5. </strong><strong>PAYMENT</strong><br><p style="margin-left:40px">5.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unless otherwise agreed in writing payment for Goods shall be made in full on completion of work or before the 20<sup>th</sup> day of the month following the date of the invoice (“the due date”).<br> 5.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Interest may be charged on any amount owing after the due date at the rate of 2% per month or part month.<br> 5.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any expenses, disbursements and legal costs incurred by LL in the enforcement of any rights contained in this contract shall be paid by the Customer, including any solicitor's fees or debt collection agency fees.<br> 5.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Receipt of a cheque, bill of exchange, or other negotiable instrument shall not constitute payment until such negotiable instrument is paid in full.<br> 5.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A deposit may be required.<br> 5.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Progress payments may apply to large contracts.</p><br> <strong>6. </strong><strong>QUOTATION</strong><br><p style="margin-left:40px">6.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Where a quotation is given by LL for Goods:<br> 6.1.1&nbsp;&nbsp;&nbsp;&nbsp; Unless otherwise agreed the quotation shall be valid for thirty (30) days from the date of issue; and<br> 6.1.2&nbsp;&nbsp;&nbsp;&nbsp; The quotation shall be exclusive of GST unless specifically stated to the contrary;<br> 6.1.3&nbsp;&nbsp;&nbsp;&nbsp; LL reserves the right to alter the quotation because of circumstances beyond its control.<br> 6.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Where Goods are required in addition to the quotation the Customer agrees to pay for the additional cost of such Goods.</p><br> <strong>7. </strong><strong>RISK</strong><br><p style="margin-left:40px">7.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Goods remain at LL's risk until delivery to the Customer.<br> 7.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Delivery of Goods shall be deemed complete when LL gives possession of the Goods directly to the Customer or possession of the Goods is given to a carrier, courier, or other bailee for purposes of transmission to the Customer.<br> 7.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All property of the Customer in the possession of LL is stored and worked on solely at the Customer's risk.&nbsp; The Customer is responsible for keeping all goods insured at all times.</p><br> <strong>8. </strong><strong>TILLE &amp; SECURITY (PERSONAL PROPERTY SECURITIES ACT 1999)</strong><br><p style="margin-left:40px">8.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Title in any Goods supplied by LL does not pass to the Customer until the Customer has paid in full for all Goods provided by LL and of all other sums due to LL by the Customer on any account whatsoever.&nbsp; Until all sums due to LL by the Customer have been paid in full, LL has a security interest in all Goods.<br> 8.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If the Goods are attached, fixed, or incorporated into any property of the Customer, by way of any manufacturing or assembly process by the Customer or any third party, title in the Goods shall remain with LL until the Customer has made payment for all Goods, and where those Goods are mixed with other property so as to be part of or a constituent of any new Goods, title to these new Goods shall deemed to be assigned to LL as security for the full satisfaction by the Customer of the full amount owing between LL and the Customer.<br> 8.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Customer gives irrevocable authority to LL to enter any premises occupied by the Customer or on which Goods are situated at any reasonable time after default by the Customer or before default if LL believes a default is likely and to remove and repossess any Goods and any other property to which Goods are attached or in which Goods are incorporated.&nbsp; LL shall not be liable for any costs, damages, expenses or losses incurred by the Customer or any third party as a result of this action, nor liable in contract or in tort or otherwise in any way whatsoever unless by statute such liability cannot be excluded.&nbsp; LL may either resell any repossessed Goods and credit the Customer's account with the net proceeds of sale (after deduction of all repossession, storage, selling and other costs) or may retain any repossessed Goods and credit the Customer's account with the invoice value thereof less such sum as LL reasonably determines on account of wear and tear, depreciation, obsolescence, loss or profit and costs.<br> 8.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Where Goods are retained by LL pursuant to clause 8.3 the Customer waives the right to receive notice under s.120 of the Personal Property Securities Act 1999 (“PPSA”) and to object under s.121 of the PPSA.<br> 8.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The following shall constitute defaults by the Customer:<br> 8.5.1&nbsp;&nbsp;&nbsp;&nbsp; Non-payment of any sum by the due date.<br> 8.5.2&nbsp;&nbsp;&nbsp;&nbsp; The Customer intimates that it will not pay any sum by the due date.<br> 8.5.3&nbsp;&nbsp;&nbsp;&nbsp; Any Goods are seized by any other creditor of the Customer or any other creditor intimates that it intends to seize Goods.<br> 8.5.4&nbsp;&nbsp;&nbsp;&nbsp; Any Goods in the possession of the Customer are materially damaged while any sum due from the Customer to LL remains unpaid.<br> 8.5.5&nbsp;&nbsp;&nbsp;&nbsp; The Customer is bankrupted or put into liquidation or a receiver is appointed to any of the Customer's assets or a landlord distrains against any of the Customer's assets.<br> 8.5.6&nbsp;&nbsp;&nbsp;&nbsp; A Court judgment is entered against the Customer and remains unsatisfied for seven (7) days.<br> 8.5.7&nbsp;&nbsp;&nbsp;&nbsp; Any material adverse change in the financial position of the Customer.</p><br> <strong>9. </strong><strong>SECURITY INTEREST FOR SERVICE PROVIDERS</strong><br>
+                            <p style="margin-left:40px">9.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Customer gives LL a security interest in all of the Customer's present and after-acquired property that LL has performed services on or to or in which goods or materials supplied or financed by LL have been attached or incorporated.</p><br> <strong>10. </strong><strong>PAYMENT ALLOCATION</strong><br><p style="margin-left:40px">10.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LL may in its discretion allocate any payment received from the Customer towards any invoice that LL determines and may do so at the time of receipt or at any time afterwards and on default by the Customer may reallocate any payments previously received and allocated.&nbsp; In the absence of any payment allocation by LL, payment shall be deemed to be allocated in such manner as preserves the maximum value of LL's purchase money security interest in the Goods.</p><br> <strong>11. </strong><strong>GENERAL LIEN</strong><br><p style="margin-left:40px">11.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Customer agrees that LL may exercise a general lien against any Goods or property belonging to the Customer that is in the possession of LL for all sums outstanding under this contract and any other contract to which the Customer and LL are parties.<br> 11.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If the lien is not satisfied within seven (7) days of the due date LL may, having given notice of the lien at its option either:<br> 11.2.1&nbsp;&nbsp; Remove such Goods and store them in such a place and in such a manner as LL shall think fit and proper and at the risk and expense of the Customer; or<br> 11.2.2&nbsp;&nbsp; Sell such Goods or part thereof upon such terms as it shall think fit and apply the proceeds in or towards discharge of the lien and costs of sale without being liable to any person for damage caused.</p><br> <strong>12. </strong><strong>DISPUTES &amp; RETURN OF GOODS</strong><br><p style="margin-left:40px">12.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LL reserves the right to decline any Goods returned after seven (7) days from the date of delivery.<br> 12.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No Goods will be considered for return without prior approval of LL.&nbsp; Any returned Goods must be unused, undamaged and in original condition and packaging.<br> 12.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A 10% handling fee may be deducted after seven (7) days.<br> 12.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Procured or indented items are not returnable for credit</p><br> <strong>13. MANUFACTURER'S WARRANTIES</strong><br><p style="margin-left:40px">13.1 &nbsp;&nbsp;&nbsp; Unless expressly agreed otherwise in writing between LL and the Customer LL gives no warranty on any Goods beyond any offered &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by the manufacturer of the Parts/Goods.&nbsp; The judgment of the manufacturer as to the validity of any claim is final and binds both the Customer and LL.<br> 13.2&nbsp;&nbsp;&nbsp;&nbsp; Such manufacturers warranties are in place of any implied term as to quality, fitness or performance and any other conditions, &nbsp;&nbsp;warranties, undertakings or terms whether expressed or implied, statutory or otherwise, inconsistent with the provisions of such warranties are to the extent permitted by law hereby expressly excluded.</p><br> <strong>14. EXCLUSION OF WARRANTIES &amp; LIMITATION OF LIABILITY</strong><br><p style="margin-left:40px">14.1&nbsp;&nbsp;&nbsp;&nbsp; All terms, warranties, conditions or obligations otherwise implied in this agreement by statute which can be lawfully excluded are hereby excluded (including, but not limited to, Sale of Goods Act 1908).<br> 14.2&nbsp;&nbsp;&nbsp;&nbsp; Except as otherwise implied by law and not able to be excluded pursuant to Clause 13.1 above, LL is not liable for:<br> 14.2.1&nbsp;&nbsp; Any loss or damage (including consequential loss), arising from the supply or non-supply of Goods by LL to the Customer;<br> 14.2.2&nbsp;&nbsp; The Customer shall indemnify LL against all claims and loss of any kind whatsoever however caused or arising, brought by any person in connection with any matter, act, omission, or error by LL its agents or employees in connection with the Goods; and<br> 14.2.3&nbsp;&nbsp; The Customer has entered any contract with LL in reliance on the Customer's own skill and judgment and has not been induced to do so by any representation made by LL; and<br> 14.2.4&nbsp;&nbsp; LL is not liable to the Customer for any loss or damage arising directly or indirectly from any representation made by LL<br> 14.3&nbsp;&nbsp;&nbsp;&nbsp; In the event of any liability by LL that liability shall be limited to the price of the goods invoiced by LL to the Customer (GST exclusive) in respect of which such liability arises.</p><br> <strong>15. </strong><strong>CONSUMER GUARANTEES ACT</strong><br><p style="margin-left:40px">15.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The guarantees contained in the Consumer Guarantees Act 1993 are excluded where the Customer acquires Goods from LL for the purposes of a business in terms of s.2 and s.43 of that Act.</p><br> <strong>16. </strong><strong>MISCELLANEOUS</strong><br><p style="margin-left:40px">16.1&nbsp;&nbsp;&nbsp;&nbsp; LL shall not be liable for delay or failure to perform its obligations if the cause of the delay or failure is beyond its control.<br> 16.2&nbsp;&nbsp;&nbsp;&nbsp; Failure by LL to enforce any of the terms and conditions contained in this contract shall not be deemed to be a waiver of any of the rights or obligations LL has under this contract.<br> 16.3&nbsp;&nbsp;&nbsp;&nbsp; If any provision of this contract shall be invalid, void or illegal or unenforceable the validity existence, legality and enforceability of the remaining provisions shall not be affected, prejudiced or impaired.<br> 16.4&nbsp;&nbsp;&nbsp;&nbsp; In the event that the Customer is an accredited franchisee, these terms and conditions of trade shall take preference over the franchise agreement.<br> 16.5&nbsp;&nbsp;&nbsp;&nbsp; The Law of New Zealand applies to this contract.</p><br> <strong>17. PERSONAL GUARANTEE OF SIGNATORY TO CREDIT APPLICATION FORM</strong><br><p style="margin-left:40px">17.1&nbsp;&nbsp;&nbsp;&nbsp; If the Customer is a company or is a trust, the director/s or trustee/s signing this agreement, in consideration for LL agreeing to supply goods and grant credit to the Customer at the Customer's request, also signs this contract in that person's personal capacity and hereby unconditionally guarantees to LL the due and punctual payment by the Customer of all monies payable in respect of Goods as and when the same shall become due and payable by the trader.<br> 17.2&nbsp;&nbsp;&nbsp;&nbsp; The signatory hereby accepts joint and several liability with the Customer to LL for any and all funds now or hereafter owed by the Customer to LL and indemnifies LL against non-payment by the Customer.&nbsp;<br> 17.3&nbsp;&nbsp;&nbsp;&nbsp; This personal guarantee is a continuing guarantee and is not discharged by any settlement on account.&nbsp;<br> 17.4&nbsp;&nbsp;&nbsp;&nbsp; Liability under this personal guarantee shall not be discharged, abrogated, prejudiced or effected by:<br> 17.4.1&nbsp;&nbsp; The granting of time, credit or other indulgence or other concession to the Customer; or<br> 17.4.2&nbsp;&nbsp; Any alteration, modification, variation or addition to any agreement in respect of the supply of the goods; or<br> 17.4.3&nbsp;&nbsp; Any other act, omission or event which but for this provision might operate to discharge, impair or otherwise effect the signatory's obligations under this personal guarantee or any of the rights, powers or remedies conferred upon LL by this guarantee or by law.</p>
+                
+                
+                        </section>
+                        
+                
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    <footer>
+       
+        
+        <div>
+            <h6>Products</h6>
+            <nav>
+                <a href="/catg.html">IC Engine Forklifts</a>
+                <a href="/catg.html">Electric Forklifts</a>
+                <a href="/catg.html">Pallet Trucks</a>
+                <a href="/catg.html">Tow Tractors</a>
+                <a href="/catg.html">Reach Trucks</a>
+                <a href="/catg.html">Narrow Aisle Trucks</a>
+                <a href="/catg.html">Pallet Stackers</a>
+                <a href="/catg.html">Order Pickers</a>
+<a href="/catg.html">Automation</a>
+            </nav> 
+            
+            <br>
+
+                <br>
+                <nav class="logoStrip left">
+                    <a href="/catg-brand.html"><img src="/images/logos/br-linde.svg" class="brandLogo"></a>
+                    <a href="/catg-brand.html"><img src="/images/logos/br-baoli-rev.svg" class="brandLogo"></a>
+                                   </nav> 
+        </div>
+          
+        <div>
+                <h6>Services</h6>
+                <nav>
+                    <a href="/servicing.html">Servicing</a>
+                    <a href="/sales-rental.html">Sales &amp; Rental</a>
+                </nav>  
+                <h6>Company</h6>
+                <nav>
+                    <a href="/about.html">Our Story</a>
+                    <a href="/careers.html">Careers</a>
+                    <a href="/contact.html">Contact Us</a>
+                </nav> 
+                <nav class="list">
+                    <a href="/copyright.html">Copyright Notice</a>
+                    <a href="/terms.html">Terms of Trade</a>
+                    <a href="/privacy.html">Privacy Policy</a>
+                </nav>    
+        </div>
+
+        <div>
+                <div class="navSection siteLogo d">
+                    <a href="#" class="logo"><img src="/images/logos/br-ldx-rev@4x.png"></a>
+                </div>
+
+                <hr class="d">
+
+                <nav>
+                    <a href="tel:0800539583" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">
+                        New Zealand Freephone:<br>
+                        <i class="inline icon-ic-1clr-call hideSmallDesktop">
+                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                        </i>0800 539 583
+                    </a>
+                </nav> 
+                
+                <hr>
+                <br>
+
+                <nav>
+                    <a href="#" class="icon inline-icons"><i class="icon-facebook"></i></a>
+                    <a href="#" class="icon inline-icons"><i class="icon-youtube"></i></a>
+                    <a href="#" class="icon inline-icons"><i class="icon-linkedin"></i></a>
+                </nav>
+               
+                <p class="small">&copy; Copyright 2023 LDX (NZ) Ltd.</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/slick/slick.js"></script>
+    <script type="text/javascript" src="/js/jquery.waypoints.min.js" ></script>
+    <script type="text/javascript" src="/js/inview.js" ></script>
+    <script type="text/javascript" src="/js/picturefill-background.js"></script>
+    <script type="text/javascript" src="/js/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.localScroll-1.4.0/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="/js/easing.js"></script>
+    <script type="text/javascript" src="/js/site.js"></script>
+    <script type="text/javascript" src="/js/fslightbox.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.mastheadSlider').slick({
+                dots:true,
+                accessibility:true,
+                autoplay:true,
+                autoplaySpeed:6000,
+                fade:true,
+                pauseOnHover:true,
+                useTransform:false,
+                easing:'easeOutQuad',
+                speed:1000
+            }).slick('slickPause');
+
+            var initialDelay = 12000;
+
+            setTimeout(function() {
+                $('.mastheadSlider').slick('slickPlay')
+            },initialDelay);
+
+
+        });
+    </script>
+    
+</body>
+</html>

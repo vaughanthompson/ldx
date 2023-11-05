@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-****"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        //gtag('config', 'UA-****');
+    </script>
+
+
+    <title>LDX. [brand] [category].</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
+    <meta name="twitter:title" property="og:title" content="[brand] [model] [category]." />
+    <meta name="twitter:card" content="LDX">
+    <meta name="twitter:site" property="og:site_name" content="LDX. Forklifts, Warehouse Trucks, Compact Construction Equipment." />
+    <meta name="description" property="og:description" content="New Zealand's source for Linde &amp; Baoli Forklifts, Warehouse Trucks and Yanmar Compact Construction Equipment." />
+    <meta name="twitter:image" property="og:image" content="https://www.ldx.co.nz/images/icon.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:url" property="og:url" content="https://www.ldx.co.nz" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <!-- css -->
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/images/icomoon/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/form.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+<body class="landing">
+    <!-- mob nav -->
+    <div id="navHeader" class="navHeight m">
+        <a href="#" class="siteLogo"><img src="/images/logos/br-ldx-rev@4x.png"></a>
+        <div id="mblNavControl">
+            <a href="#" class="icon"><i class="icon-phone"></i></a>
+            <a href="#" id="navTrigger" class="icon"><i class="icon-menu"></i></a>
+            <a href="#" id="navClose" class="icon"><i class="icon-cross"></i></a>
+        </div>
+    </div>
+
+    <div class="mblnav m">
+        <div class="mblnavContainer">
+            <div class="navHeight">&nbsp;</div>
+                <div class="containMNav">
+                    <h6>Products</h6>
+                    <nav>
+                        <a href="/landing">Lift</a>
+                        <a href="/landing">Dig</a>
+                        <a href="/landing">Compact</a>
+                    </nav> 
+                </div>  
+                <div class="containMNav">
+                    <h6>Services</h6>
+                    <nav>
+                        <a href="#">Servicing</a>
+                        <a href="#">Sales &amp; Rental</a>
+                    </nav> 
+                </div>
+                <div class="containMNav">
+                    <h6>Company</h6>
+                    <nav>
+                        <a href="#">Our Story</a>
+                        <a href="#">Careers</a>
+                    </nav> 
+                </div> 
+                <div class="containMNav">
+                    <nav>      
+                        <a href="#">Contact Us</a>    
+                        <a href="#home" class="inpage">Home</a>
+                    </nav> 
+                    <br>
+                    <br>
+                    <a href="#" class="icon inline-icons"><i class="icon-facebook"></i></a>&nbsp;
+                    <a href="#" class="icon inline-icons"><i class="icon-youtube"></i></a>&nbsp;
+                    <a href="#" class="icon inline-icons"><i class="icon-linkedin"></i></a>
+                </div>  
+            </div>
+        <div class="navHeight">&nbsp;</div>  
+    </div> 
+    <div class="navHeight m">&nbsp;</div>
+    <!-- end mobile navigation -->
+
+    <!-- desktop nav -->
+    <header class="tempNavigation">
+        <div class="navSection siteLogo">
+            <a href="#" class="logo"><img src="/images/logos/br-ldx-tagline.png"></a>
+        </div>
+       
+        <div class="navSection">
+            <span class="pipe"></span>
+            <div>
+                <nav>
+                    <a href="/landing.html">Products</a>
+                    <a href="/servicing.html" >Servicing</a>
+                    <a href="/sales-rental.html">Sales &amp; Rental</a>
+                    <a href="/about.html">Our Story</a>
+                    <a href="/careers.html">Careers</a>
+                </nav>    
+            </div>
+        </div>
+
+        <div class="navSection spacer">&nbsp;</div>
+
+        <div class="navSection">
+            <span class="pipe"></span>
+            <div>
+                <h6>Contact</h6>
+                <nav>
+                    <a href="tel:0800539583" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">
+                        <i class="inline icon-ic-1clr-call hideSmallDesktop">
+                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                        </i>0800 539 583
+                    </a>
+                </nav>    
+            </div>
+        </div>
+        <div class="navSection">
+            <div>
+                <h6>NZ Online Support</h6>
+                <nav>
+                    <a href="javascript:void(0);" onclick="$('#chat-widget-container').show();LiveChatWidget.call('maximize');">
+                        <i class="inline icon-ic-1clr-support hideSmallDesktop"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+                        <span id="ChatStatusLoading" class="chatStatus offline animated infinite bounceInDown">Loading...</span>
+                        <span id="ChatStatusOnline" class="chatStatus online" style="display:none;">Chat Now</span>
+                        <span id="ChatStatusOffline" class="chatStatus offline" style="display:none;">Message</span>
+                    </a>
+                </nav>    
+            </div>
+        </div>
+        
+
+    </header>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    <div class="mastheadSlider">
+
+
+        <div class="contentWrapper darkMode picturefill-background"> <!--bg color and pictureFill -->
+            <div class="content" style="background-image: url(/images/misc/arrowoverlay2-slider.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"> <!--overlay darken etc -->
+                <div class="innerContent halfH"><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rS cC"><!--  content control -->
+
+                            <h1 class="brand1">Privacy<br>Policy</h1> 
+                            
+                    
+                        </section>
+                        <section class="rS cC d">
+                            &nbsp;    
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+    
+
+    
+
+    
+
+
+
+    <div class="contentWrapper bodyContent"> <!--bg color and pictureFill -->
+        <div class="content"> <!--overlay darken etc -->
+            <div class="innerContent"><!--height and LR partial padding overlay bg element - eg arrow -->
+                
+                <div><!-- flex and innermost LR padding -->
+                    <section class="largerSec"><!--  content control -->
+                        
+
+
+                            <h3>The information we collect</h3><p>We are committed to protecting your privacy. We do not collect personally identifiable information about you when you visit this site, unless you choose to give it to us by completing an online form or registering for our newsletter. If you do choose to give us your personal details (such as your name, email address or telephone number) our staff will be able to access these details for the purposes for which you supplied it and/or so that we can better understand you and your interest in our services.</p><p>While we do not collect personally identifiable information about you if you only visit our website, we do analyse non-identifiable web traffic data in order to help improve our website. This information does not identify you personally and is not linked to any personally identifiable information that you may have provided. For more information about our analysis of non-identifiable information please refer to the Google Analytics section below.</p><br><h3>Who we share this information with</h3><p>We do not and will never disclose any personal information you provide to us to any outside parties without your permission, unless it is necessary for us to do so in order to carry out our service to you or otherwise as required by law.</p><br><h3>Cookies</h3><p>Cookies are small files that a website can send to your computer which can be stored on your hard drive (persistent cookies) or in memory (session cookies). Cookies store information about your preferences on a particular website and can remain on your computer once you have exited from that website.</p><br><h3>Google analytics</h3><p>We use Google Analytics software to help measure traffic patterns to, from, and within our website. Google Analytics anonymously aggregates website statistics such as number of page views, the number of visitors, time spent on our site, browser types, and common entry and exit points into and from the website.</p><p>All information is aggregated by Google Analytics and provided to us to help us better understand usage of our website - no individual visitors are identified. Google Analytics is a leader in the Internet industry and their systems have been adopted as an accepted website traffic measurement standard amongst major Internet sites. You can learn more about Google Analytics by visiting the following links. <br><a href="http://www.google.com/analytics/" target="_blank">http://www.google.com/analytics/</a> <br><a href="http://www.google.com/intl/en_ALL/privacypolicy.html">http://www.google.com/intl/en_ALL/privacypolicy.html</a></p><br><h3>Online advertising we use</h3><p>We use third-party vendors, like Google, to show you ads on sites across the Internet. Specifically we use Google AdWords Remarketing to display relevant ads tailored to you based on what parts of our website you have viewed. We do this by placing a cookie on your machine. This cookie does not in any way identify you or give access to your computer - it is simply used to say 'this person visited this page, so therefore show them ads relating to that page'. Google AdWords Remarketing allows us to tailor our marketing to better suit your needs and only display ads that are relevant to you.</p><br><h3>How to opt out of remarketing</h3><p>If you do not wish to participate in our Google AdWords Remarketing, you can opt out by visiting Google's Ads Preferences Manager. You can also opt out of any third-party vendor's use of cookies by visiting the Network Advertising Initiative opt-out page.</p><br><h3>Links to other websites</h3><p>This web site contains links to other sites. Please be aware that we are not responsible for the accuracy or the privacy practices of such sites. This privacy policy applies solely to information collected on this website.</p><br><h3>Newsletters and mailing lists</h3><p>If you currently subscribe to our newsletter and you no longer wish to receive it, you may unsubscribe by contacting us using the contact details at the bottom of this page or by clicking on the 'Unsubscribe' link at the top of our newsletter.</p><br><h3>Accessing and updating your personal information</h3><p>We are happy to provide you with access to any personal information that we hold about you. If it is incorrect, please ask us to correct it by contacting us at the details provided at the bottom of this page.</p><p>If at any time you would like to opt out of receiving any correspondence from us, or would like your personally identifiable information removed from our database, please contact us using the details at the bottom of this page and we will honour your request.</p><br><h3>How to contact us</h3><p>If you would like to know more about how we collect, record, store and use any personally identifiable information you provide to us, please get in touch using the details below.</p><p><strong>Email:</strong> <a href="mailto:info@ldxltd.co.nz">info@ldxltd.co.nz</a><br> <strong>Phone:</strong> <a href="tel:0800539583" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">+64 0800 539 583</a></p>
+                
+                
+                
+
+                        
+                
+                    </section>
+
+
+
+
+
+                    <section class="vertBorder d">
+                        &nbsp;
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    <footer>
+       
+        
+        <div>
+            <h6>Products</h6>
+            <nav>
+                <a href="/catg.html">IC Engine Forklifts</a>
+                <a href="/catg.html">Electric Forklifts</a>
+                <a href="/catg.html">Pallet Trucks</a>
+                <a href="/catg.html">Tow Tractors</a>
+                <a href="/catg.html">Reach Trucks</a>
+                <a href="/catg.html">Narrow Aisle Trucks</a>
+                <a href="/catg.html">Pallet Stackers</a>
+                <a href="/catg.html">Order Pickers</a>
+<a href="/catg.html">Automation</a>
+            </nav> 
+            
+            <br>
+
+                <br>
+                <nav class="logoStrip left">
+                    <a href="/catg-brand.html"><img src="/images/logos/br-linde.svg" class="brandLogo"></a>
+                    <a href="/catg-brand.html"><img src="/images/logos/br-baoli-rev.svg" class="brandLogo"></a>
+                                   </nav> 
+        </div>
+          
+        <div>
+                <h6>Services</h6>
+                <nav>
+                    <a href="/servicing.html">Servicing</a>
+                    <a href="/sales-rental.html">Sales &amp; Rental</a>
+                </nav>  
+                <h6>Company</h6>
+                <nav>
+                    <a href="/about.html">Our Story</a>
+                    <a href="/careers.html">Careers</a>
+                    <a href="/contact.html">Contact Us</a>
+                </nav> 
+                <nav class="list">
+                    <a href="/copyright.html">Copyright Notice</a>
+                    <a href="/terms.html">Terms of Trade</a>
+                    <a href="/privacy.html">Privacy Policy</a>
+                </nav>    
+        </div>
+
+        <div>
+                <div class="navSection siteLogo d">
+                    <a href="#" class="logo"><img src="/images/logos/br-ldx-rev@4x.png"></a>
+                </div>
+
+                <hr class="d">
+
+                <nav>
+                    <a href="tel:0800539583" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">
+                        New Zealand Freephone:<br>
+                        <i class="inline icon-ic-1clr-call hideSmallDesktop">
+                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                        </i>0800 539 583
+                    </a>
+                </nav> 
+                
+                <hr>
+                <br>
+
+                <nav>
+                    <a href="#" class="icon inline-icons"><i class="icon-facebook"></i></a>
+                    <a href="#" class="icon inline-icons"><i class="icon-youtube"></i></a>
+                    <a href="#" class="icon inline-icons"><i class="icon-linkedin"></i></a>
+                </nav>
+               
+                <p class="small">&copy; Copyright 2023 LDX (NZ) Ltd.</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/slick/slick.js"></script>
+    <script type="text/javascript" src="/js/jquery.waypoints.min.js" ></script>
+    <script type="text/javascript" src="/js/inview.js" ></script>
+    <script type="text/javascript" src="/js/picturefill-background.js"></script>
+    <script type="text/javascript" src="/js/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.localScroll-1.4.0/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="/js/easing.js"></script>
+    <script type="text/javascript" src="/js/site.js"></script>
+    <script type="text/javascript" src="/js/fslightbox.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.mastheadSlider').slick({
+                dots:true,
+                accessibility:true,
+                autoplay:true,
+                autoplaySpeed:6000,
+                fade:true,
+                pauseOnHover:true,
+                useTransform:false,
+                easing:'easeOutQuad',
+                speed:1000
+            }).slick('slickPause');
+
+            var initialDelay = 12000;
+
+            setTimeout(function() {
+                $('.mastheadSlider').slick('slickPlay')
+            },initialDelay);
+
+
+        });
+    </script>
+    
+</body>
+</html>

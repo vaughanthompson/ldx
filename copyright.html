@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-****"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        //gtag('config', 'UA-****');
+    </script>
+
+
+    <title>LDX. [brand] [category].</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
+    <meta name="twitter:title" property="og:title" content="[brand] [model] [category]." />
+    <meta name="twitter:card" content="LDX">
+    <meta name="twitter:site" property="og:site_name" content="LDX. Forklifts, Warehouse Trucks, Compact Construction Equipment." />
+    <meta name="description" property="og:description" content="New Zealand's source for Linde &amp; Baoli Forklifts, Warehouse Trucks and Yanmar Compact Construction Equipment." />
+    <meta name="twitter:image" property="og:image" content="https://www.ldx.co.nz/images/icon.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:url" property="og:url" content="https://www.ldx.co.nz" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <!-- css -->
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/images/icomoon/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/form.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+<body class="landing">
+    <!-- mob nav -->
+    <div id="navHeader" class="navHeight m">
+        <a href="#" class="siteLogo"><img src="/images/logos/br-ldx-rev@4x.png"></a>
+        <div id="mblNavControl">
+            <a href="#" class="icon"><i class="icon-phone"></i></a>
+            <a href="#" id="navTrigger" class="icon"><i class="icon-menu"></i></a>
+            <a href="#" id="navClose" class="icon"><i class="icon-cross"></i></a>
+        </div>
+    </div>
+
+    <div class="mblnav m">
+        <div class="mblnavContainer">
+            <div class="navHeight">&nbsp;</div>
+                <div class="containMNav">
+                    <h6>Products</h6>
+                    <nav>
+                        <a href="/landing">Lift</a>
+                        <a href="/landing">Dig</a>
+                        <a href="/landing">Compact</a>
+                    </nav> 
+                </div>  
+                <div class="containMNav">
+                    <h6>Services</h6>
+                    <nav>
+                        <a href="#">Servicing</a>
+                        <a href="#">Sales &amp; Rental</a>
+                    </nav> 
+                </div>
+                <div class="containMNav">
+                    <h6>Company</h6>
+                    <nav>
+                        <a href="#">Our Story</a>
+                        <a href="#">Careers</a>
+                    </nav> 
+                </div> 
+                <div class="containMNav">
+                    <nav>      
+                        <a href="#">Contact Us</a>    
+                        <a href="#home" class="inpage">Home</a>
+                    </nav> 
+                    <br>
+                    <br>
+                    <a href="#" class="icon inline-icons"><i class="icon-facebook"></i></a>&nbsp;
+                    <a href="#" class="icon inline-icons"><i class="icon-youtube"></i></a>&nbsp;
+                    <a href="#" class="icon inline-icons"><i class="icon-linkedin"></i></a>
+                </div>  
+            </div>
+        <div class="navHeight">&nbsp;</div>  
+    </div> 
+    <div class="navHeight m">&nbsp;</div>
+    <!-- end mobile navigation -->
+
+    <!-- desktop nav -->
+    <header class="tempNavigation">
+        <div class="navSection siteLogo">
+            <a href="#" class="logo"><img src="/images/logos/br-ldx-tagline.png"></a>
+        </div>
+       
+        <div class="navSection">
+            <span class="pipe"></span>
+            <div>
+                <nav>
+                    <a href="/landing.html">Products</a>
+                    <a href="/servicing.html" >Servicing</a>
+                    <a href="/sales-rental.html">Sales &amp; Rental</a>
+                    <a href="/about.html">Our Story</a>
+                    <a href="/careers.html">Careers</a>
+                </nav>    
+            </div>
+        </div>
+
+        <div class="navSection spacer">&nbsp;</div>
+
+        <div class="navSection">
+            <span class="pipe"></span>
+            <div>
+                <h6>Contact</h6>
+                <nav>
+                    <a href="tel:0800539583" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">
+                        <i class="inline icon-ic-1clr-call hideSmallDesktop">
+                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                        </i>0800 539 583
+                    </a>
+                </nav>    
+            </div>
+        </div>
+        <div class="navSection">
+            <div>
+                <h6>NZ Online Support</h6>
+                <nav>
+                    <a href="javascript:void(0);" onclick="$('#chat-widget-container').show();LiveChatWidget.call('maximize');">
+                        <i class="inline icon-ic-1clr-support hideSmallDesktop"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+                        <span id="ChatStatusLoading" class="chatStatus offline animated infinite bounceInDown">Loading...</span>
+                        <span id="ChatStatusOnline" class="chatStatus online" style="display:none;">Chat Now</span>
+                        <span id="ChatStatusOffline" class="chatStatus offline" style="display:none;">Message</span>
+                    </a>
+                </nav>    
+            </div>
+        </div>
+        
+
+    </header>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    <div class="mastheadSlider">
+
+
+        <div class="contentWrapper darkMode picturefill-background"> <!--bg color and pictureFill -->
+            <div class="content" style="background-image: url(/images/misc/arrowoverlay2-slider.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"> <!--overlay darken etc -->
+                <div class="innerContent halfH"><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rS cC"><!--  content control -->
+
+                            <h1 class="brand1">Copyright<br>Notice</h1> 
+                            
+                    
+                        </section>
+                        <section class="rS cC d">
+                            &nbsp;    
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+    
+
+    
+
+    
+
+
+
+    <div class="contentWrapper bodyContent"> <!--bg color and pictureFill -->
+        <div class="content"> <!--overlay darken etc -->
+            <div class="innerContent"><!--height and LR partial padding overlay bg element - eg arrow -->
+                
+                <div><!-- flex and innermost LR padding -->
+                    <section class="largerSec"><!--  content control -->
+                        
+                        <p>All aspects of this web site - content, design, text, graphics, software, underlying source code and all other aspects - are copyright of LDX Ltd and its respective suppliers, affiliates or content and technology providers.</p>
+                        <p>Information on the web site, including but not limited to, text, images and sound, may not, except for strictly private purposes or where otherwise indicated, be reproduced, transferred, distributed or stored without prior written permission by LDX Ltd. Modifications to the contents of the web site are expressly prohibited.</p>
+                        <p>Some parts of the web site contain images and content that are subject to the copyright rights of their providers.</p>
+                        
+                        <br>
+
+                        <h3>Trademarks</h3>
+                        <p>LDX Ltd corporate logo is subject to the trademark rights of LDX Ltd and may not be used without permission.</p>
+
+                        <br>
+
+                        <h3>Legal notices</h3>
+                        <p>The information on this web site is provided "as is" by LDX Ltd. In no event will LDX Ltd be liable to any party or any direct, indirect, special or other consequential damages for any use of this web site, or on any other hyperlinked web site.</p>
+                        <p>LDX makes no warranties and/or representations whatsoever about any other web site, which you may access through this site. Such warranties and/or representations are provided only as a convenience and do not mean that LDX Ltd endorses or accepts any responsibility for the contents or the use of such web site. The information contained on this web site may be changed at any time without prior notification or obligation.</p>
+                        <p>LDX Ltd assumes no responsibility for errors or omissions in the web site or other documents which are referenced by or linked to this web site.</p>
+                        <p>This publication could include technical or other inaccuracies and information that is published on the web site may contain references or cross references to products, services etc. that are not available in your country.</p>
+
+                        <br>
+
+                        <h3>Comments, questions or suggestions</h3>
+                        <p>Should you choose to respond directly to LDX Ltd with comments, questions, suggestions or ideas or the like relating to this web site or our products or services, you agree that such information shall be deemed as non confidential and LDX shall have no obligation to respond and be free to reproduce, use, disclose and distribute the information to others without limitation.</p>
+
+                        <br>
+
+                        <h3>Contact</h3>
+                        <p>In case you have questions about the above sections, do not hesitate to contact LDX through the contact page.</p>
+
+                        
+                
+                    </section>
+
+
+
+
+
+                    <section class="vertBorder d">
+                        &nbsp;
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    <footer>
+       
+        
+        <div>
+            <h6>Products</h6>
+            <nav>
+                <a href="/catg.html">IC Engine Forklifts</a>
+                <a href="/catg.html">Electric Forklifts</a>
+                <a href="/catg.html">Pallet Trucks</a>
+                <a href="/catg.html">Tow Tractors</a>
+                <a href="/catg.html">Reach Trucks</a>
+                <a href="/catg.html">Narrow Aisle Trucks</a>
+                <a href="/catg.html">Pallet Stackers</a>
+                <a href="/catg.html">Order Pickers</a>
+<a href="/catg.html">Automation</a>
+            </nav> 
+            
+            <br>
+
+                <br>
+                <nav class="logoStrip left">
+                    <a href="/catg-brand.html"><img src="/images/logos/br-linde.svg" class="brandLogo"></a>
+                    <a href="/catg-brand.html"><img src="/images/logos/br-baoli-rev.svg" class="brandLogo"></a>
+                                   </nav> 
+        </div>
+          
+        <div>
+                <h6>Services</h6>
+                <nav>
+                    <a href="/servicing.html">Servicing</a>
+                    <a href="/sales-rental.html">Sales &amp; Rental</a>
+                </nav>  
+                <h6>Company</h6>
+                <nav>
+                    <a href="/about.html">Our Story</a>
+                    <a href="/careers.html">Careers</a>
+                    <a href="/contact.html">Contact Us</a>
+                </nav> 
+                <nav class="list">
+                    <a href="/copyright.html">Copyright Notice</a>
+                    <a href="/terms.html">Terms of Trade</a>
+                    <a href="/privacy.html">Privacy Policy</a>
+                </nav>    
+        </div>
+
+        <div>
+                <div class="navSection siteLogo d">
+                    <a href="#" class="logo"><img src="/images/logos/br-ldx-rev@4x.png"></a>
+                </div>
+
+                <hr class="d">
+
+                <nav>
+                    <a href="tel:0800539583" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">
+                        New Zealand Freephone:<br>
+                        <i class="inline icon-ic-1clr-call hideSmallDesktop">
+                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                        </i>0800 539 583
+                    </a>
+                </nav> 
+                
+                <hr>
+                <br>
+
+                <nav>
+                    <a href="#" class="icon inline-icons"><i class="icon-facebook"></i></a>
+                    <a href="#" class="icon inline-icons"><i class="icon-youtube"></i></a>
+                    <a href="#" class="icon inline-icons"><i class="icon-linkedin"></i></a>
+                </nav>
+               
+                <p class="small">&copy; Copyright 2023 LDX (NZ) Ltd.</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/slick/slick.js"></script>
+    <script type="text/javascript" src="/js/jquery.waypoints.min.js" ></script>
+    <script type="text/javascript" src="/js/inview.js" ></script>
+    <script type="text/javascript" src="/js/picturefill-background.js"></script>
+    <script type="text/javascript" src="/js/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.localScroll-1.4.0/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="/js/easing.js"></script>
+    <script type="text/javascript" src="/js/site.js"></script>
+    <script type="text/javascript" src="/js/fslightbox.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.mastheadSlider').slick({
+                dots:true,
+                accessibility:true,
+                autoplay:true,
+                autoplaySpeed:6000,
+                fade:true,
+                pauseOnHover:true,
+                useTransform:false,
+                easing:'easeOutQuad',
+                speed:1000
+            }).slick('slickPause');
+
+            var initialDelay = 12000;
+
+            setTimeout(function() {
+                $('.mastheadSlider').slick('slickPlay')
+            },initialDelay);
+
+
+        });
+    </script>
+    
+</body>
+</html>
