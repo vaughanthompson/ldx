@@ -27,6 +27,7 @@ whiteAlp10 = rgba(255,255,255,0.1)
 whiteAlp05 = rgba(255,255,255,0.05)
 
 black = rgba(0,0,0,1.0)
+blackAlp85 = rgba(0,0,0,0.85)
 blackAlp75 = rgba(0,0,0,0.75)
 blackAlp55 = rgba(0,0,0,0.55)
 blackAlp50 = rgba(0,0,0,0.5)
@@ -195,7 +196,9 @@ footer hr
 .pullUp
     position: relative
     margin-top: -50vh * 0.30 !important
-
+    @media mtrigger 
+        margin-top: 0 !important
+        padding:10vw;
 .bumpLineHeight
     line-height: 200% !important  
 .inline
@@ -210,6 +213,10 @@ footer hr
     color: brand3 !important
 .vertBorder
     border-left: 1px solid brand1
+    @media mtrigger
+        border-top: 1px solid brand1
+        border-left: none
+        margin-top: 5vh
 
 // force same-height 
 .slick-track

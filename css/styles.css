@@ -132,6 +132,12 @@ footer hr {
   position: relative;
   margin-top: -15vh !important;
 }
+@media screen and (max-width: 1100px) {
+  .pullUp {
+    margin-top: 0 !important;
+    padding: 10vw;
+  }
+}
 .bumpLineHeight {
   line-height: 200% !important;
 }
@@ -152,6 +158,13 @@ footer hr {
 }
 .vertBorder {
   border-left: 1px solid #c8102e;
+}
+@media screen and (max-width: 1100px) {
+  .vertBorder {
+    border-top: 1px solid #c8102e;
+    border-left: none;
+    margin-top: 5vh;
+  }
 }
 .slick-track {
   display: -webkit-box !important;
@@ -894,6 +907,12 @@ section.brandLogo {
 section.brandLogo img.brandLogo {
   height: 80px;
   max-width: 250px;
+}
+@media screen and (max-width: 1100px) {
+  section.brandLogo img.brandLogo {
+    max-width: 90px;
+    height: auto;
+  }
 }
 .side-by-side img.brandLogo {
   height: 45px;
@@ -1682,7 +1701,7 @@ div.longDescription {
 div.longDescription p {
   font-weight: 200;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1100px) {
   div.longDescription p {
     font-size: 1.25em;
   }
@@ -1711,6 +1730,12 @@ div.contentWrapper.darkMode div.smallPromo,
 div.contentWrapper.darkMode div.smallPromo a {
   color: #fff !important;
 }
+@media screen and (max-width: 1100px) {
+  div.contentWrapper.darkMode div.smallPromo {
+    border-top: 1px solid #c8102e;
+    padding-top: 2em;
+  }
+}
 div.form > div {
   margin-bottom: 1.25em;
 }
@@ -1734,6 +1759,19 @@ div.teaserItems {
   margin-top: 2em;
   margin-bottom: 1em;
 }
+@media screen and (max-width: 1100px) {
+  div.teaserItems {
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -o-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
 div.teaserItems a:link,
 div.teaserItems a:visited {
   color: #fff;
@@ -1746,6 +1784,16 @@ div.teaserItems a:visited {
   box-flex: 1;
   -ms-flex: 1 1 10vw;
   flex: 1 1 10vw;
+}
+@media screen and (max-width: 1100px) {
+  div.teaserItems a:link,
+  div.teaserItems a:visited {
+    -webkit-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -ms-flex: 0 0 10vw;
+    flex: 0 0 10vw;
+  }
 }
 div.teaserItems a {
   display: -webkit-box;
@@ -1765,6 +1813,11 @@ div.teaserItems a > div {
   margin: 1em;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+@media screen and (max-width: 1100px) {
+  div.teaserItems a > div {
+    height: 10vh;
+  }
 }
 div.teaserItems a:hover > div {
   -webkit-transform: translateY(-0.4em);
@@ -2968,19 +3021,42 @@ body > header.tempNavigation span.pipe {
     display: -ms-flexbox;
     display: box;
     display: flex;
-    -webkit-box-pack: center;
-    -o-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     -webkit-box-align: center;
     -o-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
+  body.home div.mastheadSlider div.innerContent {
+    -webkit-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  div.mastheadSlider div.innerContent {
+    padding: 15vw 10vw;
+  }
+  div.mastheadSlider div.content {
+    background-color: rgba(0,0,0,0.85) !important;
+    background-image: url("/images/misc/arrowoverlay3-slider.webp") !important;
+  }
 }
 @media screen and (max-width: 1100px) {
-  div.mastheadSlider div.innerContent > div {
-    padding: 10vw;
+  div.innerContent {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+  div.innerContent section {
+    padding: 5vw 3vw;
+  }
+  div.mastheadSlider {
+    border-bottom: 1px solid #c8102e;
+  }
+  div.mastheadSlider.galleryMobile,
+  div.mastheadSlider.withOverlay {
+    border-bottom: none;
+  }
+  div.mastheadSlider div.innerContent.halfH {
+    min-height: 10vh;
   }
   div.mastheadSlider div.innerContent section {
     display: none;
@@ -2998,11 +3074,11 @@ body > header.tempNavigation span.pipe {
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1100px) {
-  div.mastheadSlider div.innerContent > div {
-    padding-right: 30vw;
-  }
   div.mastheadSlider.galleryMobile div.innerContent {
     height: 50vw;
+  }
+  div.mastheadSlider div.innerContent {
+    padding: 7vw 40vw 7vw 10vw;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -3018,7 +3094,8 @@ body > header.tempNavigation span.pipe {
   }
   div.staticOverlayContent div.innerContent > div,
   div.staticOverlayContent2 div.innerContent > div {
-    padding: 10vw;
+    padding-top: 10vw;
+    padding-bottom: 5vw;
   }
   div.staticOverlayContent div.innerContent section:last-child,
   div.staticOverlayContent2 div.innerContent section:last-child {
@@ -3044,6 +3121,54 @@ body > header.tempNavigation span.pipe {
   div.mastheadSlider.withOverlay div.innerContent section:first-child {
     margin-top: 0;
     padding-top: 5vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body.model div.innerContent > div.inpageNav {
+    display: none;
+  }
+  body.model div.innerContent .noPadTop {
+    padding-top: 5vw !important;
+  }
+  body.model section.brandLogo {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+  body.model div.modelGallery {
+    position: relative;
+    margin-top: -15vw;
+    margin-bottom: 5vw;
+  }
+  body.model div.galleryThumbs a {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  body.model div.modelGallery div.innerContent > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-direction: reverse;
+    -o-box-direction: reverse;
+    -webkit-box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .columnsInsideSection div > br {
+    display: none;
+  }
+  .columnsInsideSection {
+    margin-bottom: 4em;
+  }
+  div.contentWrapper.brandMode {
+    padding: 5vh 0;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  body.model div.modelGallery {
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 1100px) and (min-width: 750px) and (max-width: 1100px) {

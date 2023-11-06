@@ -218,6 +218,7 @@ header.sticky .imgText.stacked picture
     height:60px
     width: auto
     max-width:200px
+    
 section.brandLogo
     height:auto
     width:auto
@@ -225,6 +226,9 @@ section.brandLogo
 section.brandLogo img.brandLogo
     height:80px
     max-width:250px
+    @media mtrigger
+        max-width: 90px
+        height: auto
 .side-by-side img.brandLogo
     height:45px
     width: auto
@@ -837,7 +841,7 @@ div.longDescription
     margin-bottom: 2.5em
 div.longDescription p 
     font-weight: 200
-@media ttrigger
+@media dtrigger
     div.longDescription p 
         font-size: 1.25em
     div.longDescription
@@ -859,7 +863,10 @@ div.smallPromo h6
 div.contentWrapper.darkMode div.smallPromo,
 div.contentWrapper.darkMode div.smallPromo a
     color: white !important
-
+@media mtrigger
+    div.contentWrapper.darkMode div.smallPromo
+        border-top: 1px solid brand1
+        padding-top: 2em
 
 // enquiry tweaks
 div.form > div
@@ -876,6 +883,9 @@ div.teaserItems
     column-gap: 3vw
     margin-top: 2em
     margin-bottom: 1em
+    @media mtrigger
+        flex-wrap: wrap
+        align-items: flex-start
 div.teaserItems a:link,
 div.teaserItems a:visited
     color: white
@@ -884,6 +894,8 @@ div.teaserItems a:visited
     font-size: 0.85em
     line-height: 140%
     flex:1 1 10vw
+    @media mtrigger
+        flex:0 0 10vw
 div.teaserItems a
     display: flex
     flex-direction: column
@@ -894,6 +906,8 @@ div.teaserItems a > div
     background-repeat: no-repeat
     margin: 1em
     transition: 0.3s
+    @media mtrigger
+        height:10vh
 div.teaserItems a:hover > div
     transform: translateY(-0.4em)
 
