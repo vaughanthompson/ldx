@@ -1090,7 +1090,7 @@ div.paginationCtrl
         row-gap: 1em
         padding-bottom: padStd
     div.paginationCtrl > div
-        text-align: center
+        //text-align: center
     div.paginationCtrl div.forms  
         margin-bottom: 5px
     div.pagination
@@ -1215,6 +1215,10 @@ div.inpageTeaserBg div.content
     background-position: 100% 50%
     background-repeat: no-repeat
     padding: padXXS 45% padStd padM
+    @media phoneRule
+        background-position: 150% 50%
+        background-size:100% auto
+        padding: padM 30% padM padM
 div.inpageTeaserBg.theme-brand0,
 div.inpageTeaserBg.theme-brand1
     color: white
@@ -1225,6 +1229,10 @@ div.inpageTeaserBg.theme-brand1 a.ctaButton
     color: brand1
     background-color: white
     border-color: white
+div.inpageTeaserBg.theme-brand1 div.m a.ctaButton
+    color: white
+    background-color: brand1
+    border-color: brand1
 div.inpageTeaserBg.theme-brand1 a.ctaButton:hover
     background-color: brand1
     border-color: white !important
@@ -1233,6 +1241,9 @@ div.inpageTeaserBg.theme-brand0 a.ctaButton:hover
     background-color: brand0
     border-color: white !important
     color: white !important
+@media phoneRule
+    div.inpageTeaserBg h2
+        font-size:1.3em
 
 .sidebar-Teaser
     margin: 2em 0 3em 0
@@ -1259,6 +1270,9 @@ div.locationsCareers
     background-position: center
     position: absolute
     right: padXS
+    @media phoneRule
+        width: 48px
+        height: 60px
 div.locationsCareers.north
     background-image: url(/images/careers/locationsCareersNorth.svg)
 div.locationsCareers.south
@@ -1286,9 +1300,15 @@ div.locationsCareers.dunedin svg circle.dunedin
 
 div.catList.careers div.catItem > div
     padding: padStd padM padM padM
+    @media phoneRule
+        padding: padL
 div.catList.careers div.cardTop
     padding-right: padXL
-
+@media phoneRule  
+    div.catList.careers div.cardTop
+        padding-right: padM
+    div.catList.careers div.cardTop p
+        margin-bottom: 1.5em
 div.catList.careers div.catItem a.ctaButton
     margin-top: auto
     align-self: flex-start

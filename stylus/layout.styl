@@ -206,6 +206,26 @@ div.catItem
         grid-row-gap: 1.75vw;
         grid-template-columns: repeat(auto-fill, minmax(15%, 1fr) )
 
+@media mtrigger
+    div.catList.col4 div.catGroup
+        grid-column-gap: 3vw;
+        grid-row-gap: 4vw;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr) )
+    div.catList.col4.compact div.catGroup
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr) )
+    div.catList.col4.compact div.catGroup
+        grid-column-gap: 3vw;
+        grid-row-gap: 2.75vw;
+    div.catList.col4.compact div.catGroup .catItem > div
+        padding: padM
+
+@media phoneRule            
+    div.catList.col4.compact div.catGroup .catItem > div
+        padding: padL
+        text-align: center 
+    div.catList.col4.compact div.catGroup .catItem > div img
+        margin 1em auto
+
 div.catGroup .catItem a
     transition: 0.2s
     position: relative
@@ -221,6 +241,8 @@ div.catGroup .catItem > div
     height: 100%
     position: relative
     text-decoration: none
+    @media phoneRule
+        padding: padM padM 3.5em padM
 div.catGroup .catItem.brand1 > a
     border: 1px solid white
     background-color: brand1
@@ -233,15 +255,25 @@ body.landing div.catGroup .catItem > a,
 body.landing div.catGroup .catItem > div
     padding-top: padXXS
     padding-bottom: padXS
+    @media phoneRule
+        padding-top: padM
 @media dtrigger and (pointer: fine)
     div.catGroup .catItem:hover a
         transform: translateY(-0.4em) 
         box-shadow: 0px 7px 15px 0px blackAlp10
 
+
+@media phoneRule
+    div.catGroup .catItem
+        margin-bottom: 10vw
+
  .catItem div.brand 
     position: absolute
     top: padXXS
     left: padXXS
+    @media phoneRule
+        top: padM
+        left: padM
 .catItem div.brand img
     max-height: 30px
     max-width: 80px
@@ -252,6 +284,8 @@ body.landing div.catGroup .catItem > div
     background-position: center
     background-repeat: no-repeat
     margin-bottom: marXXS
+    @media mtrigger
+        margin-bottom: marM
 .catList.photographic .catItem div.imageThumb
     background-size: cover
     margin-top: marXXS*0.5
@@ -289,6 +323,8 @@ body.landing .catItem div.offer
 
 body.catg .catItem h5
     min-height: 2.7em 
+    @media phoneRule
+        min-height: 1em
 .catItem p
     color:brand0
     font-weight:200
@@ -296,7 +332,7 @@ body.catg .catItem h5
 @media phoneRule
     div.imageThumb
         height: 40vw !important
-        margin-bottom: 5vh !important
+        margin-bottom: 3vh !important
     div.landing div.imageThumb
         max-width: 100vw  !important
         height:60vw !important

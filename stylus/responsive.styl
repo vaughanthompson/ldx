@@ -77,13 +77,16 @@
         //background: none !important
         background-color: blackAlp85 !important
         background-image: url(/images/misc/arrowoverlay3-slider.webp) !important;
+    div.bodyContent div.innerContent
+        padding-top: 7vw
 @media mtrigger
     div.innerContent
         padding-left: 8vw
         padding-right: 8vw
     div.innerContent section
         padding: 5vw 3vw
-        
+    div.contentWrapper.bodyContent:last-of-type
+        margin-bottom: 5vh    
     div.mastheadSlider
         border-bottom:1px solid brand1
     div.mastheadSlider.galleryMobile,
@@ -197,3 +200,37 @@
         margin-bottom: 0
 
 
+// home mods
+@media mtrigger
+    .vertBorder
+        border-top: none
+        margin-top: 0
+    body.home section.noPadTop img
+        margin-top: 2em
+    body.home .pbVideo
+        margin-top: 5vh
+@media tabletRule and (orientation: landscape)
+    body.home section.noPadTop img
+        max-width: 50%
+@media mtrigger
+    div.inpageTeaserBg
+        margin-bottom: 2em
+    div.inpageTeaserBg h2
+        margin-bottom: 5px
+    div.inpageTeaserBg div.m p
+        color: brand0
+        padding: 2vh 2.5vw
+        max-width:95%
+@media phoneRule
+    div.inpageTeaserBg a.ctaButton
+        display: block
+        margin-bottom: 6px
+@media tabletRule and (orientation: landscape)
+    div.inpageTeaserBg a.ctaButton:first-of-type
+        margin-left: 2.5vw
+
+@media mtrigger
+    body.catg div.masthead div.innerContent:first-of-type section:last-child
+        display: none
+    body.catg div.masthead div.innerContent.smallH
+        min-height:20vh
