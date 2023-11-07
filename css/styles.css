@@ -2221,7 +2221,7 @@ body.model div.masthead div.content {
 .picturefill-background {
   overflow: hidden;
   background-size: contain;
-  background-position: 150% 50%;
+  background-position: 100% 50%;
 }
 @media screen and (max-width: 750px) {
   .picturefill-background {
@@ -3129,7 +3129,7 @@ body > header.tempNavigation span.pipe {
     padding: 15vw 10vw;
   }
   div.mastheadSlider div.content {
-    background-color: rgba(0,0,0,0.85) !important;
+    background-color: rgba(0,0,0,0.5) !important;
     background-image: url("/images/misc/arrowoverlay3-slider.webp") !important;
   }
   div.bodyContent div.innerContent {
@@ -3377,7 +3377,7 @@ body > header.tempNavigation span.pipe {
 }
 .gradient3 {
   background-blend-mode: multiply;
-  background: radial-gradient(circle at center, rgba(0,0,0,0.05), rgba(0,0,0,0.05), rgba(0,0,0,0.05), rgba(0,0,0,0.1), rgba(0,0,0,0.25));
+  background: radial-gradient(circle at center, rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.75), rgba(0,0,0,0.85));
 }
 .blur {
   -webkit-filter: blur(10px);
