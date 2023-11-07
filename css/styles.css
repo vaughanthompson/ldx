@@ -2255,6 +2255,11 @@ div.masthead.picturefill-background {
 .picturefill-background.offset175 {
   background-position: 175% 50%;
 }
+@media screen and (min-width: 1100px) {
+  body.home div.mastheadSlider div.picturefill-background {
+    background-size: auto 110%;
+  }
+}
 .staticOverlayContent,
 .staticOverlayContent2 {
   background: none !important;
@@ -2653,6 +2658,14 @@ p.intro {
 .text-header {
   max-width: 80%;
   height: auto;
+}
+@media screen and (min-width: 1100px) {
+  .larger {
+    font-size: 350%;
+  }
+  .largest {
+    font-size: 500%;
+  }
 }
 #navMobile .icon,
 #navHeader .icon {
