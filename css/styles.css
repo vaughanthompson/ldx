@@ -801,6 +801,12 @@ a.ctaButton:hover i {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+.darkMode a.ctaButton:hover,
+.darkMode a.ctaButton:hover > i:before {
+  background: none;
+  color: #fff !important;
+  border-color: #fff !important;
+}
 .inv,
 .inv:before,
 a.ctaButton.inv,
