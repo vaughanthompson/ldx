@@ -1135,7 +1135,7 @@ body.model div.masthead div.content
 
 
 // picturefill overrides
-.picturefill-background
+/*.picturefill-background
     overflow hidden
     background-size: contain
     background-position: 100% 50%
@@ -1145,9 +1145,9 @@ body.model div.masthead div.content
 .picturefill-background.containMob
     @media mtrigger
         background-size: contain
-        background-position: 50% 0
+        background-position: 50% 0*/
     
-div.masthead.picturefill-background
+/*div.masthead.picturefill-background
     background-size: contain
     background-position: 130% 50%
 .picturefill-background.noOffset
@@ -1164,7 +1164,7 @@ div.masthead.picturefill-background
 
 @media dtrigger
     body.home div.mastheadSlider div.picturefill-background
-        background-size: auto 110%
+        background-size: auto 110%*/
 
 
 //landing sliders
@@ -1203,6 +1203,32 @@ div.staticOverlayContent div.innerContent section:first-child > div
     body.landing div.mastheadSlider:not(.withOverlay) section.rS:first-child,
     .staticOverlayContent2 section.rS:first-child
         padding-top: smallH - padXL
+
+
+// masthead background image containers
+div.mastheadSlider div.contentWrapper
+    position: relative
+    background-color: rgba(0,0,0,0)
+div.bgImage 
+    background-size: cover !important
+    background-position: 50% 50%
+    background-color: whiteAlp50
+    background-image: url(/images/misc/default@2x.webp)
+    width: 55vw
+    height:100%
+    float: right
+    position: absolute
+    z-index -1
+    top: 0
+    right: 0
+    @media phoneRule
+        width:100vw
+div.mastheadSlider div.contentWrapper div.content
+    background-size: cover
+    background-repeat: no-repeat 
+    background-position: 50% 50%
+    background-image: url(/images/misc/arrowoverlay5-slider.webp)
+
 
 
 
