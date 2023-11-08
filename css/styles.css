@@ -976,8 +976,8 @@ section.brandLogo {
   max-width: auto;
 }
 section.brandLogo img.brandLogo {
-  height: 80px;
-  max-width: 250px;
+  height: 60px;
+  max-width: 200px;
 }
 @media screen and (max-width: 1100px) {
   section.brandLogo img.brandLogo {
@@ -1729,7 +1729,6 @@ div.contentWrapper.modelGallery section:last-of-type {
   .galleryHeroImage {
     position: absolute;
     margin-top: -28vw;
-    bottom: 0;
   }
 }
 div.galleryThumbs {
@@ -2683,6 +2682,16 @@ p.intro {
   }
   .largest {
     font-size: 500%;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1400px) {
+  body.model h1 {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body.model h1 {
+    max-width: 60%;
   }
 }
 #navMobile .icon,
