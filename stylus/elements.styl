@@ -1206,6 +1206,9 @@ div.staticOverlayContent div.innerContent section:first-child > div
 
 
 // masthead background image containers
+div.contentWrapper.masthead
+    position: relative
+    background-color: rgba(0,0,0,0)
 div.mastheadSlider div.contentWrapper
     position: relative
     background-color: rgba(0,0,0,0)
@@ -1229,11 +1232,12 @@ div.mastheadSlider div.contentWrapper div.content
     background-position: 50% 50%
     background-image: url(/images/misc/arrowoverlay5-slider.webp)
 
-
-
-
-
-
+div.mastheadSlider.galleryMobile div.bgImage
+    @media mtrigger
+        width: 100vw
+body.catg div.masthead div.bgImage
+    width: 40vw
+   
 
 // inpage teasers
 .bodyContent div.inpageTeaserBg

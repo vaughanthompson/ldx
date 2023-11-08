@@ -2274,6 +2274,10 @@ div.staticOverlayContent div.innerContent section:first-child > div {
     padding-top: 18vh;
   }
 }
+div.contentWrapper.masthead {
+  position: relative;
+  background-color: rgba(0,0,0,0);
+}
 div.mastheadSlider div.contentWrapper {
   position: relative;
   background-color: rgba(0,0,0,0);
@@ -2301,6 +2305,14 @@ div.mastheadSlider div.contentWrapper div.content {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url("/images/misc/arrowoverlay5-slider.webp");
+}
+@media screen and (max-width: 1100px) {
+  div.mastheadSlider.galleryMobile div.bgImage {
+    width: 100vw;
+  }
+}
+body.catg div.masthead div.bgImage {
+  width: 40vw;
 }
 .bodyContent div.inpageTeaserBg {
   margin-top: 6em;
@@ -3176,12 +3188,11 @@ body > header.tempNavigation span.pipe {
     display: block;
     height: 100%;
   }
-  div.mastheadSlider.galleryMobile div.contentWrapper {
-    background-position: 100% 50%;
-    background-size: cover;
-  }
   div.mastheadSlider.galleryMobile div.content {
     background: none !important;
+  }
+  div.mastheadSlider.galleryMobile div.innerContent {
+    height: 50vh;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1100px) {
