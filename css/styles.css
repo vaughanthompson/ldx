@@ -2248,7 +2248,6 @@ div.mastheadSlider.withOverlay div.innerContent section:first-child > * {
   max-width: 90%;
 }
 div.staticOverlayContent div.innerContent section:first-child {
-  margin-bottom: 40.5vh;
   padding-bottom: 0;
   padding-top: 10vh;
   display: -webkit-box;
@@ -2272,6 +2271,9 @@ div.staticOverlayContent div.innerContent section:first-child > div {
   body.landing div.mastheadSlider:not(.withOverlay) section.rS:first-child,
   .staticOverlayContent2 section.rS:first-child {
     padding-top: 18vh;
+  }
+  div.staticOverlayContent div.innerContent section:first-child {
+    padding-top: 12.75vh;
   }
 }
 div.contentWrapper.masthead {
