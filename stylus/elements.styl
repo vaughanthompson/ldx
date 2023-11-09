@@ -892,6 +892,8 @@ div.teaserItems
     @media mtrigger
         flex-wrap: wrap
         align-items: flex-start
+        justify-content: space-between
+        row-gap: 2em
 div.teaserItems a:link,
 div.teaserItems a:visited
     color: white
@@ -901,7 +903,7 @@ div.teaserItems a:visited
     line-height: 140%
     flex:1 1 10vw
     @media mtrigger
-        flex:0 0 10vw
+        flex:0 0 35vw
 div.teaserItems a
     display: flex
     flex-direction: column
@@ -916,6 +918,10 @@ div.teaserItems a > div
         height:10vh
 div.teaserItems a:hover > div
     transform: translateY(-0.4em)
+h4.teaserItems 
+    @media phoneRule
+        max-width 60vw
+        line-height: 1.3em
 
 
 // icon Lists

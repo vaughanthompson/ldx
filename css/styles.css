@@ -1841,6 +1841,11 @@ div.teaserItems {
     -o-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    row-gap: 2em;
   }
 }
 div.teaserItems a:link,
@@ -1862,8 +1867,8 @@ div.teaserItems a:visited {
     -webkit-box-flex: 1;
     -o-box-flex: 1;
     box-flex: 1;
-    -ms-flex: 0 0 10vw;
-    flex: 0 0 10vw;
+    -ms-flex: 0 0 35vw;
+    flex: 0 0 35vw;
   }
 }
 div.teaserItems a {
@@ -1893,6 +1898,12 @@ div.teaserItems a > div {
 div.teaserItems a:hover > div {
   -webkit-transform: translateY(-0.4em);
   transform: translateY(-0.4em);
+}
+@media screen and (max-width: 750px) {
+  h4.teaserItems {
+    max-width: 60vw;
+    line-height: 1.3em;
+  }
 }
 ul.summaryFeatures,
 ul.summaryFeaturesSimple {
