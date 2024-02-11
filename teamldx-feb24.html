@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-****"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        //gtag('config', 'UA-****');
+    </script>
+
+
+    <title>LDX. [brand] [category].</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
+    <meta name="twitter:title" property="og:title" content="[brand] [model] [category]." />
+    <meta name="twitter:card" content="LDX">
+    <meta name="twitter:site" property="og:site_name" content="LDX. Forklifts, Warehouse Trucks, Compact Construction Equipment." />
+    <meta name="description" property="og:description" content="New Zealand's source for Linde &amp; Baoli Forklifts, Warehouse Trucks and Yanmar Compact Construction Equipment." />
+    <meta name="twitter:image" property="og:image" content="https://www.ldx.co.nz/images/icon.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:url" property="og:url" content="https://www.ldx.co.nz" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <!-- css -->
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/images/icomoon/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/form.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+<body class="landing">
+    <!-- mob nav -->
+    <div id="navHeader" class="navHeight m">
+        <a href="#" class="siteLogo"><img src="/images/logos/br-ldx-rev@4x.png"></a>
+        <div id="mblNavControl">
+            <a href="#" class="icon"><i class="icon-phone"></i></a>
+            <a href="#" id="navTrigger" class="icon"><i class="icon-menu"></i></a>
+            <a href="#" id="navClose" class="icon"><i class="icon-cross"></i></a>
+        </div>
+    </div>
+
+    <div class="mblnav m">
+        <div class="mblnavContainer">
+            <div class="navHeight">&nbsp;</div>
+                <div class="containMNav">
+                    <h6>Products</h6>
+                    <nav>
+                        <a href="/landing">Lift</a>
+                        <a href="/landing">Dig</a>
+                        <a href="/landing">Compact</a>
+                    </nav> 
+                </div>  
+                <div class="containMNav">
+                    <h6>Services</h6>
+                    <nav>
+                        <a href="#">Servicing</a>
+                        <a href="#">Sales &amp; Rental</a>
+                    </nav> 
+                </div>
+                <div class="containMNav">
+                    <h6>Company</h6>
+                    <nav>
+                        <a href="#">Our Story</a>
+                        <a href="#">Careers</a>
+                    </nav> 
+                </div> 
+                <div class="containMNav">
+                    <nav>      
+                        <a href="#">Contact Us</a>    
+                        <a href="#home" class="inpage">Home</a>
+                    </nav> 
+                    <br>
+                    <br>
+                    <a href="#" class="icon inline-icons"><i class="icon-facebook"></i></a>&nbsp;
+                    <a href="#" class="icon inline-icons"><i class="icon-youtube"></i></a>&nbsp;
+                    <a href="#" class="icon inline-icons"><i class="icon-linkedin"></i></a>
+                </div>  
+            </div>
+        <div class="navHeight">&nbsp;</div>  
+    </div> 
+    <div class="navHeight m">&nbsp;</div>
+    <!-- end mobile navigation -->
+
+    <!-- desktop nav -->
+    <header class="tempNavigation">
+        <div class="navSection siteLogo">
+            <a href="#" class="logo"><img src="/images/logos/br-ldx-tagline.png"></a>
+        </div>
+       
+        <div class="navSection">
+            <span class="pipe"></span>
+            <div>
+                <nav>
+                    <a href="/landing.html">Products</a>
+                    <a href="/servicing.html" >Servicing</a>
+                    <a href="/sales-rental.html">Sales &amp; Rental</a>
+                    <a href="/about.html">Our Story</a>
+                    <a href="/careers.html">Careers</a>
+                </nav>    
+            </div>
+        </div>
+
+        <div class="navSection spacer">&nbsp;</div>
+
+        <div class="navSection">
+            <span class="pipe"></span>
+            <div>
+                <h6>Contact</h6>
+                <nav>
+                    <a href="tel:0800539583" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">
+                        <i class="inline icon-ic-1clr-call hideSmallDesktop">
+                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                        </i>0800 539 583
+                    </a>
+                </nav>    
+            </div>
+        </div>
+        <div class="navSection">
+            <div>
+                <h6>NZ Online Support</h6>
+                <nav>
+                    <a href="javascript:void(0);" onclick="$('#chat-widget-container').show();LiveChatWidget.call('maximize');">
+                        <i class="inline icon-ic-1clr-support hideSmallDesktop"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+                        <span id="ChatStatusLoading" class="chatStatus offline animated infinite bounceInDown">Loading...</span>
+                        <span id="ChatStatusOnline" class="chatStatus online" style="display:none;">Chat Now</span>
+                        <span id="ChatStatusOffline" class="chatStatus offline" style="display:none;">Message</span>
+                    </a>
+                </nav>    
+            </div>
+        </div>
+        
+
+    </header>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    <div class="mastheadSlider">
+
+
+        <div class="contentWrapper darkMode picturefill-background"> <!--bg color and pictureFill -->
+            <div class="content" style="background-image: url(/images/misc/arrowoverlay2-slider.webp); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"> <!--overlay darken etc -->
+                <div class="innerContent halfH"><!--height and LR partial padding overlay bg element - eg arrow -->
+                    <div><!-- flex and innermost LR padding -->
+                        <section class="rC cC largerSec"><!--  content control -->
+                            <br> <br>
+                            <picture>
+                                <img src="/images/teamldx/team-ldx.svg">
+                            </picture>
+                            <br>
+                            <h4><strong class="brandColor">Newsletter.</strong> February 2024.</h4>
+                            <br>
+                            <hr class="brand1">
+                           
+                            
+                            <p><strong class="brandColor">In this issue</strong> 
+                                Introduction - Joe Gradwell • 
+                                Meet the LDX team • 
+                                Hero Staff Member - Vee MacLeod • 
+                                
+                               </p>
+                            
+                    
+                        </section>
+                        <section class="rS cC d">
+                            &nbsp;    
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+    <!-- contents -->
+    <div class="tdxintroContain light">
+        <div class="tdxintroInner overrideHeight reducePadMob">
+            <section> 
+                <h1 class="brandColor">Contents</h1>
+               
+
+                <div class="simpleFlex">
+                      <a href="#story1" class="brandColor pictureLink"><img src="/images/teamldx/feb24/img2@0.5x.jpg" alt=""><h5>Introduction - Joe Gradwell</h5></a>
+                      
+                      <a href="#story2" class="brandColor pictureLink"><img src="/images/teamldx/feb24/3@0.5x.jpg" alt=""><h5>Meet the LDX team!</h5></a>
+                     
+                      
+                      <a href="#story3" class="brandColor pictureLink"><img src="/images/teamldx/feb24/1@0.5x.jpg" alt=""><h5>Hero Staff Member - Vee MacLeod</h5></a> 
+                      
+                      <a href="#story4" class="brandColor pictureLink"><img src="/images/2022/unearthed/internal/dec23/img1@0.5x.jpg" alt=""><h5>TBC</h5></a> 
+                      
+                      <a href="#story5" class="brandColor pictureLink"><img src="/images/2022/unearthed/internal/dec23/img1@0.5x.jpg" alt=""><h5>TBC</h5></a> 
+
+                </div>
+
+          
+            </section>
+           
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="fiftyfifty rev" name="story1">
+
+        <div class="edContain dark picturefill-background ">
+            <div class="editorial arrow ">
+                &nbsp;
+            </div>
+            <span data-src="/images/teamldx/feb24/img2.jpg"></span>
+        </div>
+
+
+        <div class="edContain dark">
+
+            <div class="editorial overrideHeight col" style="padding-bottom:0 ;">
+                <section class="">
+                    <h1 class="spanCols brandColor">A new year, a new opportunity - reaching new heights with LDX</h1>
+                    <br>
+
+                    
+                    <p>LDX is up and running as part of the TDX family, for this month's introduction we spoke with Joe Gradwell to get his thoughts about the new operation.</p>
+
+
+                    <p>It's not every day you get the chance to develop a new business unit, but bringing the LDX and Linde partnership to life has been a fascinating, challenging - and ultimately rewarding - experience to be part of.</p>
+
+
+                    <p>The launch of LDX had been brewing and started many months ago when Linde approached TDX to discuss a possible partnership. They admired the TDX values and thought they would be a great fit with Linde.</p>
+
+
+                    <p>After many months of working on the agreement, the new deal was struck, and Linde AU is 100% committed to making our partnership work.</p>
+                    
+
+
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="fiftyfifty ">
+
+        <div class="edContain dark">
+            <div class="editorial  textOnly reducePadBottomMob">
+                <section>
+
+
+                    <h6 class="brandColor">We're privileged to have a great team at LDX, we recently got everyone together for technical training and the calibre of our personnel was clear to see.</h6>
+                    <br>
+
+                    <p>The TDX name is so highly regarded in the market, that there were more than 300 applicants for recently advertised roles (a big thanks must go to the recruitment team for their support through this process!). This demonstrates that TDX and LDX are viewed as desirable companies to work with, and we can attract high-performing candidates from within the industry. </p>
+                    
+                    <p>Simply, people value the TDX and LDX brands and are attracted to being part of our story.</p>
+
+                    <p>Our brands are so renowned that, since the launch of LDX, we have received multiple approaches from significant potential customers who want to do business with us. The backing of the TDX brand adds credibility to what LDX can offer.</p>
+
+                    <p>From a business perspective, the new LDX operation will also offer a significant advantage for TDX Group when it comes to cash flow. Material Handling/ Forklift rentals are generally five-year terms, which means income every month. After the long-term contracts finish, machines are then reallocated for shorter-term rentals.</p>
+                        
+                  
+                </section>
+              
+            </div>
+        </div>
+    
+        <div class="edContain dark">
+            <div class="editorial  textOnly reducePadTopMob">
+                <section>     
+                   
+                    <p>The upshot is that there is a constant cash flow, which makes a significant and consistent contribution to the performance of the business - especially considering there are more than 300 forklifts on fully maintained service agreements currently in operation around the country which we will be picking up in the coming months from Linde AU which will provide immediate work for our teams.</p>                 
+
+                    <p>I'd like to thank Colm for the opportunity to get LDX up and running and thank all the other people involved in bringing it to life. (Check the 'Hero a Staff Member' story for more details about someone pivotal to the project).</p>
+   
+                    <p>It's an exciting time to be in business, it's exciting to create a new business unit and diversify into an entirely new area complementary to TDX.</p>
+
+                    <h6 class="brandColor">It will be an amazing year ahead for TDX and especially LDX and the new team.</h6>
+                    <p>Cheers,<br> Joe.</p>  
+                   
+                </section>
+    
+            </div>
+        </div>
+    
+    </div>
+
+
+
+    
+
+    
+
+    
+
+    
+
+ 
+
+
+
+
+
+
+
+
+ <div class="tdxintroContain light"  name="story2">
+    <div class="tdxintroInner overrideHeight reducePadMob">
+        <section> 
+            <h1 class="brandColor">Meet the LDX Team</h1>
+           
+            <div class="simpleFlex">
+                <div>
+                    <img src="/images/teamldx/feb24/team-ernest.png">
+                    <br>
+                    <h4 class="brandColor">Earnest Sternburger</h4>
+                    <p><strong>Why did you join LDX?</strong><br>Passion for the Linde product as they are a very nice machine to work on.</p>
+                    <p><strong>How long have you been in the industry?</strong><br>Forklift industry 10 yrs.</p>
+                    <p><strong>What you enjoy about the industry the most?</strong><br>Variety of jobs and worksites.</p>
+                    <p><strong>What are you looking for in your new role?</strong><br>Coming back to the Linde product</p>
+                    <p><strong>What interests do you have outside of work?</strong><br>Fishing and spending time with family.</p>      
+                </div>
+
+                <div>
+                    <img src="/images/teamldx/feb24/team-mikael.png">
+                    <br>
+                    <h4 class="brandColor">Mikaele West</h4>
+                    <p><strong>Why did you join LDX?</strong><br>Because I enjoy working on the Linde product and believe it's the best in the industry.</p>
+                    <p><strong>How long have you been in the industry?</strong><br>11 years.</p>
+                    <p><strong>What you enjoy about the industry the most?</strong><br>Satisfaction of getting machines up and running, keeping the customers going.</p>
+                    <p><strong>What are you looking for in your new role?</strong><br>To further my career aspirations.</p>
+                    <p><strong> What interests do you have outside of work?</strong><br>Golf &amp; fishing.</p>
+                </div>
+
+
+                <div>
+                    <img src="/images/teamldx/feb24/team-bruce.png">
+                    <br>
+                    <h4 class="brandColor">Bruce Rea</h4>
+                    <p><strong>Why did you join LDX?</strong><br>New adventures and opportunities.</p>
+                    <p><strong>How long have you been in the industry?</strong><br>20 years.</p>
+                    <p><strong>What you enjoy about the industry the most?</strong><br>seeing the customers and interacting with them.</p>
+                    <p><strong>What are you looking for in your new role?</strong><br>To be the best technician and to gain more knowledge and understanding.</p>
+                    <p><strong>What interests do you have outside of work?</strong><br>Sports, fitness training and readin.</p>
+
+                </div>
+
+                <div>
+                    <img src="/images/teamldx/feb24/team-jay.png">
+                    <br>
+                    <h4 class="brandColor">Jay-R Caballero</h4>
+
+                    <p><strong>How long have you been in the industry?</strong><br>Prior to working with Linde MH, I had more than 10 years of work experience in various MH companies. Afterwhich, I worked with Linde MH Australia- WA for 4 years as a Workshop Technician, FAMCO Oman in Linde MH Dept for 3 years as Master Tech/ Trainer and Product Support Engineer, AB Equipment NZ Hamilton Branch for 5 years as Workshop Leading Hand in Fonterra Crawford St. Workshop and Crown Equipment for 1.5 years as Field Service Tech.</p>
+                    
+                    <p><strong>What excited you the most about joining LDX?</strong><br>It's been my passion working with MH companies but I am excited to be part of LDX because it carries Linde MH products and services which is the best MHE manufacturer and market leading in technology and innovation.</p>
+                    
+                    <p><strong>What do you do outside of work to relax?</strong><br>I usually play darts with friends, take a walk in the park, mountain biking and do some repairs of electronic stuff.</p>            
+                </div>
+
+                <div>
+                    <img src="/images/teamldx/feb24/team-dante.png">
+                    <br>
+                    <h4 class="brandColor">Dante Egarta</h4>
+                    <p><strong>How long have you been in the industry?</strong><br>Linde Material Handling In Famco (Dubai) for 8years, came at New Zealand 2019 work at Central Group ( Fowlers Machniery) for 4years 2019-2022 and Crown equipment for 14months 2022 to 2023.</p>
+                    <p><strong>What excited you the most about joining LDX?</strong><br>I'm excited at LDX because now there is big company that will be distributor of the Linde forklift that was amaze and excellent equipment in Industry.</p>
+                    <p><strong>What do you do outside of work to relax?</strong><br>Net Surfing, watching Movies (Netflix ,Prime and YouTube) and Video Chat with my family in Philippines.</p>
+
+                </div>
+
+                <div>
+                    <img src="/images/teamldx/feb24/team-stewart.png">
+
+                    <br>
+                    <h4 class="brandColor">Stewart Russell</h4>
+                    <br>
+                    <p><strong>How long have you been in the industry?</strong><br>Crown Lift Trucks 20 years started as a sales trainee moving up to National Busi ness Development before heading to Australia where I finished as the Southeast Queensland Sales Manager.</p>
+                    <p><strong>What excited you the most about joining LDX?</strong><br>The opportunity to be part of a start up branch of the business with an industry leading forklift brand. To see where we can take this brand nationally supplying quality equipment and service.</p>
+                    <p><strong>What do you do outside of work to relax?</strong><br>I love fishing, football and all ball sports plus supporting my kids in their sporting endeavours. Two Border Collies that require constant activities and walks.</p>
+
+                </div>
+
+                <div>
+                    <img src="/images/teamldx/feb24/team-michael.png">
+                    <br>
+                    <h4 class="brandColor">Michael Salomon</h4>
+                    <p><strong>How long have you been in the industry?</strong><br>Crown Equipment Ltd. Almost 9years</p>
+                    <p><strong>What excited you the most about joining LDX?</strong><br>New company, a lots of potential opportunities.</p>
+                    <p><strong>What do you do outside of work to relax?</strong><br>Basketball, Biking &amp; walking at the parks. Watching Tele.</p>
+                </div>
+    
+            </div>
+        </section>   
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+<div class="fiftyfifty" name="story3">
+
+
+
+    <div class="edContain dark">
+
+        <div class="editorial  col reducePadBottomMob">
+            <section>
+                <h1 class="">Hero Staff Member:<br>Vee MacLeod,<br>TDX Christchurch</h1>
+                <br>
+                <br>
+                
+                <h6>This month's 'Hero a Staff Member' features Vee MacLeod, Sustainability and Quality Manager at TDX Christchurch, and is told by Joe Gradwell.</h6>
+                <br>
+
+                <hr class="brand1">
+                <br>
+
+                <p>Vee is officially a member of the HR team, however over recent months she's been participating in a special project, assisting the new LDX business get up and running.</p>
+
+                <p>But she's been doing more than just participating, she's literally been the glue that has held things together behind the scenes and has been a huge support to me.</p>
+
+                <p>Anyone who knows Vee knows she has massive energy, she's not one to sit still and wait for things to happen. Her drive and determination has helped keep the project on track, coordinating elements between TDX, LDX and Linde.</p>
+
+                <p>She has a workbook with milestones and gateways which has been the roadmap the project has followed. When it comes to hitting timelines and deadlines, Vee is the person who is across all of them and makes things happen, as and when they should.</p>
+
+                <p>Her work ethic is admirable and has been recognised by people involved in the project from both sides of the Tasman. She puts in long hours when needed, going above and beyond the normal 9-5 routine, covering a whole variety of commitments across a number of workstreams to do with the project.</p>
+
+            </section>
+        </div>
+    </div>
+
+
+    <div class="edContain dark">
+
+        <div class="editorial  col reducePadTopMob">
+            <section>
+    
+                <br>
+
+                <picture>
+                    <img src="/images/teamldx/feb24/1.jpg">
+                </picture>
+               <br>
+               <br>
+               <br>
+
+  
+               <h6>I'd like to personally thank Vee for her commitment, dedication and for helping to get LDX up and running. I have every confidence it's going to be a huge success, and a lot of this credit deserves to go to Vee for her outstanding work making it all a reality. Thank you, Vee!</h6>
+               
+
+
+            </section>
+        </div>
+    </div>
+
+</div>
+  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+    <footer>
+       
+        
+        <div>
+            <h6>Products</h6>
+            <nav>
+                <a href="/catg.html">IC Engine Forklifts</a>
+                <a href="/catg.html">Electric Forklifts</a>
+                <a href="/catg.html">Pallet Trucks</a>
+                <a href="/catg.html">Tow Tractors</a>
+                <a href="/catg.html">Reach Trucks</a>
+                <a href="/catg.html">Narrow Aisle Trucks</a>
+                <a href="/catg.html">Pallet Stackers</a>
+                <a href="/catg.html">Order Pickers</a>
+<a href="/catg.html">Automation</a>
+            </nav> 
+            
+            <br>
+
+                <br>
+                <nav class="logoStrip left">
+                    <a href="/catg-brand.html"><img src="/images/logos/br-linde.svg" class="brandLogo"></a>
+                    <a href="/catg-brand.html"><img src="/images/logos/br-baoli-rev.svg" class="brandLogo"></a>
+                                   </nav> 
+        </div>
+          
+        <div>
+                <h6>Services</h6>
+                <nav>
+                    <a href="/servicing.html">Servicing</a>
+                    <a href="/sales-rental.html">Sales &amp; Rental</a>
+                </nav>  
+                <h6>Company</h6>
+                <nav>
+                    <a href="/about.html">Our Story</a>
+                    <a href="/careers.html">Careers</a>
+                    <a href="/contact.html">Contact Us</a>
+                </nav> 
+                <nav class="list">
+                    <a href="/copyright.html">Copyright Notice</a>
+                    <a href="/terms.html">Terms of Trade</a>
+                    <a href="/privacy.html">Privacy Policy</a>
+                </nav>    
+        </div>
+
+        <div>
+                <div class="navSection siteLogo d">
+                    <a href="#" class="logo"><img src="/images/logos/br-ldx-rev@4x.png"></a>
+                </div>
+
+                <hr class="d">
+
+                <nav>
+                    <a href="tel:0800539583" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">
+                        New Zealand Freephone:<br>
+                        <i class="inline icon-ic-1clr-call hideSmallDesktop">
+                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                        </i>0800 539 583
+                    </a>
+                </nav> 
+                
+                <hr>
+                <br>
+
+                <nav>
+                    <a href="#" class="icon inline-icons"><i class="icon-facebook"></i></a>
+                    <a href="#" class="icon inline-icons"><i class="icon-youtube"></i></a>
+                    <a href="#" class="icon inline-icons"><i class="icon-linkedin"></i></a>
+                </nav>
+               
+                <p class="small">&copy; Copyright 2023 LDX (NZ) Ltd.</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/slick/slick.js"></script>
+    <script type="text/javascript" src="/js/jquery.waypoints.min.js" ></script>
+    <script type="text/javascript" src="/js/inview.js" ></script>
+    <script type="text/javascript" src="/js/picturefill-background.js"></script>
+    <script type="text/javascript" src="/js/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.localScroll-1.4.0/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="/js/easing.js"></script>
+    <script type="text/javascript" src="/js/site.js"></script>
+    <script type="text/javascript" src="/js/fslightbox.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.mastheadSlider').slick({
+                dots:true,
+                accessibility:true,
+                autoplay:true,
+                autoplaySpeed:6000,
+                fade:true,
+                pauseOnHover:true,
+                useTransform:false,
+                easing:'easeOutQuad',
+                speed:1000
+            }).slick('slickPause');
+
+            var initialDelay = 12000;
+
+            setTimeout(function() {
+                $('.mastheadSlider').slick('slickPlay')
+            },initialDelay);
+
+
+        });
+    </script>
+    
+</body>
+</html>
