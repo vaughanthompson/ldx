@@ -3205,8 +3205,8 @@ body > header.tempNavigation span.pipe {
   }
   div.mastheadSlider div.brandModeHome div.content {
     background-blend-mode: multiply;
-    background: -webkit-gradient(linear, left top, right bottom, from(#c8102e), color-stop(#c8102e), to(rgba(0,0,0,0.1))) !important;
-    background: linear-gradient(to bottom right, #c8102e, #c8102e, rgba(0,0,0,0.1)) !important;
+    background: -webkit-gradient(linear, left top, right bottom, from(#c8102e), to(rgba(0,0,0,0.1))) !important;
+    background: linear-gradient(to bottom right, #c8102e, rgba(0,0,0,0.1)) !important;
   }
   div.bodyContent div.innerContent {
     padding-top: 7vw;
