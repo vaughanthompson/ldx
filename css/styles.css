@@ -4301,6 +4301,53 @@ div.edContain .grey {
     background-size: 100% auto;
   }
 }
+div.timelineVertical {
+  padding-top: 5vh;
+}
+div.timelineVertical div.timelineItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-column-gap: 5vw;
+  -moz-column-gap: 5vw;
+  column-gap: 5vw;
+}
+div.timelineVertical div.timelineItem > div {
+  padding-bottom: 5vh;
+}
+div.timelineVertical div.timelineItem > div:first-child {
+  -webkit-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -ms-flex: 0 0 40px;
+  flex: 0 0 40px;
+}
+div.timelineVertical div.timelineItem.achieved > div:first-child {
+  background-image: url("/images/teamldx/feb24/timeline-achieved.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+div.timelineVertical div.timelineItem.pending > div:first-child {
+  background-image: url("/images/teamldx/feb24/timeline-pending.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+@media screen and (min-width: 1100px) {
+  div.timelineVertical {
+    width: 60vw;
+    margin: 0px auto;
+  }
+  div.timelineVertical div.timelineItem > div:first-child {
+    -webkit-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -ms-flex: 0 0 80px;
+    flex: 0 0 80px;
+  }
+}
 @media screen and (max-width: 1100px) {
   .reducePadMob {
     padding-top: 10vh !important;

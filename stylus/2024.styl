@@ -770,10 +770,37 @@ div.edContain .grey {
 
 
 
+div.timelineVertical 
+    padding-top: 5vh
+
+div.timelineVertical div.timelineItem
+    display: flex
+    column-gap: 5vw
+div.timelineVertical div.timelineItem > div
+    padding-bottom: 5vh
+
+div.timelineVertical div.timelineItem > div:first-child 
+    flex:0 0 40px
+
+div.timelineVertical div.timelineItem.achieved > div:first-child 
+    background-image: url(/images/teamldx/feb24/timeline-achieved.png)
+    background-position: center
+    background-size: contain
+    background-repeat: repeat-y
+
+div.timelineVertical div.timelineItem.pending > div:first-child 
+    background-image: url(/images/teamldx/feb24/timeline-pending.png)
+    background-position: center
+    background-size: contain
+    background-repeat: repeat-y
 
 
-
-
+@media dtrigger
+    div.timelineVertical 
+        width:60vw
+        margin: 0px auto
+    div.timelineVertical div.timelineItem > div:first-child 
+        flex:0 0 80px
 
 
 
