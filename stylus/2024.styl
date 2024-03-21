@@ -828,3 +828,64 @@ div.edContain.picturefill-background {
     background-position: 50% 50%;
     background-size: cover;
 }
+
+
+
+
+
+
+.value .ctaButton
+    background-color: value
+    border-color: value
+.performance .ctaButton
+    background-color: performance
+    border-color: performance
+.value .ctaButton:hover    
+.performance .ctaButton:hover
+    background-color: white
+
+
+.value h4,
+.value h6
+    color: value
+.performance h4,
+.performance h6
+    color: performance
+.performanceplus h4,
+.performanceplus h6
+    color: performanceplus
+
+div.brandRow h6
+    margin-bottom: 0
+
+div.brandRow
+    margin-top: 2em
+
+@media phoneRule
+    div.brandRow > div
+       margin-bottom: 2em
+
+@media ttrigger
+    div.brandRow
+        display: flex
+        column-gap: 1em
+    div.brandRow > div
+        flex:1 1 30%
+        display: flex
+        flex-direction: column
+    div.brandRow p
+        margin-bottom: 1.5em
+    div.brandRow .ctaButton
+        margin-top: auto
+        
+@media dtrigger
+    div.brandRow h4
+        font-size: 1.3em
+    div.brandRow h6
+        font-size: 1em
+
+@media lgdesktopRule
+    div.brandRow h4
+        font-size: 1.8em
+    div.brandRow h6
+        font-size: 1.2em
