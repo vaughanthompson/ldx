@@ -773,8 +773,7 @@ ul.iconRow li:last-child {
 ul.iconRow li i {
   font-size: 1.4em;
 }
-a.ctaButton,
-.ctaButton {
+a.ctaButton {
   padding: 0.85em 1.3em;
   background: #c8102e;
   color: #fff;
@@ -807,7 +806,6 @@ a.ctaButton i:before {
   color: #fff;
 }
 a.ctaButton:hover,
-.ctaButton:hover,
 a.ctaButton:hover > i:before,
 a.icon:hover {
   background: none;
