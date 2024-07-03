@@ -4536,3 +4536,8 @@ div.brandRow {
 .fw-900 {
   font-weight: 900;
 }
+@media screen and (min-width: 750px) {
+  .hideMobile {
+    display: none !important;
+  }
+}
