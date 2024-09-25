@@ -844,15 +844,15 @@ a.ctaButton:hover i {
 }
 .brandModeBaoli a.ctaButton,
 .brandModeBaoli a.ctaButton > i:before {
-  background: #1e97a8 !important;
-  color: #fff !important;
-  border-color: #1e97a8 !important;
+  background: #fff !important;
+  color: #197abf !important;
+  border-color: #fff !important;
 }
 .brandModeBaoli a.ctaButton:hover,
 .brandModeBaoli a.ctaButton:hover > i:before {
-  background: #1e97a8 !important;
+  background: #197abf !important;
   color: #fff !important;
-  border-color: #1e97a8 !important;
+  border-color: #197abf !important;
 }
 .inv,
 .inv:before,
@@ -2752,6 +2752,19 @@ p.intro {
   body.model h1 {
     max-width: 60%;
   }
+}
+.redacted {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  line-height: 140%;
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid #fff;
 }
 #navMobile .icon,
 #navHeader .icon {
