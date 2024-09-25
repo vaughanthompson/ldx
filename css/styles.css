@@ -390,6 +390,10 @@ div.contentWrapper.brandModeHome {
   background-color: #c8102e;
   color: #fff;
 }
+div.contentWrapper.brandModeBaoli {
+  background-color: #1e97a8;
+  color: #fff;
+}
 div.contentWrapper.darkMode div.innerContent > div.inpageNav i:before,
 div.contentWrapper.brandMode div.innerContent > div.inpageNav i:before {
   color: #fff;
@@ -837,6 +841,18 @@ a.ctaButton:hover i {
   background: #c8102e !important;
   color: #fff !important;
   border-color: #fff !important;
+}
+.brandModeBaoli a.ctaButton,
+.brandModeBaoli a.ctaButton > i:before {
+  background: #1e97a8 !important;
+  color: #fff !important;
+  border-color: #1e97a8 !important;
+}
+.brandModeBaoli a.ctaButton:hover,
+.brandModeBaoli a.ctaButton:hover > i:before {
+  background: #1e97a8 !important;
+  color: #fff !important;
+  border-color: #1e97a8 !important;
 }
 .inv,
 .inv:before,
@@ -3213,6 +3229,11 @@ body > header.tempNavigation span.pipe {
     background-blend-mode: multiply;
     background: -webkit-gradient(linear, left top, right bottom, from(#c8102e), to(rgba(0,0,0,0.1))) !important;
     background: linear-gradient(to bottom right, #c8102e, rgba(0,0,0,0.1)) !important;
+  }
+  div.mastheadSlider div.brandModeBaoli div.content {
+    background-blend-mode: multiply;
+    background: -webkit-gradient(linear, left top, right bottom, from(#1e97a8), to(rgba(0,0,0,0.1))) !important;
+    background: linear-gradient(to bottom right, #1e97a8, rgba(0,0,0,0.1)) !important;
   }
   div.bodyContent div.innerContent {
     padding-top: 7vw;
