@@ -889,3 +889,64 @@ div.brandRow
         font-size: 1.8em
     div.brandRow h6
         font-size: 1.2em
+
+
+
+
+
+/* table */
+table.revTable
+    width:100%
+    border-collapse:collapse
+
+/* reversed table formatting */
+table.revTable,
+table.revTable td
+    color: brand0
+    border-bottom:1px solid grey
+    padding:5px 5px 5px 5px
+    font-size: 1em
+
+
+table.revTable td:first-child 
+    color: brand1
+
+@media screen and (max-width:1100px)   
+    table.revTable,
+    table.revTable td
+        font-size: 0.9em
+
+    table.revTable
+        border-top:1px solid grey
+
+    table.revTable td:first-child
+        color: brand1
+    
+
+
+
+
+.flexRow
+    display: flex
+    column-gap: 7vw
+.flexRow > div
+    flex: 1 0 0
+.flexRow.twoColumn
+    flex-wrap: wrap
+    row-gap: 1em
+.flexRow.twoColumn > div
+    flex: 1 1 45%;
+    margin-bottom: 2em
+
+@media screen and (max-width:1100px)
+    .flexRow
+        display: block
+
+
+
+
+.locLinks a:active,
+.locLinks a:visited,
+.locLinks a:hover
+    color: brand1 !important
+

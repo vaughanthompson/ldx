@@ -26,6 +26,7 @@
             queue: false,
             hash: false,
             duration: 600,
+            offset: -80,
             easing: 'easeOutQuad'
     });
 

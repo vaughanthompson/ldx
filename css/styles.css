@@ -4487,6 +4487,74 @@ div.brandRow {
     font-size: 1.2em;
   }
 }
+table.revTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.revTable,
+table.revTable td {
+  color: #1a1a1a;
+  border-bottom: 1px solid #808080;
+  padding: 5px 5px 5px 5px;
+  font-size: 1em;
+}
+table.revTable td:first-child {
+  color: #c8102e;
+}
+@media screen and (max-width: 1100px) {
+  table.revTable,
+  table.revTable td {
+    font-size: 0.9em;
+  }
+  table.revTable {
+    border-top: 1px solid #808080;
+  }
+  table.revTable td:first-child {
+    color: #c8102e;
+  }
+}
+.flexRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-column-gap: 7vw;
+  -moz-column-gap: 7vw;
+  column-gap: 7vw;
+}
+.flexRow > div {
+  -webkit-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
+}
+.flexRow.twoColumn {
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 1em;
+}
+.flexRow.twoColumn > div {
+  -webkit-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -ms-flex: 1 1 45%;
+  flex: 1 1 45%;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 1100px) {
+  .flexRow {
+    display: block;
+  }
+}
+.locLinks a:active,
+.locLinks a:visited,
+.locLinks a:hover {
+  color: #c8102e !important;
+}
 /* effects */
 .multiply {
   background-blend-mode: multiply;
