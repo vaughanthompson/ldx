@@ -2286,6 +2286,16 @@ body.model div.masthead div.content {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+.picturefill-background.cover {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+@media screen and (max-width: 750px) {
+  .picturefill-background.cover {
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
 .staticOverlayContent,
 .staticOverlayContent2 {
   background: none !important;
@@ -2358,6 +2368,9 @@ div.bgImage {
   div.bgImage {
     width: 100vw;
   }
+}
+div.bgImage.full {
+  width: 100vw;
 }
 div.mastheadSlider div.contentWrapper div.content {
   background-size: cover;
@@ -2562,6 +2575,45 @@ div.catList.careers div.catItem a.ctaButton {
   align-self: flex-start;
   -ms-flex-item-align: start;
 }
+div.featurette {
+  padding: 0 1.5vw;
+}
+div.featurette > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 750px) {
+  div.featurette > div {
+    -webkit-box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2em;
+    margin-bottom: 4em;
+  }
+}
+div.featurette > div:last-of-type {
+  margin-bottom: 0;
+}
+.marginTopMobile {
+  padding-top: 8vh;
+}
+@media screen and (max-width: 750px) {
+  .phoneCenter {
+    text-align: center;
+  }
+}
 a:link {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -2606,6 +2658,9 @@ li a:hover,
   color: #1a1a1a !important;
   -webkit-transition: 500ms;
   transition: 500ms;
+}
+.balanceMe {
+  text-wrap: balance;
 }
 h1,
 h2,
