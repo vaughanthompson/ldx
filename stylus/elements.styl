@@ -1424,3 +1424,25 @@ div.featurette > div:last-of-type
 .phoneCenter 
     @media phoneRule
         text-align: center
+
+
+
+.arrow-line {
+  position: relative;
+  width: 90%; /* Adjust length of the line */
+  height: 4px;  /* Adjust thickness of the line */
+  background-color: brand1
+  display: block;
+}
+
+.arrow-line::after {
+  content: '';
+  position: absolute;
+  right: -1px;  /* Aligns tip to the end of the line */
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 20px;
+  height: 20px;
+  border-top: 4px solid brand1
+  border-right: 4px solid brand1
+}
